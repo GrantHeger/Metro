@@ -1,0 +1,2180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BCA43471-1674-4118-9FF3-ABDEF3599EA0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NFTA_Metro</RootNamespace>
+    <AssemblyName>NFTA-Metro</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>NFTA-Metro.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>NFTA-Metro.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About\Info.aspx.designer.vb">
+      <DependentUpon>Info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About\Info.aspx.vb">
+      <DependentUpon>Info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CNG\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CNG\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Contest.aspx.designer.vb">
+      <DependentUpon>Contest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Contest.aspx.vb">
+      <DependentUpon>Contest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\MetroNowBoard1.aspx.designer.vb">
+      <DependentUpon>MetroNowBoard1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\MetroNowBoard1.aspx.vb">
+      <DependentUpon>MetroNowBoard1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Stripped.Master.designer.vb">
+      <DependentUpon>Stripped.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Stripped.Master.vb">
+      <DependentUpon>Stripped.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PAL\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Paratransit\Form.aspx.designer.vb">
+      <DependentUpon>Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paratransit\Form.aspx.vb">
+      <DependentUpon>Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\CollegeFAQ.aspx.designer.vb">
+      <DependentUpon>CollegeFAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\CollegeFAQ.aspx.vb">
+      <DependentUpon>CollegeFAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Open.aspx.designer.vb">
+      <DependentUpon>Open.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Open.aspx.vb">
+      <DependentUpon>Open.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\HowTo.aspx.designer.vb">
+      <DependentUpon>HowTo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\HowTo.aspx.vb">
+      <DependentUpon>HowTo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Winter.aspx.designer.vb">
+      <DependentUpon>Winter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Winter.aspx.vb">
+      <DependentUpon>Winter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\DumpPump.aspx.designer.vb">
+      <DependentUpon>DumpPump.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\DumpPump.aspx.vb">
+      <DependentUpon>DumpPump.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\TitleVI.aspx.designer.vb">
+      <DependentUpon>TitleVI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\TitleVI.aspx.vb">
+      <DependentUpon>TitleVI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Safe.aspx.designer.vb">
+      <DependentUpon>Safe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Safe.aspx.vb">
+      <DependentUpon>Safe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\AppCenter.aspx.designer.vb">
+      <DependentUpon>AppCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\AppCenter.aspx.vb">
+      <DependentUpon>AppCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\MetroNowBoard.aspx.designer.vb">
+      <DependentUpon>MetroNowBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\MetroNowBoard.aspx.vb">
+      <DependentUpon>MetroNowBoard.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Routes\MetroNowStatus.aspx.designer.vb">
+      <DependentUpon>MetroNowStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\MetroNowStatus.aspx.vb">
+      <DependentUpon>MetroNowStatus.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Routes\MetroNow.aspx.designer.vb">
+      <DependentUpon>MetroNow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\MetroNow.aspx.vb">
+      <DependentUpon>MetroNow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\Escalator.aspx.designer.vb">
+      <DependentUpon>Escalator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\Escalator.aspx.vb">
+      <DependentUpon>Escalator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\MetroNowHistory.aspx.designer.vb">
+      <DependentUpon>MetroNowHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\MetroNowHistory.aspx.vb">
+      <DependentUpon>MetroNowHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\Storm.aspx.designer.vb">
+      <DependentUpon>Storm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\Storm.aspx.vb">
+      <DependentUpon>Storm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\Flex57.aspx.designer.vb">
+      <DependentUpon>Flex57.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\Flex57.aspx.vb">
+      <DependentUpon>Flex57.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\PublicHearing.aspx.designer.vb">
+      <DependentUpon>PublicHearing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\PublicHearing.aspx.vb">
+      <DependentUpon>PublicHearing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\ParkRide.aspx.designer.vb">
+      <DependentUpon>ParkRide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\ParkRide.aspx.vb">
+      <DependentUpon>ParkRide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\Store.aspx.designer.vb">
+      <DependentUpon>Store.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\Store.aspx.vb">
+      <DependentUpon>Store.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\RiderAlerts.aspx.designer.vb">
+      <DependentUpon>RiderAlerts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\RiderAlerts.aspx.vb">
+      <DependentUpon>RiderAlerts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About\History.aspx.designer.vb">
+      <DependentUpon>History.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About\History.aspx.vb">
+      <DependentUpon>History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessLogic\AddPageClass.vb" />
+    <Compile Include="BusinessLogic\common.vb" />
+    <Compile Include="BusinessLogic\LogErrors.vb" />
+    <Compile Include="BusinessLogic\RouteBuilder.vb" />
+    <Compile Include="CAC\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CAC\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CAC\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CAC\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact\Advertise.aspx.designer.vb">
+      <DependentUpon>Advertise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact\Advertise.aspx.vb">
+      <DependentUpon>Advertise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact\Contact.aspx.designer.vb">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact\Contact.aspx.vb">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact\Feedback.aspx.designer.vb">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact\Feedback.aspx.vb">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact\Developers.aspx.designer.vb">
+      <DependentUpon>Developers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact\Developers.aspx.vb">
+      <DependentUpon>Developers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\PerkOrder.aspx.designer.vb">
+      <DependentUpon>PerkOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\PerkOrder.aspx.vb">
+      <DependentUpon>PerkOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Perk.aspx.designer.vb">
+      <DependentUpon>Perk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Perk.aspx.vb">
+      <DependentUpon>Perk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\Route.aspx.designer.vb">
+      <DependentUpon>Route.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\Route.aspx.vb">
+      <DependentUpon>Route.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\Schedules.aspx.designer.vb">
+      <DependentUpon>Schedules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\Schedules.aspx.vb">
+      <DependentUpon>Schedules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\SystemMap.aspx.designer.vb">
+      <DependentUpon>SystemMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\SystemMap.aspx.vb">
+      <DependentUpon>SystemMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\Rail.aspx.designer.vb">
+      <DependentUpon>Rail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\Rail.aspx.vb">
+      <DependentUpon>Rail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataAccess\CACBase.vb" />
+    <Compile Include="DataAccess\nftaEscalator.vb" />
+    <Compile Include="DataAccess\XMLMessageBoardHandler.vb" />
+    <Compile Include="DataAccess\XMLEmergencyHandler.vb" />
+    <Compile Include="Programs\CACForm.aspx.designer.vb">
+      <DependentUpon>CACForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\CACForm.aspx.vb">
+      <DependentUpon>CACForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\CAC.aspx.designer.vb">
+      <DependentUpon>CAC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\CAC.aspx.vb">
+      <DependentUpon>CAC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Redirect.aspx.designer.vb">
+      <DependentUpon>Redirect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Redirect.aspx.vb">
+      <DependentUpon>Redirect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\College.aspx.designer.vb">
+      <DependentUpon>College.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\College.aspx.vb">
+      <DependentUpon>College.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PopularLocations.ascx.designer.vb">
+      <DependentUpon>PopularLocations.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PopularLocations.ascx.vb">
+      <DependentUpon>PopularLocations.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataAccess\nfta.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>nfta.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\NFTAAlert.vb" />
+    <Compile Include="DataAccess\nftaRoute.vb" />
+    <Compile Include="DataAccess\StoredProcedureReader.vb" />
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Oops.aspx.designer.vb">
+      <DependentUpon>Oops.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Oops.aspx.vb">
+      <DependentUpon>Oops.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Programs\SGP.aspx.designer.vb">
+      <DependentUpon>SGP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\SGP.aspx.vb">
+      <DependentUpon>SGP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\CocaService.aspx.designer.vb">
+      <DependentUpon>CocaService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\CocaService.aspx.vb">
+      <DependentUpon>CocaService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\AutoPassPayments.aspx.designer.vb">
+      <DependentUpon>AutoPassPayments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\AutoPassPayments.aspx.vb">
+      <DependentUpon>AutoPassPayments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\Express.aspx.designer.vb">
+      <DependentUpon>Express.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\Express.aspx.vb">
+      <DependentUpon>Express.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\Thankyou.aspx.designer.vb">
+      <DependentUpon>Thankyou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\Thankyou.aspx.vb">
+      <DependentUpon>Thankyou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\Fares.aspx.designer.vb">
+      <DependentUpon>Fares.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\Fares.aspx.vb">
+      <DependentUpon>Fares.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\HSBCService.aspx.designer.vb">
+      <DependentUpon>HSBCService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\HSBCService.aspx.vb">
+      <DependentUpon>HSBCService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\Airport.aspx.designer.vb">
+      <DependentUpon>Airport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\Airport.aspx.vb">
+      <DependentUpon>Airport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paratransit\BusRail.aspx.designer.vb">
+      <DependentUpon>BusRail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paratransit\BusRail.aspx.vb">
+      <DependentUpon>BusRail.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Paratransit\Paratransit.aspx.designer.vb">
+      <DependentUpon>Paratransit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paratransit\Paratransit.aspx.vb">
+      <DependentUpon>Paratransit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Paratransit\FaresReduced.aspx.designer.vb">
+      <DependentUpon>FaresReduced.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paratransit\FaresReduced.aspx.vb">
+      <DependentUpon>FaresReduced.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\EmergencyRide.aspx.designer.vb">
+      <DependentUpon>EmergencyRide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\EmergencyRide.aspx.vb">
+      <DependentUpon>EmergencyRide.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Ride.aspx.designer.vb">
+      <DependentUpon>Ride.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Ride.aspx.vb">
+      <DependentUpon>Ride.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\HeadingToEvent.aspx.designer.vb">
+      <DependentUpon>HeadingToEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\HeadingToEvent.aspx.vb">
+      <DependentUpon>HeadingToEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About\Visitor.aspx.designer.vb">
+      <DependentUpon>Visitor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About\Visitor.aspx.vb">
+      <DependentUpon>Visitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\Tools.aspx.designer.vb">
+      <DependentUpon>Tools.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\Tools.aspx.vb">
+      <DependentUpon>Tools.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="Trip\Help.aspx.designer.vb">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Trip\Help.aspx.vb">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web References\AlertService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\CacheService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MetroService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\StatesAndProvincesService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Whoops.aspx.designer.vb">
+      <DependentUpon>Whoops.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Whoops.aspx.vb">
+      <DependentUpon>Whoops.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Xtras.aspx.designer.vb">
+      <DependentUpon>Xtras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Xtras.aspx.vb">
+      <DependentUpon>Xtras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About\News.aspx.designer.vb">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About\News.aspx.vb">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Metro.Master.designer.vb">
+      <DependentUpon>Metro.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Metro.Master.vb">
+      <DependentUpon>Metro.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Routes\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Paratransit\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paratransit\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WiFi\Terms2.aspx.designer.vb">
+      <DependentUpon>Terms2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WiFi\Terms2.aspx.vb">
+      <DependentUpon>Terms2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WiFi\Default2.aspx.designer.vb">
+      <DependentUpon>Default2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WiFi\Default2.aspx.vb">
+      <DependentUpon>Default2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WiFi\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WiFi\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WiFi\Terms.aspx.designer.vb">
+      <DependentUpon>Terms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WiFi\Terms.aspx.vb">
+      <DependentUpon>Terms.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataAccess\nfta.dbml.layout">
+      <DependentUpon>nfta.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About\Info.aspx" />
+    <Content Include="About\Default.aspx" />
+    <Content Include="bootstrap-3.2.0-dist\css\bootstrap-theme.css" />
+    <Content Include="bootstrap-3.2.0-dist\css\bootstrap-theme.min.css" />
+    <Content Include="bootstrap-3.2.0-dist\css\bootstrap.css" />
+    <Content Include="bootstrap-3.2.0-dist\css\bootstrap.min.css" />
+    <Content Include="bootstrap-3.2.0-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bootstrap-3.2.0-dist\js\bootstrap-modal.js" />
+    <Content Include="bootstrap-3.2.0-dist\js\bootstrap.js" />
+    <Content Include="bootstrap-3.2.0-dist\js\bootstrap.min.js" />
+    <Content Include="bootstrap-3.2.0-dist\js\jquery.js" />
+    <Content Include="CNG\Default.aspx" />
+    <Content Include="css\cssStripped.css" />
+    <Content Include="img\10-again-75.jpg" />
+    <Content Include="img\10till_75.png" />
+    <Content Include="img\114inside.jpg" />
+    <Content Include="img\114outside.jpg" />
+    <Content Include="img\2008FallReporter.jpg" />
+    <Content Include="img\2008WinterReporter.jpg" />
+    <Content Include="img\2009SpringReporter.jpg" />
+    <Content Include="img\2010-worldchamps.jpg" />
+    <Content Include="img\2011-worldhockey-banner-o.jpg" />
+    <Content Include="img\2011-worldhockey-banner.jpg" />
+    <Content Include="img\2011-worldhockey-hot.jpg" />
+    <Content Include="img\2012-sounds.jpg" />
+    <Content Include="img\2013Taste.jpg" />
+    <Content Include="img\206-large.jpg" />
+    <Content Include="img\55Casino.jpg" />
+    <Content Include="img\57flex-icon.png" />
+    <Content Include="img\addressinfo.gif" />
+    <Content Include="img\ads\2011-ecf-o.gif" />
+    <Content Include="img\ads\2011-ecf.gif" />
+    <Content Include="img\ads\2014Bisons-o.png" />
+    <Content Include="img\ads\2014Bisons.jpg" />
+    <Content Include="img\ads\Black-History-Brown-color.gif" />
+    <Content Include="img\ads\Black-History-Long-color.gif" />
+    <Content Include="img\ads\Black-History-Nash-color.gif" />
+    <Content Include="img\ads\Black-History-Talbert-color.gif" />
+    <Content Include="img\ads\blackhistory-bw.gif" />
+    <Content Include="img\ads\blackhistory.gif" />
+    <Content Include="img\ads\boatharbor-2010.gif" />
+    <Content Include="img\ads\boatharbor.gif" />
+    <Content Include="img\ads\Compass-House-Ad.gif" />
+    <Content Include="img\ads\Dunkin-ad-set-up.gif" />
+    <Content Include="img\ads\earthday2009.jpg" />
+    <Content Include="img\ads\earthday2010.jpg" />
+    <Content Include="img\ads\earthday2011.gif" />
+    <Content Include="img\ads\ecf-2010.jpg" />
+    <Content Include="img\ads\ecf-2011.gif" />
+    <Content Include="img\ads\ECF-MME-Horizontal.gif" />
+    <Content Include="img\ads\ECF-MME.gif" />
+    <Content Include="img\ads\ecfair.jpg" />
+    <Content Include="img\ads\ee-hot.jpg" />
+    <Content Include="img\ads\ee-square.gif" />
+    <Content Include="img\ads\enhancedexpress.jpg" />
+    <Content Include="img\ads\Fairgrounds-2011.gif" />
+    <Content Include="img\ads\fairgrounds.gif" />
+    <Content Include="img\ads\fallfest.gif" />
+    <Content Include="img\ads\festivalflyer.jpg" />
+    <Content Include="img\ads\frankWarren.gif" />
+    <Content Include="img\ads\fuccillo.jpg" />
+    <Content Include="img\ads\getMeToTheGame.gif" />
+    <Content Include="img\ads\Heart-Gallery-ad.gif" />
+    <Content Include="img\ads\HolidayCelebration.gif" />
+    <Content Include="img\ads\LaSalle-Park-&amp;-Ride.gif" />
+    <Content Include="img\ads\MMG-bus.gif" />
+    <Content Include="img\ads\MMG-gas.gif" />
+    <Content Include="img\ads\MMG-rail.gif" />
+    <Content Include="img\ads\MMG-save.gif" />
+    <Content Include="img\ads\outerharbor.jpg" />
+    <Content Include="img\ads\Pier_Location_Map.jpg" />
+    <Content Include="img\ads\solar.gif" />
+    <Content Include="img\ads\swine-o.gif" />
+    <Content Include="img\ads\swine.gif" />
+    <Content Include="img\ads\syp-2010-web.jpg" />
+    <Content Include="img\ads\taste-photo.jpg" />
+    <Content Include="img\ads\taste.jpg" />
+    <Content Include="img\ads\taste2009.gif" />
+    <Content Include="img\ads\taste2009.jpg" />
+    <Content Include="img\ads\taste2010.jpg" />
+    <Content Include="img\ads\wilsonFarms-coupon.jpg" />
+    <Content Include="img\ads\wilsonFarms.gif" />
+    <Content Include="img\ads\wilsonFarms.jpg" />
+    <Content Include="img\adv-back.jpg" />
+    <Content Include="img\adv-eccwrap.jpg" />
+    <Content Include="img\adv-midas.jpg" />
+    <Content Include="img\adv-rail.jpg" />
+    <Content Include="img\adv-shelter.jpg" />
+    <Content Include="img\adv-wnyjobs.jpg" />
+    <Content Include="img\advantage-with-pal.gif" />
+    <Content Include="img\advantage-with.gif" />
+    <Content Include="img\advantage-without.gif" />
+    <Content Include="img\ad_bus.gif" />
+    <Content Include="img\ala.jpg" />
+    <Content Include="img\alert.gif" />
+    <Content Include="img\app-googletransit.png" />
+    <Content Include="img\app-hopstop.png" />
+    <Content Include="img\app-nfta.png" />
+    <Content Include="img\app-nittec.png" />
+    <Content Include="img\app-stp.png" />
+    <Content Include="img\app-swift.png" />
+    <Content Include="img\app-systemmap.png" />
+    <Content Include="img\app-transittimes.png" />
+    <Content Include="img\app-transittracker.png" />
+    <Content Include="img\app-tripplanner.png" />
+    <Content Include="img\app-wmb.png" />
+    <Content Include="img\app.png" />
+    <Content Include="img\area-b-o.jpg" />
+    <Content Include="img\area-b.jpg" />
+    <Content Include="img\area-n-o.jpg" />
+    <Content Include="img\area-n.jpg" />
+    <Content Include="img\Back-of-bus-in-circle.jpg" />
+    <Content Include="img\Basketball.jpg" />
+    <Content Include="img\bflo.gif" />
+    <Content Include="img\bflo.jpg" />
+    <Content Include="img\bflo.png" />
+    <Content Include="img\bg-all.jpg" />
+    <Content Include="img\bg-all.png" />
+    <Content Include="img\bg-banner.gif" />
+    <Content Include="img\bg-body.jpg" />
+    <Content Include="img\bg-footer.png" />
+    <Content Include="img\bg-main.gif" />
+    <Content Include="img\bg-mainNav.jpg" />
+    <Content Include="img\bg-nav.jpg" />
+    <Content Include="img\bg-navHover.gif" />
+    <Content Include="img\bg-navHover.png" />
+    <Content Include="img\bg-navLink.png" />
+    <Content Include="img\bg-navShort.jpg" />
+    <Content Include="img\bg-sidebar.jpg" />
+    <Content Include="img\bg-tools.gif" />
+    <Content Include="img\bg.jpg" />
+    <Content Include="img\bikerace.jpg" />
+    <Content Include="img\billsexpress.jpg" />
+    <Content Include="img\billsfans.jpg" />
+    <Content Include="img\billslogo.jpg" />
+    <Content Include="img\black_arrow-lg.png" />
+    <Content Include="img\black_arrow.gif" />
+    <Content Include="img\black_arrow.png" />
+    <Content Include="img\black_arrow_big.png" />
+    <Content Include="img\BNIA.jpg" />
+    <Content Include="img\btn-accesspass-o.jpg" />
+    <Content Include="img\btn-accesspass.jpg" />
+    <Content Include="img\btn-ada-o.jpg" />
+    <Content Include="img\btn-ada.jpg" />
+    <Content Include="img\btn-advantage-employees-o.jpg" />
+    <Content Include="img\btn-advantage-employees.jpg" />
+    <Content Include="img\btn-advantage-employers-o.jpg" />
+    <Content Include="img\btn-advantage-employers.jpg" />
+    <Content Include="img\btn-advantage-o.jpg" />
+    <Content Include="img\btn-advantage-PAL-o.jpg" />
+    <Content Include="img\btn-advantage-PAL.jpg" />
+    <Content Include="img\btn-advantage.jpg" />
+    <Content Include="img\btn-airport-o.jpg" />
+    <Content Include="img\btn-airport.jpg" />
+    <Content Include="img\btn-alert-2-o.jpg" />
+    <Content Include="img\btn-alert-2.jpg" />
+    <Content Include="img\btn-alert-o.jpg" />
+    <Content Include="img\btn-alert.jpg" />
+    <Content Include="img\btn-cac-o.jpg" />
+    <Content Include="img\btn-cac.jpg" />
+    <Content Include="img\btn-change-current-o.gif" />
+    <Content Include="img\btn-change-current.gif" />
+    <Content Include="img\btn-change-next-o.gif" />
+    <Content Include="img\btn-change-next.gif" />
+    <Content Include="img\btn-contact-o.gif" />
+    <Content Include="img\btn-contact.gif" />
+    <Content Include="img\btn-elevator-o.jpg" />
+    <Content Include="img\btn-elevator.jpg" />
+    <Content Include="img\btn-extras-o.jpg" />
+    <Content Include="img\btn-extras.jpg" />
+    <Content Include="img\btn-gameday-o.jpg" />
+    <Content Include="img\btn-gameday.jpg" />
+    <Content Include="img\btn-heading-o.gif" />
+    <Content Include="img\btn-heading.gif" />
+    <Content Include="img\btn-mondayMarket-o.gif" />
+    <Content Include="img\btn-mondayMarket.gif" />
+    <Content Include="img\btn-next-o.gif" />
+    <Content Include="img\btn-next.gif" />
+    <Content Include="img\btn-pal-o.jpg" />
+    <Content Include="img\btn-pal.jpg" />
+    <Content Include="img\btn-perk-o.jpg" />
+    <Content Include="img\btn-perk.jpg" />
+    <Content Include="img\btn-prev-o.gif" />
+    <Content Include="img\btn-prev.gif" />
+    <Content Include="img\btn-rideralert-o.gif" />
+    <Content Include="img\btn-rideralert.gif" />
+    <Content Include="img\btn-routes-info-o.gif" />
+    <Content Include="img\btn-routes-info.gif" />
+    <Content Include="img\btn-routes-jpg-o.gif" />
+    <Content Include="img\btn-routes-jpg.gif" />
+    <Content Include="img\btn-routes-schedule-o.gif" />
+    <Content Include="img\btn-routes-schedule.gif" />
+    <Content Include="img\btn-sat-in-o.png" />
+    <Content Include="img\btn-sat-in.png" />
+    <Content Include="img\btn-sat-out-o.png" />
+    <Content Include="img\btn-sat-out.png" />
+    <Content Include="img\btn-send.jpg" />
+    <Content Include="img\btn-sent-o.jpg" />
+    <Content Include="img\btn-sesay-o.png" />
+    <Content Include="img\btn-sesay.png" />
+    <Content Include="img\btn-sm-perk-o.jpg" />
+    <Content Include="img\btn-sm-perk.jpg" />
+    <Content Include="img\btn-sun-in-o.png" />
+    <Content Include="img\btn-sun-in.png" />
+    <Content Include="img\btn-sun-out-o.png" />
+    <Content Include="img\btn-sun-out.png" />
+    <Content Include="img\btn-survey-o.gif" />
+    <Content Include="img\btn-survey.gif" />
+    <Content Include="img\btn-syp-o.jpg" />
+    <Content Include="img\btn-syp-sm-o.gif" />
+    <Content Include="img\btn-syp-sm.gif" />
+    <Content Include="img\btn-syp.jpg" />
+    <Content Include="img\btn-takesurvey-o.gif" />
+    <Content Include="img\btn-takesurvey.jpg" />
+    <Content Include="img\btn-tranistwatch-o.jpg" />
+    <Content Include="img\btn-tranistwatch.jpg" />
+    <Content Include="img\btn-transit-fade.jpg" />
+    <Content Include="img\btn-transit-o.jpg" />
+    <Content Include="img\btn-transit.jpg" />
+    <Content Include="img\btn-transitwatch-o.jpg" />
+    <Content Include="img\btn-transitwatch.jpg" />
+    <Content Include="img\btn-tripAdvanced-o.png" />
+    <Content Include="img\btn-tripAdvanced.png" />
+    <Content Include="img\btn-tripBasic.png" />
+    <Content Include="img\btn-tripGoogle.png" />
+    <Content Include="img\btn-tripplanner-o.jpg" />
+    <Content Include="img\btn-tripplanner.jpg" />
+    <Content Include="img\btn-vendor-o.gif" />
+    <Content Include="img\btn-vendor.gif" />
+    <Content Include="img\btn-viewall-o.gif" />
+    <Content Include="img\btn-viewall.gif" />
+    <Content Include="img\btn-visiting-o.jpg" />
+    <Content Include="img\btn-visiting.jpg" />
+    <Content Include="img\btn-week-in-o.png" />
+    <Content Include="img\btn-week-in.png" />
+    <Content Include="img\btn-week-out-o.png" />
+    <Content Include="img\btn-week-out.png" />
+    <Content Include="img\btn-winterRidersGuide-o.jpg" />
+    <Content Include="img\btn-winterRidersGuide.jpg" />
+    <Content Include="img\btn-xtras.jpg" />
+    <Content Include="img\bullet.gif" />
+    <Content Include="img\Bus-from-front.jpg" />
+    <Content Include="img\Bus-in-circle.jpg" />
+    <Content Include="img\Bus-side-view.jpg" />
+    <Content Include="img\busreroute.jpg" />
+    <Content Include="img\button-back.gif" />
+    <Content Include="img\button_plan_trip_bg.gif" />
+    <Content Include="img\button_reset_trip_bg.gif" />
+    <Content Include="img\button_stops.gif" />
+    <Content Include="img\button_trip_plan.gif" />
+    <Content Include="img\button_trip_schedule.gif" />
+    <Content Include="img\button_trip_service.gif" />
+    <Content Include="img\button_trip_stops.gif" />
+    <Content Include="img\buynow-full.gif" />
+    <Content Include="img\buynow-reduced.gif" />
+    <Content Include="img\buynow-x.gif" />
+    <Content Include="img\buynow.gif" />
+    <Content Include="img\buynowx.gif" />
+    <Content Include="img\buypass.gif" />
+    <Content Include="img\buypasslogos.gif" />
+    <Content Include="img\cac-member-o.gif" />
+    <Content Include="img\cac-member.gif" />
+    <Content Include="img\CACApp-o.jpg" />
+    <Content Include="img\CACApp.jpg" />
+    <Content Include="img\calc-ad.jpg" />
+    <Content Include="img\calc-bg.jpg" />
+    <Content Include="img\calc-btn.gif" />
+    <Content Include="img\calcbtn-o.jpg" />
+    <Content Include="img\calcbtn.jpg" />
+    <Content Include="img\Canalside-logo.jpg" />
+    <Content Include="img\car114.jpg" />
+    <Content Include="img\card-30day.jpg" />
+    <Content Include="img\card-monthly.jpg" />
+    <Content Include="img\card-xtras.jpg" />
+    <Content Include="img\carshare.png" />
+    <Content Include="img\CHALKFest.jpg" />
+    <Content Include="img\change20121202.jpg" />
+    <Content Include="img\close.gif" />
+    <Content Include="img\close.png" />
+    <Content Include="img\closelabel.gif" />
+    <Content Include="img\college-bryant-fall-nolink.jpg" />
+    <Content Include="img\college-bryant-fall-o.jpg" />
+    <Content Include="img\college-bryant-fall.jpg" />
+    <Content Include="img\college-bryant-nolink.jpg" />
+    <Content Include="img\college-bryant-o.jpg" />
+    <Content Include="img\college-bryant-spring-nolink.jpg" />
+    <Content Include="img\college-bryant-spring-o.jpg" />
+    <Content Include="img\college-bryant-spring.jpg" />
+    <Content Include="img\college-bryant-winter-nolink.jpg" />
+    <Content Include="img\college-bryant-winter-o.jpg" />
+    <Content Include="img\college-bryant-winter.jpg" />
+    <Content Include="img\college-bryant.jpg" />
+    <Content Include="img\college-bsc-nolink.jpg" />
+    <Content Include="img\college-bsc-o.jpg" />
+    <Content Include="img\college-bsc.jpg" />
+    <Content Include="img\college-canisius-nolink.jpg" />
+    <Content Include="img\college-canisius-o.jpg" />
+    <Content Include="img\college-canisius.jpg" />
+    <Content Include="img\college-ecc-nolink.jpg" />
+    <Content Include="img\college-ecc-o.jpg" />
+    <Content Include="img\college-ecc.jpg" />
+    <Content Include="img\college-medaille-nolink.jpg" />
+    <Content Include="img\college-medaille-o.jpg" />
+    <Content Include="img\college-medaille.jpg" />
+    <Content Include="img\college-ub-nolink.jpg" />
+    <Content Include="img\college-ub-o.jpg" />
+    <Content Include="img\college-ub.jpg" />
+    <Content Include="img\colorcode-bus.gif" />
+    <Content Include="img\colorcode-sign.gif" />
+    <Content Include="img\colorcode.jpg" />
+    <Content Include="img\construction.png" />
+    <Content Include="img\controls.png" />
+    <Content Include="img\corner-left.png" />
+    <Content Include="img\corner-right.png" />
+    <Content Include="img\cram-group.jpg" />
+    <Content Include="img\cram-swipe.jpg" />
+    <Content Include="img\cram.gif" />
+    <Content Include="img\delta.jpg" />
+    <Content Include="img\delta.png" />
+    <Content Include="img\destinations.jpg" />
+    <Content Include="img\donate-button.gif" />
+    <Content Include="img\download-icon.gif" />
+    <Content Include="img\download-schedule-o.gif" />
+    <Content Include="img\download-schedule.gif" />
+    <Content Include="img\dp1.jpg" />
+    <Content Include="img\dp2.jpg" />
+    <Content Include="img\dp3.jpg" />
+    <Content Include="img\dp4.jpg" />
+    <Content Include="img\dp5.jpg" />
+    <Content Include="img\dp6.jpg" />
+    <Content Include="img\dp7.jpg" />
+    <Content Include="img\dp8.jpg" />
+    <Content Include="img\dp9.jpg" />
+    <Content Include="img\dump-icon.png" />
+    <Content Include="img\dumppump.jpg" />
+    <Content Include="img\ECC-211-handout.jpg" />
+    <Content Include="img\ECCpass.png" />
+    <Content Include="img\ecctemp.jpg" />
+    <Content Include="img\eccWrap.JPG" />
+    <Content Include="img\ECFair.png" />
+    <Content Include="img\ed-fare-o.jpg" />
+    <Content Include="img\ed-fare.jpg" />
+    <Content Include="img\edge-bottom.png" />
+    <Content Include="img\edge-left.png" />
+    <Content Include="img\edge-right.png" />
+    <Content Include="img\elevator.jpg" />
+    <Content Include="img\employee-pass-o.jpg" />
+    <Content Include="img\employee-pass.jpg" />
+    <Content Include="img\employers-pass-o.jpg" />
+    <Content Include="img\employers-pass.jpg" />
+    <Content Include="img\enhancedexpress.jpg" />
+    <Content Include="img\Fairtable.gif" />
+    <Content Include="img\fare-30day.jpg" />
+    <Content Include="img\fare-30day.png" />
+    <Content Include="img\fare-7day.jpg" />
+    <Content Include="img\fare-7day.png" />
+    <Content Include="img\fare-balance.gif" />
+    <Content Include="img\fare-cost.gif" />
+    <Content Include="img\fare-day.jpg" />
+    <Content Include="img\fare-day.png" />
+    <Content Include="img\fare-fiscal.gif" />
+    <Content Include="img\fare-inflation.gif" />
+    <Content Include="img\fare-month.png" />
+    <Content Include="img\fare-monthly.jpg" />
+    <Content Include="img\fare-monty.jpg" />
+    <Content Include="img\fare-pal.jpg" />
+    <Content Include="img\fare-pal.png" />
+    <Content Include="img\fare-pal20.jpg" />
+    <Content Include="img\fare-panels.gif" />
+    <Content Include="img\fare-pass-small.gif" />
+    <Content Include="img\fare-pass-small.jpg" />
+    <Content Include="img\fare-sgp.png" />
+    <Content Include="img\fare-standard.jpg" />
+    <Content Include="img\fare-syp-small.gif" />
+    <Content Include="img\fare-syp-small.jpg" />
+    <Content Include="img\fare-syp.gif" />
+    <Content Include="img\fare-syp.jpg" />
+    <Content Include="img\fares09.jpg" />
+    <Content Include="img\favicon.ico" />
+    <Content Include="img\feedback.png" />
+    <Content Include="img\firstride-closed.jpg" />
+    <Content Include="img\firstride-o.jpg" />
+    <Content Include="img\firstride-winners.jpg" />
+    <Content Include="img\firstride.jpg" />
+    <Content Include="img\Flex57map.png" />
+    <Content Include="img\footer-iu-o.png" />
+    <Content Include="img\footer-iu.png" />
+    <Content Include="img\form-bg.png" />
+    <Content Include="img\fristride.jpg" />
+    <Content Include="img\Fuel-Gauge.jpg" />
+    <Content Include="img\g-bnia-o.png" />
+    <Content Include="img\g-bnia.png" />
+    <Content Include="img\g-mobile-o.png" />
+    <Content Include="img\g-mobile.png" />
+    <Content Include="img\g-taf-o.png" />
+    <Content Include="img\g-taf.png" />
+    <Content Include="img\GalleriaAlert.jpg" />
+    <Content Include="img\getMotivated.jpg" />
+    <Content Include="img\get_adobe_reader.gif" />
+    <Content Include="img\get_flash_player.gif" />
+    <Content Include="img\Global-Nav.png" />
+    <Content Include="img\gmap-park.png" />
+    <Content Include="img\gmap-shadow.png" />
+    <Content Include="img\gmap-transit.png" />
+    <Content Include="img\google-transit.jpg" />
+    <Content Include="img\group-shot.jpg" />
+    <Content Include="img\h1-messageboard.png" />
+    <Content Include="img\h1-transittools.png" />
+    <Content Include="img\h1.png" />
+    <Content Include="img\h2_trigger_a.gif" />
+    <Content Include="img\headed-bills-o.gif" />
+    <Content Include="img\headed-bills.gif" />
+    <Content Include="img\headed-bisons-o.gif" />
+    <Content Include="img\headed-bisons.gif" />
+    <Content Include="img\headed-coca-o.gif" />
+    <Content Include="img\headed-coca.gif" />
+    <Content Include="img\headed-hsbc-o.gif" />
+    <Content Include="img\headed-hsbc.gif" />
+    <Content Include="img\headed-sabres-o.gif" />
+    <Content Include="img\headed-sabres.gif" />
+    <Content Include="img\here.png" />
+    <Content Include="img\hockey-blue.gif" />
+    <Content Include="img\hockey-green.gif" />
+    <Content Include="img\holiday2012.jpg" />
+    <Content Include="img\holidayBell.gif" />
+    <Content Include="img\holidayperformers2011-hot.jpg" />
+    <Content Include="img\holidayperformers2011.jpg" />
+    <Content Include="img\hot-cac.jpg" />
+    <Content Include="img\hot-santatrain.jpg" />
+    <Content Include="img\hot-single.jpg" />
+    <Content Include="img\hotsyp.jpg" />
+    <Content Include="img\i-active.gif" />
+    <Content Include="img\i-inactive.gif" />
+    <Content Include="img\icon-check.gif" />
+    <Content Include="img\icon-delta.png" />
+    <Content Include="img\icon-ele.gif" />
+    <Content Include="img\icon-esc-down.gif" />
+    <Content Include="img\icon-esc-down.jpg" />
+    <Content Include="img\icon-esc-up.gif" />
+    <Content Include="img\icon-esp.gif" />
+    <Content Include="img\icon-jpg.gif" />
+    <Content Include="img\icon-machine-o.png" />
+    <Content Include="img\icon-machine.png" />
+    <Content Include="img\icon-map.gif" />
+    <Content Include="img\icon-online-o.png" />
+    <Content Include="img\icon-online.gif" />
+    <Content Include="img\icon-online.png" />
+    <Content Include="img\icon-open.gif" />
+    <Content Include="img\icon-operatior-o.png" />
+    <Content Include="img\icon-operator-o.png" />
+    <Content Include="img\icon-operator.gif" />
+    <Content Include="img\icon-operator.png" />
+    <Content Include="img\icon-pdf.gif" />
+    <Content Include="img\icon-schedule.gif" />
+    <Content Include="img\icon-status.png" />
+    <Content Include="img\icon-stop.gif" />
+    <Content Include="img\icon-timetable.gif" />
+    <Content Include="img\icon-tvm.gif" />
+    <Content Include="img\icon-vendor-o.png" />
+    <Content Include="img\icon-vendor.png" />
+    <Content Include="img\iconRevised.gif" />
+    <Content Include="img\image-1.jpg" />
+    <Content Include="img\info.gif" />
+    <Content Include="img\infoweb-footerBG.png" />
+    <Content Include="img\infoweb-headerBG.png" />
+    <Content Include="img\infoweb-metrologo-white.png" />
+    <Content Include="img\infoweb-metrologo-yellow.png" />
+    <Content Include="img\infoweb-metrologo.png" />
+    <Content Include="img\infoweb-transittools.png" />
+    <Content Include="img\instantupdates-o.jpg" />
+    <Content Include="img\instantupdates.jpg" />
+    <Content Include="img\iu-winter.jpg" />
+    <Content Include="img\keep.jpg" />
+    <Content Include="img\keepschedule-o.jpg" />
+    <Content Include="img\keepschedule.jpg" />
+    <Content Include="img\kegwinterfest.gif" />
+    <Content Include="img\kiosk.jpg" />
+    <Content Include="img\KISSRIDE.jpg" />
+    <Content Include="img\LaSalle.jpg" />
+    <Content Include="img\legend1.gif" />
+    <Content Include="img\legend2.gif" />
+    <Content Include="img\legend3.gif" />
+    <Content Include="img\legend4.gif" />
+    <Content Include="img\li-icon.gif" />
+    <Content Include="img\lightbox-blank.gif" />
+    <Content Include="img\lightbox-btn-close.gif" />
+    <Content Include="img\lightbox-btn-next.gif" />
+    <Content Include="img\lightbox-btn-prev.gif" />
+    <Content Include="img\lightbox-ico-loading.gif" />
+    <Content Include="img\live-broadcast.jpg" />
+    <Content Include="img\loading.gif" />
+    <Content Include="img\logo-nfta.gif" />
+    <Content Include="img\logos\40greasePole.jpg" />
+    <Content Include="img\logos\ADV-Speed.jpg" />
+    <Content Include="img\logos\advlanding.gif" />
+    <Content Include="img\logos\advlanding.jpg" />
+    <Content Include="img\logos\allentown.gif" />
+    <Content Include="img\logos\allentownmusic.gif" />
+    <Content Include="img\logos\AMF-Logo.jpg" />
+    <Content Include="img\logos\aquarium.gif" />
+    <Content Include="img\logos\Aquarium.jpg" />
+    <Content Include="img\logos\artsinpark.gif" />
+    <Content Include="img\logos\av.jpg" />
+    <Content Include="img\logos\BECHS.gif" />
+    <Content Include="img\logos\better.jpg" />
+    <Content Include="img\logos\Bisons.jpg" />
+    <Content Include="img\logos\bisons2.jpg" />
+    <Content Include="img\logos\bisonsSm.gif" />
+    <Content Include="img\logos\bodyworlds.gif" />
+    <Content Include="img\logos\book.gif" />
+    <Content Include="img\logos\botanical.png" />
+    <Content Include="img\logos\boulevard.jpg" />
+    <Content Include="img\logos\BPO-logo.jpg" />
+    <Content Include="img\logos\brand.gif" />
+    <Content Include="img\logos\brewfest.gif" />
+    <Content Include="img\logos\budweys.jpg" />
+    <Content Include="img\logos\Buffalo-Place-logo.png" />
+    <Content Include="img\logos\buffalo4th.jpg" />
+    <Content Include="img\logos\buffaloboatshow.jpg" />
+    <Content Include="img\logos\buffaloPlace.gif" />
+    <Content Include="img\logos\buffaloPlace.jpg" />
+    <Content Include="img\logos\canalfest.gif" />
+    <Content Include="img\logos\centralTerminal.gif" />
+    <Content Include="img\logos\chase.gif" />
+    <Content Include="img\logos\chefs.png" />
+    <Content Include="img\logos\citylove.gif" />
+    <Content Include="img\logos\clintonsDitch.jpg" />
+    <Content Include="img\logos\coffeeculture.jpg" />
+    <Content Include="img\logos\coldstone.jpg" />
+    <Content Include="img\logos\collegiate.gif" />
+    <Content Include="img\logos\curtainUp.gif" />
+    <Content Include="img\logos\darienLake.jpg" />
+    <Content Include="img\logos\dash.jpg" />
+    <Content Include="img\logos\DASHSLOGO.jpg" />
+    <Content Include="img\logos\dicks-logo.jpg" />
+    <Content Include="img\logos\dinosaurs.gif" />
+    <Content Include="img\logos\Dipson-Theatre.jpg" />
+    <Content Include="img\logos\disco.gif" />
+    <Content Include="img\logos\drums.gif" />
+    <Content Include="img\logos\dutyfree.gif" />
+    <Content Include="img\logos\dyngus.gif" />
+    <Content Include="img\logos\eden.gif" />
+    <Content Include="img\logos\elmwood.gif" />
+    <Content Include="img\logos\fair.gif" />
+    <Content Include="img\logos\fairfever.jpg" />
+    <Content Include="img\logos\fairgrounds-lightslogo.gif" />
+    <Content Include="img\logos\fairgrounds.gif" />
+    <Content Include="img\logos\fallfest-logo.jpg" />
+    <Content Include="img\logos\Fantastic-Sams-stacked.jpg" />
+    <Content Include="img\logos\Fantasy-Island.jpg" />
+    <Content Include="img\logos\fasionoutlets.gif" />
+    <Content Include="img\logos\film.gif" />
+    <Content Include="img\logos\firstNight.gif" />
+    <Content Include="img\logos\freightworld.gif" />
+    <Content Include="img\logos\FRIGHTWORLD.png" />
+    <Content Include="img\logos\FS.jpg" />
+    <Content Include="img\logos\fta.gif" />
+    <Content Include="img\logos\g-bnia-o.png" />
+    <Content Include="img\logos\g-bnia.png" />
+    <Content Include="img\logos\g-harbor-o.png" />
+    <Content Include="img\logos\g-harbor.png" />
+    <Content Include="img\logos\g-metro-o.png" />
+    <Content Include="img\logos\g-metro.png" />
+    <Content Include="img\logos\g-nfia-o.png" />
+    <Content Include="img\logos\g-nfia.png" />
+    <Content Include="img\logos\g-nfta-o.png" />
+    <Content Include="img\logos\g-nfta.png" />
+    <Content Include="img\logos\gardens.gif" />
+    <Content Include="img\logos\gbnrtc.gif" />
+    <Content Include="img\logos\gino.gif" />
+    <Content Include="img\logos\greek.gif" />
+    <Content Include="img\logos\greek.jpg" />
+    <Content Include="img\logos\gus.gif" />
+    <Content Include="img\logos\harbor.jpg" />
+    <Content Include="img\logos\holidayCelebration.jpg" />
+    <Content Include="img\logos\homecoming.gif" />
+    <Content Include="img\logos\homegarden.gif" />
+    <Content Include="img\logos\hospicewalk.jpg" />
+    <Content Include="img\logos\hunt.gif" />
+    <Content Include="img\logos\irish.gif" />
+    <Content Include="img\logos\italian.gif" />
+    <Content Include="img\logos\jazz.gif" />
+    <Content Include="img\logos\jazz.jpg" />
+    <Content Include="img\logos\juneteenth.jpg" />
+    <Content Include="img\logos\KFCBugV2NB.jpg" />
+    <Content Include="img\logos\kites2009.gif" />
+    <Content Include="img\logos\kites2010.gif" />
+    <Content Include="img\logos\lasalle-farmersmarket-logo.gif" />
+    <Content Include="img\logos\lasalle-station-parking.gif" />
+    <Content Include="img\logos\lasertron-iec-logo.jpg" />
+    <Content Include="img\logos\lights.jpg" />
+    <Content Include="img\logos\logo_buffalo_dot_com.gif" />
+    <Content Include="img\logos\logo_channel7-2.jpg" />
+    <Content Include="img\logos\logo_channel7.jpg" />
+    <Content Include="img\logos\madness.gif" />
+    <Content Include="img\logos\mandt-holiday.jpg" />
+    <Content Include="img\logos\market.gif" />
+    <Content Include="img\logos\martini.jpg" />
+    <Content Include="img\logos\Martins.jpg" />
+    <Content Include="img\logos\MartinsLogo200x62.jpg" />
+    <Content Include="img\logos\md.gif" />
+    <Content Include="img\logos\metro-logo-sm.png" />
+    <Content Include="img\logos\metro-yellow.png" />
+    <Content Include="img\logos\metro.png" />
+    <Content Include="img\logos\mondayMarket.gif" />
+    <Content Include="img\logos\mtPlaza.gif" />
+    <Content Include="img\logos\MUSEUMLOGO1.jpg" />
+    <Content Include="img\logos\musicIsArt.jpg" />
+    <Content Include="img\logos\ncaa.gif" />
+    <Content Include="img\logos\nfta.png" />
+    <Content Include="img\logos\niagarausa.gif" />
+    <Content Include="img\logos\nyworks.gif" />
+    <Content Include="img\logos\onsale.jpg" />
+    <Content Include="img\logos\oscars.jpg" />
+    <Content Include="img\logos\parkside.jpg" />
+    <Content Include="img\logos\perk.gif" />
+    <Content Include="img\logos\peurto.gif" />
+    <Content Include="img\logos\Pizza-Hut.jpg" />
+    <Content Include="img\logos\poster.gif" />
+    <Content Include="img\logos\powderkeg.gif" />
+    <Content Include="img\logos\puerto.gif" />
+    <Content Include="img\logos\pumkin.gif" />
+    <Content Include="img\logos\Record-Theatre-1.jpg" />
+    <Content Include="img\logos\recovery.gif" />
+    <Content Include="img\logos\sabres.png" />
+    <Content Include="img\logos\sesame.jpg" />
+    <Content Include="img\logos\sheas.jpg" />
+    <Content Include="img\logos\Side-Medallion-Logo-%28gold%29.jpg" />
+    <Content Include="img\logos\square.jpg" />
+    <Content Include="img\logos\StereoLogo25th_Color.jpg" />
+    <Content Include="img\logos\SYP-160-08.jpg" />
+    <Content Include="img\logos\syp-2007.jpg" />
+    <Content Include="img\logos\SYP-Card-08.jpg" />
+    <Content Include="img\logos\Taco-Bell-logo.jpg" />
+    <Content Include="img\logos\tanning.gif" />
+    <Content Include="img\logos\taste.gif" />
+    <Content Include="img\logos\taste2009.gif" />
+    <Content Include="img\logos\tastecountry.jpg" />
+    <Content Include="img\logos\Tops.jpg" />
+    <Content Include="img\logos\TopsOutlineLogo200.jpg" />
+    <Content Include="img\logos\toy.png" />
+    <Content Include="img\logos\usdot.gif" />
+    <Content Include="img\logos\wellfest.gif" />
+    <Content Include="img\logos\Wendys.gif" />
+    <Content Include="img\logos\wf.gif" />
+    <Content Include="img\logos\willy_logo.jpg" />
+    <Content Include="img\logos\winesZoo.gif" />
+    <Content Include="img\logos\wing.gif" />
+    <Content Include="img\logos\Zoo-Color.jpg" />
+    <Content Include="img\logo_trip_planner.gif" />
+    <Content Include="img\main-bg2.png" />
+    <Content Include="img\main-bg3.jpg" />
+    <Content Include="img\Map-AdamsMark-400-o.jpg" />
+    <Content Include="img\Map-AdamsMark-400.jpg" />
+    <Content Include="img\Map-AdamsMark-tn-o.jpg" />
+    <Content Include="img\Map-AdamsMark-tn.jpg" />
+    <Content Include="img\Map-AdamsMark.jpg" />
+    <Content Include="img\map-buffalo-o.jpg" />
+    <Content Include="img\map-buffalo.jpg" />
+    <Content Include="img\Map-BuffState-400-o.jpg" />
+    <Content Include="img\Map-BuffState-400.jpg" />
+    <Content Include="img\Map-BuffState-tn-o.jpg" />
+    <Content Include="img\Map-BuffState-tn.jpg" />
+    <Content Include="img\Map-BuffState.jpg" />
+    <Content Include="img\map-erie-o.jpg" />
+    <Content Include="img\map-erie.jpg" />
+    <Content Include="img\map-nf-o.jpg" />
+    <Content Include="img\map-nf.jpg" />
+    <Content Include="img\map-niagara-o.jpg" />
+    <Content Include="img\map-niagara.jpg" />
+    <Content Include="img\map-rail-o.jpg" />
+    <Content Include="img\map-rail.jpg" />
+    <Content Include="img\map-zone-o.jpg" />
+    <Content Include="img\map-zone.jpg" />
+    <Content Include="img\MapFlex57.jpg" />
+    <Content Include="img\mapKey.gif" />
+    <Content Include="img\metro-ed-message.jpg" />
+    <Content Include="img\metro-logo-cp.png" />
+    <Content Include="img\metro-logo-sm.png" />
+    <Content Include="img\metro-logo.png" />
+    <Content Include="img\metro-store-o.png" />
+    <Content Include="img\metro-store.png" />
+    <Content Include="img\metro-yellow.png" />
+    <Content Include="img\metrobisons.png" />
+    <Content Include="img\MLK_opt.jpg" />
+    <Content Include="img\MME-background.jpg" />
+    <Content Include="img\MME-banner.gif" />
+    <Content Include="img\MME-Logo-Animated.gif" />
+    <Content Include="img\mondayMarket.gif" />
+    <Content Include="img\more-info.gif" />
+    <Content Include="img\moreinfo.gif" />
+    <Content Include="img\nav-about-o.png" />
+    <Content Include="img\nav-about.png" />
+    <Content Include="img\nav-bar-bg.png" />
+    <Content Include="img\nav-bg.png" />
+    <Content Include="img\nav-contact-o.png" />
+    <Content Include="img\nav-contact.png" />
+    <Content Include="img\nav-departments-o.png" />
+    <Content Include="img\nav-departments.png" />
+    <Content Include="img\nav-home-o.png" />
+    <Content Include="img\nav-home.png" />
+    <Content Include="img\nav-logo-o.png" />
+    <Content Include="img\nav-logo.png" />
+    <Content Include="img\nav-news-o.png" />
+    <Content Include="img\nav-news.png" />
+    <Content Include="img\nav-programs-o.png" />
+    <Content Include="img\nav-programs.png" />
+    <Content Include="img\nav-schedules-o.png" />
+    <Content Include="img\nav-schedules.png" />
+    <Content Include="img\nav-special-o.png" />
+    <Content Include="img\nav-special.png" />
+    <Content Include="img\NewYear.jpg" />
+    <Content Include="img\nextlabel.gif" />
+    <Content Include="img\NFTA_kiosk2_v4_date.jpg" />
+    <Content Include="img\NFTA_kiosk2_v4_planner.jpg" />
+    <Content Include="img\oops.gif" />
+    <Content Include="img\or.gif" />
+    <Content Include="img\page-Accessibility-o.gif" />
+    <Content Include="img\page-Accessibility.gif" />
+    <Content Include="img\page-ACD-o.gif" />
+    <Content Include="img\page-ACD.gif" />
+    <Content Include="img\page-Advantage-o.gif" />
+    <Content Include="img\page-Advantage.gif" />
+    <Content Include="img\page-Advertise-o.gif" />
+    <Content Include="img\page-Advertise.gif" />
+    <Content Include="img\page-Airport-o.gif" />
+    <Content Include="img\page-airport.gif" />
+    <Content Include="img\page-Cac-o.gif" />
+    <Content Include="img\page-Cac.gif" />
+    <Content Include="img\page-Calc-o.gif" />
+    <Content Include="img\page-Calc.gif" />
+    <Content Include="img\page-College-o.gif" />
+    <Content Include="img\page-College.gif" />
+    <Content Include="img\page-Color-o.gif" />
+    <Content Include="img\page-color.gif" />
+    <Content Include="img\page-Contact-o.gif" />
+    <Content Include="img\page-Contact.gif" />
+    <Content Include="img\page-Cram-o.gif" />
+    <Content Include="img\page-Cram.gif" />
+    <Content Include="img\page-Developer-o.gif" />
+    <Content Include="img\page-Developer.gif" />
+    <Content Include="img\page-Emergency-o.gif" />
+    <Content Include="img\page-Emergency.gif" />
+    <Content Include="img\page-express-o.gif" />
+    <Content Include="img\page-express.gif" />
+    <Content Include="img\page-Fares-o.gif" />
+    <Content Include="img\page-Fares.gif" />
+    <Content Include="img\page-Feedback-o.gif" />
+    <Content Include="img\page-Feedback.gif" />
+    <Content Include="img\page-Game-o.gif" />
+    <Content Include="img\page-Game.gif" />
+    <Content Include="img\page-google-o.gif" />
+    <Content Include="img\page-google.gif" />
+    <Content Include="img\page-Heading-o.gif" />
+    <Content Include="img\page-Heading.gif" />
+    <Content Include="img\page-History-o.gif" />
+    <Content Include="img\page-History.gif" />
+    <Content Include="img\page-info-.gif" />
+    <Content Include="img\page-info-o.gif" />
+    <Content Include="img\page-info.gif" />
+    <Content Include="img\page-infoo.gif" />
+    <Content Include="img\page-InstantUpdates-o.gif" />
+    <Content Include="img\page-InstantUpdates.gif" />
+    <Content Include="img\page-Lots-o.gif" />
+    <Content Include="img\page-Lots.gif" />
+    <Content Include="img\page-map-o.gif" />
+    <Content Include="img\page-map.gif" />
+    <Content Include="img\page-maps-o.gif" />
+    <Content Include="img\page-Maps.gif" />
+    <Content Include="img\page-MME-o.gif" />
+    <Content Include="img\page-MME.gif" />
+    <Content Include="img\page-News-o.gif" />
+    <Content Include="img\page-News.gif" />
+    <Content Include="img\page-nft-o.gif" />
+    <Content Include="img\page-nft.gif" />
+    <Content Include="img\page-Pal-o.gif" />
+    <Content Include="img\page-Pal.gif" />
+    <Content Include="img\page-PalAdv-o.gif" />
+    <Content Include="img\page-PalAdv.gif" />
+    <Content Include="img\page-perk-o.gif" />
+    <Content Include="img\page-perk.gif" />
+    <Content Include="img\page-Reduced-o.gif" />
+    <Content Include="img\page-Reduced.gif" />
+    <Content Include="img\page-Ride-o.gif" />
+    <Content Include="img\page-Ride.gif" />
+    <Content Include="img\page-RideBus-o.gif" />
+    <Content Include="img\page-RideBus.gif" />
+    <Content Include="img\page-RideRail-o.gif" />
+    <Content Include="img\page-RideRail.gif" />
+    <Content Include="img\page-RiderAlerts-o.gif" />
+    <Content Include="img\page-RiderAlerts.gif" />
+    <Content Include="img\page-Safeplace-o.gif" />
+    <Content Include="img\page-Safeplace.gif" />
+    <Content Include="img\page-Schedules-o.gif" />
+    <Content Include="img\page-Schedules.gif" />
+    <Content Include="img\page-seesay-o.gif" />
+    <Content Include="img\page-seesay.gif" />
+    <Content Include="img\page-Sgp-o.gif" />
+    <Content Include="img\page-Sgp.gif" />
+    <Content Include="img\page-stp-o.gif" />
+    <Content Include="img\page-stp.gif" />
+    <Content Include="img\page-SYP-o.gif" />
+    <Content Include="img\page-SYP.gif" />
+    <Content Include="img\page-Tips-o.gif" />
+    <Content Include="img\page-Tips.gif" />
+    <Content Include="img\page-trip-o.gif" />
+    <Content Include="img\page-trip.gif" />
+    <Content Include="img\page-Visiting-o.gif" />
+    <Content Include="img\page-Visiting.gif" />
+    <Content Include="img\page-Watch-o.gif" />
+    <Content Include="img\page-Watch.gif" />
+    <Content Include="img\page-Xtras-o.gif" />
+    <Content Include="img\page-Xtras.gif" />
+    <Content Include="img\PAL-pass-employeer-o.jpg" />
+    <Content Include="img\PAL-pass-employeer.jpg" />
+    <Content Include="img\PAL-pass-o.jpg" />
+    <Content Include="img\PAL-pass.jpg" />
+    <Content Include="img\panel.png" />
+    <Content Include="img\parkride-sign.gif" />
+    <Content Include="img\parkride.gif" />
+    <Content Include="img\paypal-logo.jpg" />
+    <Content Include="img\perk-cutout.jpg" />
+    <Content Include="img\perk1.gif" />
+    <Content Include="img\perk2.gif" />
+    <Content Include="img\perk3.gif" />
+    <Content Include="img\photos\historyphotos\bus.jpg" />
+    <Content Include="img\photos\historyphotos\f_op.jpg" />
+    <Content Include="img\photos\historyphotos\genesee.jpg" />
+    <Content Include="img\photos\historyphotos\link_shuttle.jpg" />
+    <Content Include="img\photos\historyphotos\rail.jpg" />
+    <Content Include="img\photos\historyphotos\snowy-3.jpg" />
+    <Content Include="img\photos\historyphotos\trolley.jpg" />
+    <Content Include="img\photos\historyphotos\wagons.jpg" />
+    <Content Include="img\photos\historyphotos\_notes\dwsync.xml" />
+    <Content Include="img\photos\MondayMarket\1.jpg" />
+    <Content Include="img\photos\MondayMarket\2.jpg" />
+    <Content Include="img\photos\MondayMarket\3.jpg" />
+    <Content Include="img\photos\MondayMarket\4.jpg" />
+    <Content Include="img\photos\MondayMarket\5.jpg" />
+    <Content Include="img\photos\MondayMarket\6.jpg" />
+    <Content Include="img\photos\MondayMarket\images\1.jpg" />
+    <Content Include="img\photos\MondayMarket\images\2.jpg" />
+    <Content Include="img\photos\MondayMarket\images\3.jpg" />
+    <Content Include="img\photos\MondayMarket\images\4.jpg" />
+    <Content Include="img\photos\MondayMarket\images\5.jpg" />
+    <Content Include="img\photos\MondayMarket\images\6.jpg" />
+    <Content Include="img\photos\MondayMarket\images\_notes\dwsync.xml" />
+    <Content Include="img\photos\MondayMarket\thumbnails\1.jpg" />
+    <Content Include="img\photos\MondayMarket\thumbnails\2.jpg" />
+    <Content Include="img\photos\MondayMarket\thumbnails\3.jpg" />
+    <Content Include="img\photos\MondayMarket\thumbnails\4.jpg" />
+    <Content Include="img\photos\MondayMarket\thumbnails\5.jpg" />
+    <Content Include="img\photos\MondayMarket\thumbnails\6.jpg" />
+    <Content Include="img\photos\MondayMarket\thumbnails\_notes\dwsync.xml" />
+    <Content Include="img\photos\MondayMarket\_notes\dwsync.xml" />
+    <Content Include="img\plan-trip-o.gif" />
+    <Content Include="img\plan-trip.gif" />
+    <Content Include="img\poduim.png" />
+    <Content Include="img\poster.gif" />
+    <Content Include="img\pr.gif" />
+    <Content Include="img\pres.jpg" />
+    <Content Include="img\preview-pdf-gray.png" />
+    <Content Include="img\preview-pdf-o.jpg" />
+    <Content Include="img\preview-pdf-o.png" />
+    <Content Include="img\preview-pdf.gif" />
+    <Content Include="img\preview-pdf.png" />
+    <Content Include="img\prevlabel.gif" />
+    <Content Include="img\primaryNav.gif" />
+    <Content Include="img\proposed.jpg" />
+    <Content Include="img\purchase-fare-o.gif" />
+    <Content Include="img\purchase-fare.gif" />
+    <Content Include="img\Rail-Car-Rebuild-Fact-Sheet.jpg" />
+    <Content Include="img\Rail-map.gif" />
+    <Content Include="img\Rail-map.jpg" />
+    <Content Include="img\Rail.jpg" />
+    <Content Include="img\railmap-540.jpg" />
+    <Content Include="img\railmap-640.gif" />
+    <Content Include="img\railmap.jpg" />
+    <Content Include="img\reduced.gif" />
+    <Content Include="img\reduced.jpg" />
+    <Content Include="img\reducedinfo.gif" />
+    <Content Include="img\red_arrow_big.png" />
+    <Content Include="img\reroutewash.jpg" />
+    <Content Include="img\restore.png" />
+    <Content Include="img\return-o.gif" />
+    <Content Include="img\return.gif" />
+    <Content Include="img\ride-bus-o.jpg" />
+    <Content Include="img\ride-bus.jpg" />
+    <Content Include="img\ride-rail-o.jpg" />
+    <Content Include="img\ride-rail.jpg" />
+    <Content Include="img\riderAlert-italianfestival.gif" />
+    <Content Include="img\riderAlert-rockstheharbor.gif" />
+    <Content Include="img\riderAlert.png" />
+    <Content Include="img\RiderAlerts.png" />
+    <Content Include="img\Route-211-map-l.gif" />
+    <Content Include="img\Route-211-map.gif" />
+    <Content Include="img\routeStatus.png" />
+    <Content Include="img\rt57.jpg" />
+    <Content Include="img\running.jpg" />
+    <Content Include="img\s.gif" />
+    <Content Include="img\s.png" />
+    <Content Include="img\sabres.png" />
+    <Content Include="img\safe.jpg" />
+    <Content Include="img\safe1.jpg" />
+    <Content Include="img\safe2.jpg" />
+    <Content Include="img\safe3.jpg" />
+    <Content Include="img\safe4.jpg" />
+    <Content Include="img\safe5.jpg" />
+    <Content Include="img\safeplace.gif" />
+    <Content Include="img\Safety-Sheet.jpg" />
+    <Content Include="img\santa-hat-icon.png" />
+    <Content Include="img\santatrain.gif" />
+    <Content Include="img\sch-fall-a.jpg" />
+    <Content Include="img\sch-fall-go.jpg" />
+    <Content Include="img\sch-fall-na.jpg" />
+    <Content Include="img\sch-fall-o.jpg" />
+    <Content Include="img\sch-fall.jpg" />
+    <Content Include="img\sch-left.jpg" />
+    <Content Include="img\sch-right.jpg" />
+    <Content Include="img\sch-spring-a.jpg" />
+    <Content Include="img\sch-spring-go.jpg" />
+    <Content Include="img\sch-spring-na.jpg" />
+    <Content Include="img\sch-spring-o.jpg" />
+    <Content Include="img\sch-spring.jpg" />
+    <Content Include="img\sch-summer-a.jpg" />
+    <Content Include="img\sch-summer-go.jpg" />
+    <Content Include="img\sch-summer-na.jpg" />
+    <Content Include="img\sch-summer-o.jpg" />
+    <Content Include="img\sch-summer.jpg" />
+    <Content Include="img\sch-winter-a.jpg" />
+    <Content Include="img\sch-winter-go.jpg" />
+    <Content Include="img\sch-winter-na.jpg" />
+    <Content Include="img\sch-winter-o.jpg" />
+    <Content Include="img\sch-winter.jpg" />
+    <Content Include="img\service-o.jpg" />
+    <Content Include="img\service.jpg" />
+    <Content Include="img\servicefare2012-o.jpg" />
+    <Content Include="img\servicefare2012.jpg" />
+    <Content Include="img\signIcon.gif" />
+    <Content Include="img\single-btn-o.jpg" />
+    <Content Include="img\single-btn.jpg" />
+    <Content Include="img\single-tracking-shuttle.png" />
+    <Content Include="img\single-tracking-table.png" />
+    <Content Include="img\single-tracking.jpg" />
+    <Content Include="img\single-tracking.png" />
+    <Content Include="img\singletracking-header.png" />
+    <Content Include="img\singletracking-icon.png" />
+    <Content Include="img\snowflake.png" />
+    <Content Include="img\soundsofseason.jpg" />
+    <Content Include="img\ss.jpg" />
+    <Content Include="img\stationMarker.png" />
+    <Content Include="img\stop.gif" />
+    <Content Include="img\Subaru.png" />
+    <Content Include="img\subNav-dark.gif" />
+    <Content Include="img\subNav.gif" />
+    <Content Include="img\summitmaps.gif" />
+    <Content Include="img\survey-banner.gif" />
+    <Content Include="img\survey-o.gif" />
+    <Content Include="img\survey.gif" />
+    <Content Include="img\survey.png" />
+    <Content Include="img\syp-2009-pass.jpg" />
+    <Content Include="img\syp-2009.jpg" />
+    <Content Include="img\SYP-2011.jpg" />
+    <Content Include="img\SYP.jpg" />
+    <Content Include="img\system-map-o.jpg" />
+    <Content Include="img\system-map.jpg" />
+    <Content Include="img\system-map.png" />
+    <Content Include="img\SytemStatus.png" />
+    <Content Include="img\takeSurvey-banner.gif" />
+    <Content Include="img\takeSurvey.gif" />
+    <Content Include="img\teacher.jpg" />
+    <Content Include="img\thumb-1.jpg" />
+    <Content Include="img\tint20.png" />
+    <Content Include="img\tip.gif" />
+    <Content Include="img\to-banner-o.jpg" />
+    <Content Include="img\to-banner.jpg" />
+    <Content Include="img\trackwork.jpg" />
+    <Content Include="img\trainbus.jpg" />
+    <Content Include="img\transit-app-o.png" />
+    <Content Include="img\transit-app.png" />
+    <Content Include="img\travel-from.gif" />
+    <Content Include="img\travel-to.gif" />
+    <Content Include="img\tripPlanner.gif" />
+    <Content Include="img\tripPlanner.png" />
+    <Content Include="img\trolley.jpg" />
+    <Content Include="img\trolleyicon.png" />
+    <Content Include="img\tt-btn-fares-o.png" />
+    <Content Include="img\tt-btn-fares.png" />
+    <Content Include="img\tt-btn-google-o.png" />
+    <Content Include="img\tt-btn-google.png" />
+    <Content Include="img\tt-btn-howto-o.png" />
+    <Content Include="img\tt-btn-howto.png" />
+    <Content Include="img\tt-btn-iu-o.png" />
+    <Content Include="img\tt-btn-iu.png" />
+    <Content Include="img\tt-btn-rideralert-o.png" />
+    <Content Include="img\tt-btn-rideralert.png" />
+    <Content Include="img\tt-btn-rideralerts-o.png" />
+    <Content Include="img\tt-btn-rideralerts.png" />
+    <Content Include="img\tt-btn-schedules-o.png" />
+    <Content Include="img\tt-btn-schedules.png" />
+    <Content Include="img\tt-btn-stp-o .png" />
+    <Content Include="img\tt-btn-stp-o.png" />
+    <Content Include="img\tt-btn-stp.png" />
+    <Content Include="img\tt-btn-systemmap-o.png" />
+    <Content Include="img\tt-btn-systemmap.png" />
+    <Content Include="img\tt-btn-tripplanner-o.png" />
+    <Content Include="img\tt-btn-tripplanner.png" />
+    <Content Include="img\tt-cal-sat.png" />
+    <Content Include="img\tt-cal-sun.png" />
+    <Content Include="img\tt-cal-week.png" />
+    <Content Include="img\tt-fares-o.png" />
+    <Content Include="img\tt-fares.png" />
+    <Content Include="img\tt-google-o.png" />
+    <Content Include="img\tt-google.png" />
+    <Content Include="img\tt-instantupdates-o.png" />
+    <Content Include="img\tt-instantupdates.png" />
+    <Content Include="img\tt-rideralerts-o.png" />
+    <Content Include="img\tt-rideralerts.png" />
+    <Content Include="img\tt-saturday.gif" />
+    <Content Include="img\tt-schedules-o.png" />
+    <Content Include="img\tt-schedules.png" />
+    <Content Include="img\tt-stp-o.png" />
+    <Content Include="img\tt-stp.png" />
+    <Content Include="img\tt-sunday.gif" />
+    <Content Include="img\tt-systemmap-o.png" />
+    <Content Include="img\tt-systemmap.png" />
+    <Content Include="img\tt-tripplanner-o.png" />
+    <Content Include="img\tt-tripplanner.png" />
+    <Content Include="img\tt-weekday.gif" />
+    <Content Include="img\tty-yellow.png" />
+    <Content Include="img\tty.gif" />
+    <Content Include="img\turkey.png" />
+    <Content Include="img\ulAbout.png" />
+    <Content Include="img\ulAlerts.png" />
+    <Content Include="img\ulContact.png" />
+    <Content Include="img\ulHome.png" />
+    <Content Include="img\ulHowToRide.png" />
+    <Content Include="img\ulMaps.png" />
+    <Content Include="img\ulParatransit.png" />
+    <Content Include="img\ulParkRide.png" />
+    <Content Include="img\ulPrograms.png" />
+    <Content Include="img\ulRoutes.png" />
+    <Content Include="img\ulSchedules.png" />
+    <Content Include="img\ulSpecialServices.png" />
+    <Content Include="img\ultips.png" />
+    <Content Include="img\ulTripPlanner.png" />
+    <Content Include="img\ValentinesDayArt.jpg" />
+    <Content Include="img\vbn.gif" />
+    <Content Include="img\vendors.gif" />
+    <Content Include="img\viewSchedule-es-o.gif" />
+    <Content Include="img\viewSchedule-es.gif" />
+    <Content Include="img\viewSchedule-o.gif" />
+    <Content Include="img\viewSchedule.gif" />
+    <Content Include="img\VisitBNlogo.gif" />
+    <Content Include="img\w.gif" />
+    <Content Include="img\whoops.gif" />
+    <Content Include="img\wmb-o.jpg" />
+    <Content Include="img\wmb.jpg" />
+    <Content Include="img\wmb.png" />
+    <Content Include="img\world-hockey-guide.jpg" />
+    <Content Include="img\x.png" />
+    <Content Include="img\xtraslogo.gif" />
+    <Content Include="img\zone.gif" />
+    <Content Include="img\zonemap.jpg" />
+    <Content Include="img\_notes\dwsync.xml" />
+    <Content Include="js\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="js\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="js\bootstrap\css\bootstrap.css" />
+    <Content Include="js\bootstrap\css\bootstrap.min.css" />
+    <Content Include="js\bootstrap\js\bootstrap.js" />
+    <Content Include="js\bootstrap\js\bootstrap.min.js" />
+    <Content Include="js\markerwithlabel.js" />
+    <Content Include="PAL\Default.aspx" />
+    <Content Include="Paratransit\Form.aspx" />
+    <Content Include="Programs\CollegeFAQ.aspx" />
+    <Content Include="Programs\Contest.aspx" />
+    <Content Include="Programs\Open.aspx" />
+    <Content Include="Programs\HowTo.aspx" />
+    <Content Include="Programs\Winter.aspx" />
+    <Content Include="Programs\DumpPump.aspx" />
+    <Content Include="Programs\TitleVI.aspx" />
+    <Content Include="Programs\Safe.aspx" />
+    <Content Include="Routes\AppCenter.aspx" />
+    <Content Include="Routes\MetroNowBoard1.aspx" />
+    <Content Include="Routes\MetroNowBoard.aspx" />
+    <Content Include="Routes\MetroNowStatus.aspx" />
+    <Content Include="Routes\MetroNow.aspx" />
+    <Content Include="Routes\Escalator.aspx" />
+    <Content Include="Routes\MetroNowHistory.aspx" />
+    <Content Include="Routes\Storm.aspx" />
+    <Content Include="Routes\Flex57.aspx" />
+    <Content Include="Routes\PublicHearing.aspx" />
+    <Content Include="Routes\ParkRide.aspx" />
+    <Content Include="Routes\Store.aspx" />
+    <Content Include="Routes\RiderAlerts.aspx" />
+    <Content Include="About\History.aspx" />
+    <Content Include="CAC\Login.aspx" />
+    <Content Include="CAC\Default.aspx" />
+    <Content Include="Contact\Advertise.aspx" />
+    <Content Include="Contact\Contact.aspx" />
+    <Content Include="Contact\Feedback.aspx" />
+    <Content Include="Contact\Default.aspx" />
+    <Content Include="Contact\Developers.aspx" />
+    <Content Include="css\cssTTPub-Print.css" />
+    <Content Include="css\cssTTPub.css" />
+    <Content Include="js\geolocationmarker-compiled.js" />
+    <Content Include="js\jquery-1.10.2.min.js" />
+    <Content Include="js\jquery-1.11.0.js" />
+    <Content Include="js\jquery-1.11.0.min.js" />
+    <Content Include="js\jquery.tabSlideOut.v1.3.js" />
+    <Content Include="js\qTip.js" />
+    <Content Include="js\StyleMarker.js" />
+    <Content Include="js\SystemMap.js" />
+    <Content Include="js\TTPubBasic.js" />
+    <Content Include="Programs\PerkOrder.aspx" />
+    <Content Include="Programs\Perk.aspx" />
+    <Content Include="Routes\Route.aspx" />
+    <Content Include="Routes\Schedules.aspx" />
+    <Content Include="Routes\SystemMap.aspx" />
+    <Content Include="Routes\Rail.aspx" />
+    <Content Include="js\showhide.js" />
+    <Content Include="Programs\CACForm.aspx" />
+    <Content Include="Programs\CAC.aspx" />
+    <Content Include="Redirect.aspx" />
+    <Content Include="Programs\College.aspx" />
+    <Content Include="Controls\dateTime.asp" />
+    <Content Include="Controls\menu_trip_planner.asp" />
+    <Content Include="Controls\PopularLocations.ascx" />
+    <Content Include="Controls\PopularLocations.inc" />
+    <Content Include="css\cssTripPlanner.css" />
+    <Content Include="Global.asax" />
+    <Content Include="js\accordion.js" />
+    <Content Include="logs\errors.txt" />
+    <Content Include="Oops.aspx" />
+    <Content Include="Programs\SGP.aspx" />
+    <Content Include="Programs\Default.aspx" />
+    <Content Include="Routes\CocaService.aspx" />
+    <Content Include="Routes\AutoPassPayments.aspx" />
+    <Content Include="Routes\Express.aspx" />
+    <Content Include="Routes\Thankyou.aspx" />
+    <Content Include="Routes\Fares.aspx" />
+    <Content Include="Routes\HSBCService.aspx" />
+    <Content Include="Routes\Airport.aspx" />
+    <Content Include="Paratransit\BusRail.aspx" />
+    <Content Include="Paratransit\Paratransit.aspx" />
+    <Content Include="Paratransit\FaresReduced.aspx" />
+    <Content Include="Programs\EmergencyRide.aspx" />
+    <Content Include="Programs\SavingsCalc.html" />
+    <Content Include="Programs\Ride.aspx" />
+    <Content Include="Routes\Tools.aspx" />
+    <Content Include="Trip\Help.aspx" />
+    <Content Include="Trip\inc_tp_popular_locations.asp" />
+    <None Include="CAC\Web.config.back" />
+    <Content Include="Stripped.Master" />
+    <None Include="img\6a476321" />
+    <None Include="img\blackarrow.psd" />
+    <None Include="img\Flex57map.pdf" />
+    <None Include="img\h1.psd" />
+    <None Include="img\photos\MondayMarket\images\.picasa.ini" />
+    <None Include="img\photos\MondayMarket\thumbnails\.picasa.ini" />
+    <None Include="img\return-o.psd" />
+    <None Include="img\Thumbs.db" />
+    <None Include="img\tt-sun.psd" />
+    <None Include="img\tt-wee.psd" />
+    <None Include="js\bootstrap\css\bootstrap-theme.css.map" />
+    <None Include="js\bootstrap\css\bootstrap.css.map" />
+    <None Include="js\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="js\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="js\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="js\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="pdfs\2013AnnualReport.pdf" />
+    <None Include="pdfs\2013Survey.pdf" />
+    <None Include="pdfs\Perk-Employee.pdf" />
+    <None Include="pdfs\Perk-Employer.pdf" />
+    <None Include="Routes\pdfs\1.pdf" />
+    <None Include="Routes\pdfs\101.pdf" />
+    <None Include="Routes\pdfs\102.pdf" />
+    <None Include="Routes\pdfs\103.pdf" />
+    <None Include="Routes\pdfs\104.pdf" />
+    <None Include="Routes\pdfs\106.pdf" />
+    <None Include="Routes\pdfs\11.pdf" />
+    <None Include="Routes\pdfs\110.pdf" />
+    <None Include="Routes\pdfs\111.pdf" />
+    <None Include="Routes\pdfs\112.pdf" />
+    <None Include="Routes\pdfs\12.pdf" />
+    <None Include="Routes\pdfs\13.pdf" />
+    <None Include="Routes\pdfs\14.pdf" />
+    <None Include="Routes\pdfs\15.pdf" />
+    <None Include="Routes\pdfs\16.pdf" />
+    <None Include="Routes\pdfs\18.pdf" />
+    <None Include="Routes\pdfs\19.pdf" />
+    <None Include="Routes\pdfs\2.pdf" />
+    <None Include="Routes\pdfs\20.pdf" />
+    <None Include="Routes\pdfs\204.pdf" />
+    <None Include="Routes\pdfs\206.pdf" />
+    <None Include="Routes\pdfs\22.pdf" />
+    <None Include="Routes\pdfs\23.pdf" />
+    <None Include="Routes\pdfs\24.pdf" />
+    <None Include="Routes\pdfs\25.pdf" />
+    <None Include="Routes\pdfs\26.pdf" />
+    <None Include="Routes\pdfs\27.pdf" />
+    <None Include="Routes\pdfs\29.pdf" />
+    <None Include="Routes\pdfs\3.pdf" />
+    <None Include="Routes\pdfs\32.pdf" />
+    <None Include="Routes\pdfs\34.pdf" />
+    <None Include="Routes\pdfs\35.pdf" />
+    <None Include="Routes\pdfs\36.pdf" />
+    <None Include="Routes\pdfs\4.pdf" />
+    <None Include="Routes\pdfs\40.pdf" />
+    <None Include="Routes\pdfs\42.pdf" />
+    <None Include="Routes\pdfs\44.pdf" />
+    <None Include="Routes\pdfs\45.pdf" />
+    <None Include="Routes\pdfs\46.pdf" />
+    <None Include="Routes\pdfs\47.pdf" />
+    <None Include="Routes\pdfs\48.pdf" />
+    <None Include="Routes\pdfs\49.pdf" />
+    <None Include="Routes\pdfs\5.pdf" />
+    <None Include="Routes\pdfs\50.pdf" />
+    <None Include="Routes\pdfs\52.pdf" />
+    <None Include="Routes\pdfs\54.pdf" />
+    <None Include="Routes\pdfs\55.pdf" />
+    <None Include="Routes\pdfs\55T.pdf" />
+    <None Include="Routes\pdfs\57.pdf" />
+    <None Include="Routes\pdfs\6.pdf" />
+    <None Include="Routes\pdfs\60.pdf" />
+    <None Include="Routes\pdfs\61.pdf" />
+    <None Include="Routes\pdfs\64.pdf" />
+    <None Include="Routes\pdfs\66.pdf" />
+    <None Include="Routes\pdfs\67.pdf" />
+    <None Include="Routes\pdfs\68.pdf" />
+    <None Include="Routes\pdfs\69.pdf" />
+    <None Include="Routes\pdfs\7.pdf" />
+    <None Include="Routes\pdfs\70.pdf" />
+    <None Include="Routes\pdfs\72.pdf" />
+    <None Include="Routes\pdfs\74.pdf" />
+    <None Include="Routes\pdfs\75.pdf" />
+    <None Include="Routes\pdfs\76.pdf" />
+    <None Include="Routes\pdfs\79.pdf" />
+    <None Include="Routes\pdfs\8.pdf" />
+    <None Include="Routes\pdfs\81.pdf" />
+    <None Include="Routes\preview\45.pdf" />
+    <Content Include="Routes\HeadingToEvent.aspx" />
+    <Content Include="About\Visitor.aspx" />
+    <None Include="Web References\AlertService\AlertCategoryView.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\AlertService\AlertService.disco" />
+    <None Include="Web References\CacheService\CacheService.wsdl" />
+    <None Include="Web References\CacheService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\MetroService\ConfigView.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MetroService\MetroService.disco" />
+    <Content Include="Trip\trip_planner.asp" />
+    <Content Include="Trip\trip_planner_schedule.asp" />
+    <Content Include="Trip\trip_planner_services.asp" />
+    <Content Include="Trip\trip_planner_stops.asp" />
+    <None Include="Web References\StatesAndProvincesService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\StatesAndProvincesService\StatesAndProvincesService.disco" />
+    <None Include="Web References\CacheService\CacheService.disco" />
+    <Content Include="Whoops.aspx" />
+    <Content Include="Programs\Xtras.aspx" />
+    <Content Include="About\News.aspx" />
+    <Content Include="css\cssPrint.css" />
+    <Content Include="css\cssScreen.css" />
+    <Content Include="js\addThisToolbar.js" />
+    <Content Include="js\domroll.js" />
+    <Content Include="js\event-pagination.js" />
+    <Content Include="js\pngfix.js" />
+    <Content Include="js\rotator.js" />
+    <Content Include="js\validateERH.js" />
+    <Content Include="Metro.Master" />
+    <Content Include="pdfs\35.jpg" />
+    <Content Include="pdfs\5.jpg" />
+    <Content Include="pdfs\Easter-Train.jpg" />
+    <Content Include="pdfs\MetroReporter.txt" />
+    <Content Include="pdfs\MetroReporterFall2009.txt" />
+    <Content Include="pdfs\reporter3_09.txt" />
+    <Content Include="pdfs\reporter3_10.txt" />
+    <Content Include="pdfs\reporter6_08.txt" />
+    <Content Include="pdfs\reporter6_09.txt" />
+    <Content Include="pdfs\reporterFall2008.txt" />
+    <Content Include="Routes\Default.aspx" />
+    <Content Include="Paratransit\Default.aspx" />
+    <Content Include="WiFi\connect-o.png" />
+    <Content Include="WiFi\connect.png" />
+    <Content Include="WiFi\Terms2.aspx" />
+    <Content Include="WiFi\Default2.aspx" />
+    <Content Include="WiFi\Default.aspx" />
+    <Content Include="WiFi\Terms.aspx" />
+    <Content Include="WiFi\wifi-o.png" />
+    <Content Include="WiFi\wifi-small.png" />
+    <Content Include="WiFi\wifi.png" />
+    <None Include="DataAccess\nfta.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>nfta.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="pdfs\2008holidayPerformances.pdf" />
+    <None Include="pdfs\2008kidskites.pdf" />
+    <None Include="pdfs\2009HolidayCoupon.pdf" />
+    <None Include="pdfs\35.pdf" />
+    <None Include="pdfs\40GreasePole.pdf" />
+    <None Include="pdfs\apta-safe.pdf" />
+    <None Include="pdfs\BasketballHandout.pdf" />
+    <None Include="pdfs\Destinations09.pdf" />
+    <None Include="pdfs\Destinationsbrochure08.pdf" />
+    <None Include="pdfs\Employee Participation Form9_10.pdf" />
+    <None Include="pdfs\EmployeeParticipationForm-2009.pdf" />
+    <None Include="pdfs\EmployeeParticipationForm-old.pdf" />
+    <None Include="pdfs\EmployeeParticipationForm.pdf" />
+    <None Include="pdfs\EmployersMonthlyForm-2009.pdf" />
+    <None Include="pdfs\EmployersMonthlyForm-old.pdf" />
+    <None Include="pdfs\EmployersMonthlyForm.pdf" />
+    <None Include="pdfs\Erie County Fair contest rules.pdf" />
+    <None Include="pdfs\Erie_County.pdf" />
+    <None Include="pdfs\firefighterfuneralmass.pdf" />
+    <None Include="pdfs\homecoming.pdf" />
+    <None Include="pdfs\Intern.pdf" />
+    <None Include="pdfs\Kites2010.pdf" />
+    <None Include="pdfs\MakingMetroEasierRouteBook.pdf" />
+    <None Include="pdfs\Metro Reporter Summer 08-Spanish.pdf" />
+    <None Include="pdfs\Metro Reporter Summer 08.pdf" />
+    <None Include="pdfs\MetroReporter.pdf" />
+    <None Include="pdfs\MetroReporterFall2008.pdf" />
+    <None Include="pdfs\MetroReporterFall2008es.pdf" />
+    <None Include="pdfs\MetroReporterSpanish.pdf" />
+    <None Include="pdfs\MetroReporterSpring 10.pdf" />
+    <None Include="pdfs\MetroReporterSpring Spanish10.pdf" />
+    <None Include="pdfs\MetroReporterSummer10.pdf" />
+    <None Include="pdfs\MetroReporterSummerSpanish 10.pdf" />
+    <None Include="pdfs\MktngInternPosting.pdf" />
+    <None Include="pdfs\MktngInternPostingSummer09.pdf" />
+    <None Include="pdfs\newNF.pdf" />
+    <None Include="pdfs\Niagara_County.pdf" />
+    <None Include="pdfs\Niagara_Falls.pdf" />
+    <None Include="pdfs\PALApplication.pdf" />
+    <None Include="pdfs\PALpassap.pdf" />
+    <None Include="pdfs\powderkeg.pdf" />
+    <None Include="pdfs\powderkegfest.pdf" />
+    <None Include="pdfs\railMap.pdf" />
+    <None Include="pdfs\reporter12-23.rtf" />
+    <None Include="pdfs\reporter2-08.rtf" />
+    <None Include="pdfs\reporter3_09.pdf" />
+    <None Include="pdfs\reporter6_09.doc" />
+    <None Include="pdfs\reporter6_10.doc" />
+    <None Include="pdfs\ReporterSpring08.pdf" />
+    <None Include="pdfs\ReporterSpring08Spanish.pdf" />
+    <None Include="pdfs\ReporterWinter09.pdf" />
+    <None Include="pdfs\ServiceModificationsJan2009.pdf" />
+    <None Include="pdfs\SERVICEROUTEREPORT1203.pdf" />
+    <None Include="pdfs\Stuff-a-Bus- Poster.pdf" />
+    <None Include="pdfs\WhatsNew.pdf" />
+    <None Include="pdfs\World Juniors Transportation-Guide.pdf" />
+    <None Include="pdfs\zone-ma.pdf" />
+    <None Include="pdfs\zone-pal.pdf" />
+    <None Include="Web References\AlertService\AlertService.wsdl" />
+    <None Include="Web References\AlertService\AlertView.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\AlertService\ContactAlertView.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\AlertService\ContactView.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\AlertService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\MetroService\MetroService.wsdl" />
+    <None Include="Web References\MetroService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\StatesAndProvincesService\StatesAndProvincesService.wsdl" />
+    <None Include="Web References\StatesAndProvincesService\StatesAndProvincesView.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://services.nfta.com/AlertService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AlertService\</RelPath>
+      <UpdateFromURL>http://services.nfta.com/AlertService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFTA_Metro_AlertService_AlertService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://services.nfta.com/CacheService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CacheService\</RelPath>
+      <UpdateFromURL>http://services.nfta.com/CacheService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFTA_Metro_CacheService_CacheService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://services.nfta.com/MetroService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MetroService\</RelPath>
+      <UpdateFromURL>http://services.nfta.com/MetroService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFTA_Metro_MetroService_MetroService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://services.nfta.com/StatesAndProvincesService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\StatesAndProvincesService\</RelPath>
+      <UpdateFromURL>http://services.nfta.com/StatesAndProvincesService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFTA_Metro_StatesAndProvincesService_StatesAndProvincesService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NFTA_RouteDB\NFTA_RouteDB.vbproj">
+      <Project>{B8CF48BF-0B7B-4C0B-AD8B-EC04CC7385F1}</Project>
+      <Name>NFTA_RouteDB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50208</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

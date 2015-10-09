@@ -1,0 +1,42 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Stripped.Master.vb" Inherits="NFTA_Metro._Stripped" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head id="Header" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="copyright" content="Copyright (c) NFTA-Metro" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/cssStripped.css" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-5984582-9', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  
+    <asp:ContentPlaceHolder ID="phHead" runat="server">
+    
+    </asp:ContentPlaceHolder>
+  
+
+</head>
+
+<body>
+    <form id="formMaster" runat="server"> 
+	    <div id="All">
+            <div id="Top">       
+                <asp:ContentPlaceHolder ID="EmergencyMessagePH" runat="server"></asp:ContentPlaceHolder>
+            </div><!-- end Top  -->
+            <div id="Container">        
+                <asp:ContentPlaceHolder ID="phMain" runat="server"></asp:ContentPlaceHolder>
+            </div><!-- end Container  -->
+	        
+        </div><!-- end All -->    
+    </form>
+</body>
+</html>

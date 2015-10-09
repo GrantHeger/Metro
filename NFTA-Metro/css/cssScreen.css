@@ -1,0 +1,680 @@
+
+/*  Color Scheme
+Dark Blue  	004990
+Light Blue  bcd6f0
+Grey		999b9e
+Light Grey	c5c6c8
+Red			bf2f37
+blue            24496d
+bright blue     3f6ea6
+light grey      999b9e
+Mid Grey       4a4949 
+Dark Grey       302f2f
+Yellowish       edc93e  
+*/
+
+
+body {	
+	margin:0;
+	padding:0;
+	font-size:small;
+	font-family:Trebuchet, Arial, sans-serif;
+	color:#302f2f;
+	background:#fff url(/img/main-bg3.jpg) no-repeat top;
+	width:100% ;
+	text-align:center;
+	font-size:62.5%; /* 16px × 62.5% = 10px */
+	font-size:1em;
+	line-height:1.7em;
+}
+
+
+/* ===================  Top Sections ==================== */
+#All {
+    padding-top:10px;
+    width:100%;
+}
+
+
+#Top { 
+    margin:0 auto;
+    width:966px;
+    text-align:left;
+}
+
+#Container {
+  padding:0 20px;
+  float:left;
+  width:966px;
+} 
+
+#Main {
+  width:600px;
+  float:left;
+
+} 
+
+#Sidebar {              
+    width:320px;
+    padding:10px 10px 10px 20px;
+    margin:0;
+    float:left;
+}
+
+#mastHead {
+    width:100%;
+    text-align:center;
+    background: url(../img/nav-bg.png) no-repeat;
+    
+}
+
+
+/* ===================  Navigation ==================== */
+
+ul#globalNav {
+    list-style:none;
+    padding:0px;
+    margin:0 auto;
+    width:966px;
+    height:48px;
+    text-align:left;
+    background: url(/img/bg-global.png) no-repeat;
+}
+
+#globalNav li { list-style:none; display:inline; padding:0;}
+
+#globalNav li input.search-field { height:25px; position:relative; top:-21px; left:0; font-size:12px; color:#767676; border:0; padding:3; margin:0 4px; width:110px; -moz-border-radius: 4px; border-radius:4px;}
+
+
+
+ul#nav {
+    list-style:none;
+    display:block;
+    padding:0;
+    margin:0 auto;
+    width:966px;
+    height:100px;
+    text-align:left;
+    font-size:0;  /* set to eliminate inline spacing block element display issue */
+}
+
+ul#nav li { list-style:none; display:inline; padding:0; margin:0; }
+
+ul#nav li ul {
+	display:none;
+	cursor:pointer;
+	list-style:none; 
+	width:300px;  
+	border-top:0;
+	min-height:122px;
+	position:absolute;
+	top:154px; 
+	padding:0px 0 20px 0;
+	margin:0;
+	background:#edc93e;
+	z-index:10000;
+	font-size:13px; 
+	font-weight:900;
+	-moz-border-radius-bottomright: 20px;
+    border-bottom-right-radius: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+ul#nav li ul li {margin:0; padding:0;}
+ul#nav li ul#subAbout {margin-left:268px; *margin-left:-155px;}
+ul#nav li ul#subSchedules {margin-left:397px; *margin-left:-181px;}
+ul#nav li ul#subPrograms{margin-left:514px; *margin-left:-162px;}
+ul#nav li ul#subSpecial{margin-left:647px; *margin-left:-162px;}
+ul#nav li ul#subContact {margin-left:655px; *margin-left:-315px;}
+ul#nav  li:hover ul, ul#nav li.over ul { display: block;}
+
+ul#nav li ul li { 
+	padding:0;
+	margin:0;
+	height:40px;
+	text-align:left;
+}
+ 
+ul#nav li ul li a, ul#nav li ul li a:link, ul#nav li ul li a:visited, ul#nav li ul li a:hover, ul#nav li ul li a:active { 
+	display:block; 
+	padding:5px 5px 5px 10px;
+	margin:0;
+	color:#fff;
+	text-decoration:none;
+	border-top:1px solid #cdae36;
+    color:#283c73;
+	width:285px;
+} 
+
+ul#nav li ul li a:hover { 
+	background:#cdae36;
+} 
+
+ul#nav li ul li:hover, ul#nav li ul li.over { 
+	color:red;
+}
+
+
+ul.publicdocs {list-style-type:none;}
+.publicdocs li {list-style-type:none; padding-left:20px;}
+.pdf { background: url(/img/li-pdf.gif) no-repeat left; }
+.indent { margin-left:30px;}
+.link { background: url(/img/li-link.gif) no-repeat left; }
+.forms { background: url(/img/li-form.gif) no-repeat left; }
+.xcel { background: url(/img/li-xcel.gif) no-repeat left; }
+
+
+/* ===================  Bottom Sections ==================== */
+
+
+#bottom {
+    clear:both;
+    background:#4a4949;
+    width:100%;
+}
+
+#footerBar {
+    background:#302f2f;
+    width:100%;
+    text-align:center;
+    min-height:50px;
+}
+
+#footerBarContainer {
+    margin:0 auto;
+    width:966px;
+}
+
+#footer {
+    background:#4a4949;
+    width:100%;
+    text-align:center;
+}
+
+#footerLists {
+    margin:0 auto;
+    width:996px;
+    text-align:left;
+}
+
+ul#footAbout, ul#footRoutes, ul#footPrograms, ul#footSpecial, ul#footContact {
+    border-left:2px dotted #999b9e;
+    list-style:none;
+    margin:1em 0;
+    padding:0 3px 0 6px;
+    color:#000;
+    float:left;
+    position:relative;
+    min-height:280px;
+}
+
+ul#footAbout {
+    width:180px;
+    border:0;
+    margin-left:30px;
+}
+
+
+
+ul#footRoutes {
+    width:200px;
+}
+
+ul#footPrograms {
+    width:205px;
+}
+
+ul#footSpecial {
+    width:170px;
+}
+
+ul#footContact {
+    width:155px;
+}
+
+
+
+
+
+#footerLists a, #footerLists a:link, #footerLists a:visited, #footerLists a:active, #footerLists a:hover {
+    color:#fff;
+    text-decoration:none;
+    font-size:.9em;
+    font-weight:300;
+    padding: 3px;
+}
+
+#footerLists a:hover {
+    color:#edc93e;
+}
+
+#footerLists a.yellow  {
+    color:#edc93e;
+    font-size:.9em;
+    font-weight:900;
+    font-family: Arial, Sans-Serif;
+    line-height:1.2em;
+}
+
+#footAddress {
+    clear:both;
+    color:#edc93e;
+    background:#4a4949;
+    width:100%;
+    text-align:center;
+    line-height:50px;
+    border:1px solid #999b9e;
+    border-left:0;
+    border-right:0;
+}
+ 
+	
+
+/*============== General ======================== */	
+img {border:none;}
+p {padding:1em 0 1em 0; margin:0;}
+p.padded {padding:1em 20px 1em 20px;}
+.txtCenter {text-align:center;}
+.txtSmall {font-size:.9em;}
+
+    .noPadding {padding:0;}
+    
+.offscreen {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+/* =============== Headings  ======================   */
+
+h1 {
+font-weight:900;
+font-size:1.0em;
+background: url(/img/h1.png) no-repeat;
+padding:0 0 0 70px;
+line-height:18px;
+margin:1.2em 0 0 0;
+}
+
+
+
+h2 { margin:0; padding:0; font-size:1.2em; color:#565656; }
+h3 { margin:0; padding:0; font-size:1.2em; color:#999; }
+
+h4 {
+font-weight:900;
+font-size:1em;
+color:#2b357d;
+padding:0;
+margin:0;
+}
+
+h5 {
+font-weight:900;
+font-size:1.1em;
+}
+
+
+/*  ======== LISTS =============== */
+
+	
+ul.square {
+font-weight:100;
+font-size:.8em;
+margin:20px 0 0 0;
+border:0;
+padding:0;
+list-style-image:url(http://www.nfta.com/img/li_bullet.gif);
+}
+
+
+ul.square li {
+padding-bottom:.2em;
+margin-left:40px;
+}
+
+.li_acrobat {
+list-style-image:url(/img/icon_acrobat_small.gif);
+position:relative;
+left:50px;
+}
+
+.li_excel {
+list-style-image:url(../img/icon_excel.gif);
+position:relative;
+left:50px;
+}
+
+.li_powerpoint {
+list-style-image:url(../img/icon_powerpoint.gif);
+position:relative;
+left:50px;
+}
+
+.li_word {
+list-style-image:url(../img/icon_word.gif);
+position:relative;
+left:50px;
+}
+
+.li_zip {
+list-style-image:url(../img/icon_zip.gif);
+position:relative;
+left:50px;
+}
+
+.li_quicktime {
+list-style-image:url(../img/icon_quicktime.gif);
+position:relative;
+left:50px;
+}
+
+.li_wmv {
+list-style-image:url(../img/icon_wmv.gif);
+position:relative;
+left:50px;
+}
+
+ul.triangle {
+list-style-image:url(../img/li-arrow.png);
+
+}
+
+ul.triangle li {
+
+padding:10px 0;
+}
+
+/* ==============LINKS  ================*/
+
+/* a, a:link, a:visited, a:hover, a:active {
+color:#2b357d;
+
+background:transparent;
+text-decoration:underline;
+display:inline;
+}
+
+a:hover { color:#71706f; }
+*/
+
+/* ==============OTHER  ================*/
+
+ #TransitToolsSidebar
+  {
+    margin:0px 4px;
+    padding:10px 10px 10px 10px;
+    
+  
+    }
+ #TransitToolsSidebar img {padding:3px 0;}
+ 
+  .tTool {padding:5px 0;}
+ 
+ 
+ .newsheader {
+border: 0;
+border-bottom: 1px solid #999;
+color: #003366;
+padding: 12px 0 0 0;
+margin-bottom: 0;
+}
+
+.BlueBar 
+{
+	background:#004990; padding:.5em; font-size:1.6em; text-align:center; color:#fff; margin-top:12px;
+	 -moz-border-radius-topleft: 10px;
+        border-top-left-radius: 10px;
+         -moz-border-radius-topright: 10px;
+        border-top-right-radius: 10px;
+}
+
+
+
+/*  ===========================    Route Status Styles for Default and schedules and routes pages ===========  */
+
+#scheduleKey P {padding:5px; margin:0;}
+
+p.indent {text-indent:20px;}
+p.padding-top {position:relative; top:100px;}
+
+
+
+#routeStatusBox, #scheduleKey
+      {
+        background:#fff;
+        margin:30px 4px;
+        padding:10px 10px 10px 10px;
+        border:2px solid green;
+    	border-radius:8px; /*CSS3 border radius*/
+        -moz-border-radius:8px;
+        -webkit-border-radius:8px;	
+        box-shadow:0 0 15px #959595; /*CSS3 shadow*/
+        -moz-box-shadow:0 0 15px #959595;
+        -webkit-box-shadow:0 0 15px #959595;
+      
+        }
+        
+#routeStatus {
+	
+}      
+
+      /*
+      red       b50000   7f0000   
+      yellow    f9ff00   b1b500
+      green     00a604   dde200   
+      
+      */
+      
+      
+      .header0, .header1, .header2 {
+      	border:0px solid #00;
+	    border-top-left-radius:5px; 
+        -moz-border-radius-topleft:5px;
+        -webkit-border-radius-topleft:5px;
+        border-top-right-radius:5px; 
+        -moz-border-radius-topright:5px;
+        -webkit-border-radius-topright:5px;
+        
+
+      }
+      
+      #routeStatus a, #routeStatus a:hover, #scheduleKey a, #scheduleKey a:hover, #scheduleTable a, #scheduleTable a:hover 
+      {
+      	    color:#fff;
+      	    background:#006b03;
+      	    font-size:.9em;
+      	     border:0px solid #006b03;
+    	    border-radius:4px; /*CSS3 border radius*/
+            -moz-border-radius:4px;
+            -webkit-border-radius:4px;	
+            box-shadow:0 0 15px #959595; /*CSS3 shadow*/
+            -moz-box-shadow:0 0 15px #959595;
+            -webkit-box-shadow:0 0 15px #959595;
+            text-decoration:none;
+            padding:4px 6px;
+            margin:3px;
+            
+      }
+      
+      #routeStatus a:hover, #scheduleKey a:hover, #scheduleTable a:hover
+      {
+      	color:#000;
+      	background:#00a604;
+      }
+      
+      .header2, #routeStatus a.color2, #routeStatus a.color2:hover, #scheduleKey a.color2, #scheduleKey a.color2:hover, #scheduleTable a.color2 /* Red */
+      {
+      	    color:#fff;
+      	    background:#b50000;  
+      }
+      
+ 
+      #routeStatus a.color2:hover /* Red */
+      {
+      	color:#fff;
+      	background:#7f0000;
+      }
+      
+      .header1, #routeStatus a.color1, #routeStatus a.color1:hover, #scheduleKey a.color1, #scheduleKey a.color1:hover, #scheduleTable a.color1, #scheduleTable a.color1:hover /* Yellow */
+      {
+      	    color:#000;
+      	    background:#f9ff00; 
+      }
+      
+      #routeStatus a.color1:hover  /* Yellow */
+      {
+      	color:#000;
+      	background:#dde200;
+      }
+      
+      .header0, #routeStatus a.color0, #routeStatus a.color0:hover, #scheduleKey a.color0, #scheduleKey a.color:hover, #scheduleTable a.color0, #scheduleTable a.color0:hover /* Green */
+      {
+      	    color:#fff;
+      	    background:#006b03; 
+      }
+      
+      #routeStatus a.color0:hover /* Green */
+      {
+      	color:#000;
+      	background:#00a604;
+      }
+      
+
+      
+      
+      #scheduleTable a.details, #scheduleTable a.details:hover /* blue */
+      {
+      	    color:#fff;
+      	    background:#007cc2; 
+      }
+      
+     #scheduleTable a.details:hover /* blue */
+      {
+      	color:#fff;
+      	background:#00a3ff;
+      }
+      
+   
+    .close {color:#fff;}
+    
+
+    
+    .posted {
+    	font-size:.9em; 
+    	text-align:right;
+    	font-weight:900;
+    }
+    
+    #routeBtns, #routeBtns li {
+        display:inline;
+        list-style:none; 	
+        margin:0;
+        padding:0;
+        line-height:28px;
+    }
+    
+
+
+	
+	#quickSelect 
+    {
+        display:none;
+    }
+    
+    
+    #routeAlert 
+    {
+        background:#c20d00;
+        color:#fff;
+        padding:10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+
+    }
+    
+    .theAlertDetails  {
+    	background:#fff;
+    	text-align:left;
+        border:2px solid #ccc;
+        margin:10px 0;
+        padding:5px;
+        border-radius:4px; /*CSS3 border radius*/
+        -moz-border-radius:4px;
+        -webkit-border-radius:4px;	   
+        box-shadow:0 0 15px #959595; /*CSS3 shadow*/
+        -moz-box-shadow:0 0 15px #959595;
+        -webkit-box-shadow:0 0 15px #959595;          
+                      
+     }
+    
+    .theAlertDetails h4 {font-size:.9em; color:#999;}
+    
+    .color2 { border-color:#b50000; } /* Red */
+    .color1 { border-color:#f9ff00; } /* Yellow */
+    .color0 { border-color:#006b03; } /* Green */
+    
+    .AlertTitle {
+    	float:left;
+    	width:50%;
+    	font-weight:900; 
+    	font-size:1.2em;
+    }
+    
+    .AlertStamp {
+    	float:left;
+    	width:50%;
+    	text-align:right;
+    	font-weight:900; 
+    	font-size:.9em;
+    	color:#999;
+    }
+        
+	#statusAlert   {
+        border:2px solid #999;
+        margin:10px 0;
+        padding:15px;
+        
+        border-radius:8px; /*CSS3 border radius*/
+        -moz-border-radius:8px;
+        -webkit-border-radius:8px;	
+        box-shadow:0 0 15px #959595; /*CSS3 shadow*/
+        -moz-box-shadow:0 0 15px #959595;
+        -webkit-box-shadow:0 0 15px #959595;	 	
+    }
+    
+    .clearAll { clear:both;}
+    
+    .keepInformed {text-align:center; font-weight:900; font-size:.8em;}
+    .keepInformed a.InstantUpdates {background:red;}
+    
+    .btn-primary {
+		background-image: linear-gradient(to bottom, #428BCA 0px, #2D6CA2 100%);
+		background-repeat: repeat-x;
+		border-color: #2B669A;
+    }
+    
+    #preview {
+        border:2px solid #de8500;
+        margin:10px 0;
+        padding:15px;
+        background:#fff;
+        border-radius:8px; /*CSS3 border radius*/
+        -moz-border-radius:8px;
+        -webkit-border-radius:8px;	
+        box-shadow:0 0 15px #959595; /*CSS3 shadow*/
+        -moz-box-shadow:0 0 15px #959595;
+        -webkit-box-shadow:0 0 15px #959595;
+    }
+    
+    h1 {font-size:22px !important;; font-weight:900 !important;;}
+       
+    #statusAlert h5, #statusAlertHistory h5, #statusAlertList h5 {line-height:30px; height:30px; font-size:.9em; font-weight:900; background: url(/img/icon-status.png) no-repeat; padding:0 0 0 30px; margin:0;}  
+    #preview h5 {line-height:30px; height:30px; font-size:.9em; font-weight:900; background: url(/img/icon-delta.png) no-repeat; padding:0 0 0 30px; margin:0;}
+       
+ 
+    	

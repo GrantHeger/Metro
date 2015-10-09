@@ -1,0 +1,1550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="GetAllParentCategories">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllParentCategoriesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllParentCategoriesResult" type="tns:ArrayOfAlertCategoryView" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAlertCategoryView">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AlertCategoryView" nillable="true" type="tns:AlertCategoryView" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AlertCategoryView">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Category_Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Parent_Id" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CategoryName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CategoryDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CategoryCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsPublic" nillable="true" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetPublicParentCategories">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPublicParentCategoriesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPublicParentCategoriesResult" type="tns:ArrayOfAlertCategoryView" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubCategories">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="parentId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubCategoriesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSubCategoriesResult" type="tns:ArrayOfAlertCategoryView" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCategoryDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="catId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCategoryDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCategoryDetailsResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CategoryExists">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="catName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="parentId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CategoryExistsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CategoryExistsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CategoryIsPublic">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="catId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CategoryIsPublicResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CategoryIsPublicResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewCategory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="parentId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="desc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ispublic" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewCategoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddNewCategoryResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCategory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="catId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="parentId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="desc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ispublic" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCategoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateCategoryResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCategory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="catId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCategoryResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAlertsByCategory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="categoryId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAlertsByCategoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAlertsByCategoryResult" type="tns:ArrayOfAlertView" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAlertView">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AlertView" nillable="true" type="tns:AlertView" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AlertView">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Alert_Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Category_Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status_Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateAdded" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="MessageText" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MessageEmail" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsArchived" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DisplayAlert" nillable="true" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Parent_Id" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CategoryName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CategoryDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CategoryCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsPublic" nillable="true" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAlertDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="alertId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAlertDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAlertDetailsResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewAlert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="catId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="messageText" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="messageEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endDate" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="showAlert" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewAlertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddNewAlertResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAlert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="alertId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="catId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="messageText" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="messageEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endDate" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="showAlert" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAlertResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteAlert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="alertId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteAlertResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateAlertStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="alertId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="statusId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAlertStatusResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ArchiveAlert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="alertId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ArchiveAlertResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUserContacts">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserContactsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserContactsResult" type="tns:ArrayOfContactView" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfContactView">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ContactView" nillable="true" type="tns:ContactView" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ContactView">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Contact_Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Contact_User_Id" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="Contact_Type_Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Provider_Id" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Contact_Info" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Contact_Enabled" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Contact_Validation" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProviderName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Domain" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetUserVerifiedContacts">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserVerifiedContactsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserVerifiedContactsResult" type="tns:ArrayOfContactView" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetContactDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="contactId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetContactDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetContactDetailsResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewContact">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="TypeId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ProviderId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="info" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="code" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewContactResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateContactEmail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oldEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="newEmail" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="code" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateContactEmailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateContactEmailResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateContact">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="contactId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateContactResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ValidateContactResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteContact">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="contactId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteContactResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUserSubscriptions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserSubscriptionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserSubscriptionsResult" type="tns:ArrayOfContactAlertView" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfContactAlertView">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ContactAlertView" nillable="true" type="tns:ContactAlertView" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ContactAlertView">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Contact_Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Alert_Category_Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Start_Date" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Finish_Date" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Contact_User_Id" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="Contact_Type_Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Provider_Id" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Contact_Info" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Contact_Enabled" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Contact_Validation" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProviderName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Domain" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Contact_Type_Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Parent_Id" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CategoryName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSubscriptionDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="subscriptionId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubscriptionDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSubscriptionDetailsResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewSubscription">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="contactId" type="tns:ArrayOfInt" />
+            <s:element minOccurs="0" maxOccurs="1" name="categoryId" type="tns:ArrayOfInt" />
+            <s:element minOccurs="1" maxOccurs="1" name="StartDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="EndDate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddNewSubscriptionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateSubscription">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="subscriptionId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="contactId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="catId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="StartDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="EndDate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateSubscriptionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteSubscription">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="subscriptionId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSubscriptionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteSubscriptionsByContactId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="contactId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSubscriptionsByContactIdResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteSubscriptionsByCategoryId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="categoryId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSubscriptionsByCategoryIdResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAlertTextList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="catId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAlertTextListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAlertTextListResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAlertEmailList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="catId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAlertEmailListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAlertEmailListResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserRoleDescriptions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserRoleDescriptionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserRoleDescriptionsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="applicationname" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="guid">
+        <s:restriction base="s:string">
+          <s:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAllParentCategoriesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllParentCategories" />
+  </wsdl:message>
+  <wsdl:message name="GetAllParentCategoriesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllParentCategoriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPublicParentCategoriesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPublicParentCategories" />
+  </wsdl:message>
+  <wsdl:message name="GetPublicParentCategoriesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPublicParentCategoriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSubCategoriesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSubCategories" />
+  </wsdl:message>
+  <wsdl:message name="GetSubCategoriesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSubCategoriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCategoryDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCategoryDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetCategoryDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCategoryDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="CategoryExistsSoapIn">
+    <wsdl:part name="parameters" element="tns:CategoryExists" />
+  </wsdl:message>
+  <wsdl:message name="CategoryExistsSoapOut">
+    <wsdl:part name="parameters" element="tns:CategoryExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="CategoryIsPublicSoapIn">
+    <wsdl:part name="parameters" element="tns:CategoryIsPublic" />
+  </wsdl:message>
+  <wsdl:message name="CategoryIsPublicSoapOut">
+    <wsdl:part name="parameters" element="tns:CategoryIsPublicResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddNewCategorySoapIn">
+    <wsdl:part name="parameters" element="tns:AddNewCategory" />
+  </wsdl:message>
+  <wsdl:message name="AddNewCategorySoapOut">
+    <wsdl:part name="parameters" element="tns:AddNewCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCategorySoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCategory" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCategorySoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCategorySoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteCategory" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCategorySoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAlertsByCategorySoapIn">
+    <wsdl:part name="parameters" element="tns:GetAlertsByCategory" />
+  </wsdl:message>
+  <wsdl:message name="GetAlertsByCategorySoapOut">
+    <wsdl:part name="parameters" element="tns:GetAlertsByCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAlertDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAlertDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetAlertDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAlertDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddNewAlertSoapIn">
+    <wsdl:part name="parameters" element="tns:AddNewAlert" />
+  </wsdl:message>
+  <wsdl:message name="AddNewAlertSoapOut">
+    <wsdl:part name="parameters" element="tns:AddNewAlertResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAlertSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateAlert" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAlertSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateAlertResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAlertSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteAlert" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAlertSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteAlertResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAlertStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateAlertStatus" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAlertStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateAlertStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArchiveAlertSoapIn">
+    <wsdl:part name="parameters" element="tns:ArchiveAlert" />
+  </wsdl:message>
+  <wsdl:message name="ArchiveAlertSoapOut">
+    <wsdl:part name="parameters" element="tns:ArchiveAlertResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserContactsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserContacts" />
+  </wsdl:message>
+  <wsdl:message name="GetUserContactsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserContactsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserVerifiedContactsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserVerifiedContacts" />
+  </wsdl:message>
+  <wsdl:message name="GetUserVerifiedContactsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserVerifiedContactsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetContactDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetContactDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetContactDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetContactDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddNewContactSoapIn">
+    <wsdl:part name="parameters" element="tns:AddNewContact" />
+  </wsdl:message>
+  <wsdl:message name="AddNewContactSoapOut">
+    <wsdl:part name="parameters" element="tns:AddNewContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateContactEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateContactEmail" />
+  </wsdl:message>
+  <wsdl:message name="UpdateContactEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateContactEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidateContactSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidateContact" />
+  </wsdl:message>
+  <wsdl:message name="ValidateContactSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidateContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteContactSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteContact" />
+  </wsdl:message>
+  <wsdl:message name="DeleteContactSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserSubscriptionsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserSubscriptions" />
+  </wsdl:message>
+  <wsdl:message name="GetUserSubscriptionsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserSubscriptionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSubscriptionDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSubscriptionDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetSubscriptionDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSubscriptionDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddNewSubscriptionSoapIn">
+    <wsdl:part name="parameters" element="tns:AddNewSubscription" />
+  </wsdl:message>
+  <wsdl:message name="AddNewSubscriptionSoapOut">
+    <wsdl:part name="parameters" element="tns:AddNewSubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSubscriptionSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateSubscription" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSubscriptionSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateSubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSubscriptionSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteSubscription" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSubscriptionSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteSubscriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSubscriptionsByContactIdSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteSubscriptionsByContactId" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSubscriptionsByContactIdSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteSubscriptionsByContactIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSubscriptionsByCategoryIdSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteSubscriptionsByCategoryId" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSubscriptionsByCategoryIdSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteSubscriptionsByCategoryIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAlertTextListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAlertTextList" />
+  </wsdl:message>
+  <wsdl:message name="GetAlertTextListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAlertTextListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAlertEmailListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAlertEmailList" />
+  </wsdl:message>
+  <wsdl:message name="GetAlertEmailListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAlertEmailListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserRoleDescriptionsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserRoleDescriptions" />
+  </wsdl:message>
+  <wsdl:message name="GetUserRoleDescriptionsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserRoleDescriptionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetUserDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserDetailsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AlertServiceSoap">
+    <wsdl:operation name="GetAllParentCategories">
+      <wsdl:input message="tns:GetAllParentCategoriesSoapIn" />
+      <wsdl:output message="tns:GetAllParentCategoriesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPublicParentCategories">
+      <wsdl:input message="tns:GetPublicParentCategoriesSoapIn" />
+      <wsdl:output message="tns:GetPublicParentCategoriesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubCategories">
+      <wsdl:input message="tns:GetSubCategoriesSoapIn" />
+      <wsdl:output message="tns:GetSubCategoriesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryDetails">
+      <wsdl:input message="tns:GetCategoryDetailsSoapIn" />
+      <wsdl:output message="tns:GetCategoryDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CategoryExists">
+      <wsdl:input message="tns:CategoryExistsSoapIn" />
+      <wsdl:output message="tns:CategoryExistsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CategoryIsPublic">
+      <wsdl:input message="tns:CategoryIsPublicSoapIn" />
+      <wsdl:output message="tns:CategoryIsPublicSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddNewCategory">
+      <wsdl:input message="tns:AddNewCategorySoapIn" />
+      <wsdl:output message="tns:AddNewCategorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCategory">
+      <wsdl:input message="tns:UpdateCategorySoapIn" />
+      <wsdl:output message="tns:UpdateCategorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCategory">
+      <wsdl:input message="tns:DeleteCategorySoapIn" />
+      <wsdl:output message="tns:DeleteCategorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAlertsByCategory">
+      <wsdl:input message="tns:GetAlertsByCategorySoapIn" />
+      <wsdl:output message="tns:GetAlertsByCategorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAlertDetails">
+      <wsdl:input message="tns:GetAlertDetailsSoapIn" />
+      <wsdl:output message="tns:GetAlertDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddNewAlert">
+      <wsdl:input message="tns:AddNewAlertSoapIn" />
+      <wsdl:output message="tns:AddNewAlertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAlert">
+      <wsdl:input message="tns:UpdateAlertSoapIn" />
+      <wsdl:output message="tns:UpdateAlertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAlert">
+      <wsdl:input message="tns:DeleteAlertSoapIn" />
+      <wsdl:output message="tns:DeleteAlertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAlertStatus">
+      <wsdl:input message="tns:UpdateAlertStatusSoapIn" />
+      <wsdl:output message="tns:UpdateAlertStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ArchiveAlert">
+      <wsdl:input message="tns:ArchiveAlertSoapIn" />
+      <wsdl:output message="tns:ArchiveAlertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserContacts">
+      <wsdl:input message="tns:GetUserContactsSoapIn" />
+      <wsdl:output message="tns:GetUserContactsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserVerifiedContacts">
+      <wsdl:input message="tns:GetUserVerifiedContactsSoapIn" />
+      <wsdl:output message="tns:GetUserVerifiedContactsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactDetails">
+      <wsdl:input message="tns:GetContactDetailsSoapIn" />
+      <wsdl:output message="tns:GetContactDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddNewContact">
+      <wsdl:input message="tns:AddNewContactSoapIn" />
+      <wsdl:output message="tns:AddNewContactSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContactEmail">
+      <wsdl:input message="tns:UpdateContactEmailSoapIn" />
+      <wsdl:output message="tns:UpdateContactEmailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateContact">
+      <wsdl:input message="tns:ValidateContactSoapIn" />
+      <wsdl:output message="tns:ValidateContactSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContact">
+      <wsdl:input message="tns:DeleteContactSoapIn" />
+      <wsdl:output message="tns:DeleteContactSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserSubscriptions">
+      <wsdl:input message="tns:GetUserSubscriptionsSoapIn" />
+      <wsdl:output message="tns:GetUserSubscriptionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscriptionDetails">
+      <wsdl:input message="tns:GetSubscriptionDetailsSoapIn" />
+      <wsdl:output message="tns:GetSubscriptionDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddNewSubscription">
+      <wsdl:input message="tns:AddNewSubscriptionSoapIn" />
+      <wsdl:output message="tns:AddNewSubscriptionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSubscription">
+      <wsdl:input message="tns:UpdateSubscriptionSoapIn" />
+      <wsdl:output message="tns:UpdateSubscriptionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubscription">
+      <wsdl:input message="tns:DeleteSubscriptionSoapIn" />
+      <wsdl:output message="tns:DeleteSubscriptionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubscriptionsByContactId">
+      <wsdl:input message="tns:DeleteSubscriptionsByContactIdSoapIn" />
+      <wsdl:output message="tns:DeleteSubscriptionsByContactIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubscriptionsByCategoryId">
+      <wsdl:input message="tns:DeleteSubscriptionsByCategoryIdSoapIn" />
+      <wsdl:output message="tns:DeleteSubscriptionsByCategoryIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAlertTextList">
+      <wsdl:input message="tns:GetAlertTextListSoapIn" />
+      <wsdl:output message="tns:GetAlertTextListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAlertEmailList">
+      <wsdl:input message="tns:GetAlertEmailListSoapIn" />
+      <wsdl:output message="tns:GetAlertEmailListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRoleDescriptions">
+      <wsdl:input message="tns:GetUserRoleDescriptionsSoapIn" />
+      <wsdl:output message="tns:GetUserRoleDescriptionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetails">
+      <wsdl:input message="tns:GetUserDetailsSoapIn" />
+      <wsdl:output message="tns:GetUserDetailsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AlertServiceSoap" type="tns:AlertServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllParentCategories">
+      <soap:operation soapAction="http://tempuri.org/GetAllParentCategories" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPublicParentCategories">
+      <soap:operation soapAction="http://tempuri.org/GetPublicParentCategories" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubCategories">
+      <soap:operation soapAction="http://tempuri.org/GetSubCategories" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryDetails">
+      <soap:operation soapAction="http://tempuri.org/GetCategoryDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CategoryExists">
+      <soap:operation soapAction="http://tempuri.org/CategoryExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CategoryIsPublic">
+      <soap:operation soapAction="http://tempuri.org/CategoryIsPublic" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewCategory">
+      <soap:operation soapAction="http://tempuri.org/AddNewCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCategory">
+      <soap:operation soapAction="http://tempuri.org/UpdateCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCategory">
+      <soap:operation soapAction="http://tempuri.org/DeleteCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlertsByCategory">
+      <soap:operation soapAction="http://tempuri.org/GetAlertsByCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlertDetails">
+      <soap:operation soapAction="http://tempuri.org/GetAlertDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewAlert">
+      <soap:operation soapAction="http://tempuri.org/AddNewAlert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAlert">
+      <soap:operation soapAction="http://tempuri.org/UpdateAlert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAlert">
+      <soap:operation soapAction="http://tempuri.org/DeleteAlert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAlertStatus">
+      <soap:operation soapAction="http://tempuri.org/UpdateAlertStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ArchiveAlert">
+      <soap:operation soapAction="http://tempuri.org/ArchiveAlert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserContacts">
+      <soap:operation soapAction="http://tempuri.org/GetUserContacts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserVerifiedContacts">
+      <soap:operation soapAction="http://tempuri.org/GetUserVerifiedContacts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactDetails">
+      <soap:operation soapAction="http://tempuri.org/GetContactDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewContact">
+      <soap:operation soapAction="http://tempuri.org/AddNewContact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContactEmail">
+      <soap:operation soapAction="http://tempuri.org/UpdateContactEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateContact">
+      <soap:operation soapAction="http://tempuri.org/ValidateContact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContact">
+      <soap:operation soapAction="http://tempuri.org/DeleteContact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserSubscriptions">
+      <soap:operation soapAction="http://tempuri.org/GetUserSubscriptions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscriptionDetails">
+      <soap:operation soapAction="http://tempuri.org/GetSubscriptionDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewSubscription">
+      <soap:operation soapAction="http://tempuri.org/AddNewSubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSubscription">
+      <soap:operation soapAction="http://tempuri.org/UpdateSubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubscription">
+      <soap:operation soapAction="http://tempuri.org/DeleteSubscription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubscriptionsByContactId">
+      <soap:operation soapAction="http://tempuri.org/DeleteSubscriptionsByContactId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubscriptionsByCategoryId">
+      <soap:operation soapAction="http://tempuri.org/DeleteSubscriptionsByCategoryId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlertTextList">
+      <soap:operation soapAction="http://tempuri.org/GetAlertTextList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlertEmailList">
+      <soap:operation soapAction="http://tempuri.org/GetAlertEmailList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRoleDescriptions">
+      <soap:operation soapAction="http://tempuri.org/GetUserRoleDescriptions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetails">
+      <soap:operation soapAction="http://tempuri.org/GetUserDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AlertServiceSoap12" type="tns:AlertServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllParentCategories">
+      <soap12:operation soapAction="http://tempuri.org/GetAllParentCategories" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPublicParentCategories">
+      <soap12:operation soapAction="http://tempuri.org/GetPublicParentCategories" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubCategories">
+      <soap12:operation soapAction="http://tempuri.org/GetSubCategories" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetCategoryDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CategoryExists">
+      <soap12:operation soapAction="http://tempuri.org/CategoryExists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CategoryIsPublic">
+      <soap12:operation soapAction="http://tempuri.org/CategoryIsPublic" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewCategory">
+      <soap12:operation soapAction="http://tempuri.org/AddNewCategory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCategory">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCategory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCategory">
+      <soap12:operation soapAction="http://tempuri.org/DeleteCategory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlertsByCategory">
+      <soap12:operation soapAction="http://tempuri.org/GetAlertsByCategory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlertDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetAlertDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewAlert">
+      <soap12:operation soapAction="http://tempuri.org/AddNewAlert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAlert">
+      <soap12:operation soapAction="http://tempuri.org/UpdateAlert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAlert">
+      <soap12:operation soapAction="http://tempuri.org/DeleteAlert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAlertStatus">
+      <soap12:operation soapAction="http://tempuri.org/UpdateAlertStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ArchiveAlert">
+      <soap12:operation soapAction="http://tempuri.org/ArchiveAlert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserContacts">
+      <soap12:operation soapAction="http://tempuri.org/GetUserContacts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserVerifiedContacts">
+      <soap12:operation soapAction="http://tempuri.org/GetUserVerifiedContacts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetContactDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewContact">
+      <soap12:operation soapAction="http://tempuri.org/AddNewContact" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContactEmail">
+      <soap12:operation soapAction="http://tempuri.org/UpdateContactEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateContact">
+      <soap12:operation soapAction="http://tempuri.org/ValidateContact" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContact">
+      <soap12:operation soapAction="http://tempuri.org/DeleteContact" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserSubscriptions">
+      <soap12:operation soapAction="http://tempuri.org/GetUserSubscriptions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscriptionDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetSubscriptionDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewSubscription">
+      <soap12:operation soapAction="http://tempuri.org/AddNewSubscription" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSubscription">
+      <soap12:operation soapAction="http://tempuri.org/UpdateSubscription" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubscription">
+      <soap12:operation soapAction="http://tempuri.org/DeleteSubscription" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubscriptionsByContactId">
+      <soap12:operation soapAction="http://tempuri.org/DeleteSubscriptionsByContactId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubscriptionsByCategoryId">
+      <soap12:operation soapAction="http://tempuri.org/DeleteSubscriptionsByCategoryId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlertTextList">
+      <soap12:operation soapAction="http://tempuri.org/GetAlertTextList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlertEmailList">
+      <soap12:operation soapAction="http://tempuri.org/GetAlertEmailList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRoleDescriptions">
+      <soap12:operation soapAction="http://tempuri.org/GetUserRoleDescriptions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetUserDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AlertService">
+    <wsdl:port name="AlertServiceSoap" binding="tns:AlertServiceSoap">
+      <soap:address location="http://services.nfta.com/AlertService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AlertServiceSoap12" binding="tns:AlertServiceSoap12">
+      <soap12:address location="http://services.nfta.com/AlertService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

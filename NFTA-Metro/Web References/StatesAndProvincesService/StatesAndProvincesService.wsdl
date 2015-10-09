@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetStatesAndProvinces">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetStatesAndProvincesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStatesAndProvincesResult" type="tns:ArrayOfStatesAndProvincesView" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfStatesAndProvincesView">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="StatesAndProvincesView" nillable="true" type="tns:StatesAndProvincesView" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="StatesAndProvincesView">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="stpId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="stpName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="stpAbbreviation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="stpCountry" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetUSStates">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUSStatesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUSStatesResult" type="tns:ArrayOfStatesAndProvincesView" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCanadianProvinces">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCanadianProvincesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCanadianProvincesResult" type="tns:ArrayOfStatesAndProvincesView" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetStatesAndProvincesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStatesAndProvinces" />
+  </wsdl:message>
+  <wsdl:message name="GetStatesAndProvincesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStatesAndProvincesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUSStatesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUSStates" />
+  </wsdl:message>
+  <wsdl:message name="GetUSStatesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUSStatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCanadianProvincesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCanadianProvinces" />
+  </wsdl:message>
+  <wsdl:message name="GetCanadianProvincesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCanadianProvincesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="StatesAndProvincesServiceSoap">
+    <wsdl:operation name="GetStatesAndProvinces">
+      <wsdl:input message="tns:GetStatesAndProvincesSoapIn" />
+      <wsdl:output message="tns:GetStatesAndProvincesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUSStates">
+      <wsdl:input message="tns:GetUSStatesSoapIn" />
+      <wsdl:output message="tns:GetUSStatesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCanadianProvinces">
+      <wsdl:input message="tns:GetCanadianProvincesSoapIn" />
+      <wsdl:output message="tns:GetCanadianProvincesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="StatesAndProvincesServiceSoap" type="tns:StatesAndProvincesServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetStatesAndProvinces">
+      <soap:operation soapAction="http://tempuri.org/GetStatesAndProvinces" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUSStates">
+      <soap:operation soapAction="http://tempuri.org/GetUSStates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCanadianProvinces">
+      <soap:operation soapAction="http://tempuri.org/GetCanadianProvinces" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="StatesAndProvincesServiceSoap12" type="tns:StatesAndProvincesServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetStatesAndProvinces">
+      <soap12:operation soapAction="http://tempuri.org/GetStatesAndProvinces" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUSStates">
+      <soap12:operation soapAction="http://tempuri.org/GetUSStates" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCanadianProvinces">
+      <soap12:operation soapAction="http://tempuri.org/GetCanadianProvinces" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="StatesAndProvincesService">
+    <wsdl:port name="StatesAndProvincesServiceSoap" binding="tns:StatesAndProvincesServiceSoap">
+      <soap:address location="http://services.nfta.com/StatesAndProvincesService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="StatesAndProvincesServiceSoap12" binding="tns:StatesAndProvincesServiceSoap12">
+      <soap12:address location="http://services.nfta.com/StatesAndProvincesService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

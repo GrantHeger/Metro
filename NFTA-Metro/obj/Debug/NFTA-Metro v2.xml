@@ -1,0 +1,2214 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+NFTA-Metrov2
+</name>
+</assembly>
+<members>
+<member name="F:NFTA_Metro.RouteHis.rptCategories">
+	<summary>
+rptCategories control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.RouteHis.phShowRt">
+	<summary>
+phShowRt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.RouteHis.litRouteDisplayName">
+	<summary>
+litRouteDisplayName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.RouteHis.litAlert">
+	<summary>
+litAlert control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.RouteHis.phHideRt">
+	<summary>
+phHideRt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Schedules.rptCategories">
+	<summary>
+rptCategories control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._Default2.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._Default2.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._Default2.cbox">
+	<summary>
+cbox control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._Default2.CustomValidator1">
+	<summary>
+CustomValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._Default2.btnEnter">
+	<summary>
+btnEnter control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PAL.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._Escalator.rptEscalator">
+	<summary>
+rptEscalator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._NowBoard1.EmergencyStatus">
+	<summary>
+EmergencyStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._NowBoard1.EmergencyText">
+	<summary>
+EmergencyText control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._NowBoard1.Panel1">
+	<summary>
+Panel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._NowBoard1.rptRoutes">
+	<summary>
+rptRoutes control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._NowBoard1.rptAlerts">
+	<summary>
+rptAlerts control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._Store.ImageButton1">
+	<summary>
+ImageButton1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._Store.ImageButton2">
+	<summary>
+ImageButton2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._Store.btnSYP">
+	<summary>
+btnSYP control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._TVI.phSent">
+	<summary>
+phSent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._TVI.phForm">
+	<summary>
+phForm control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._TVI.tbName">
+	<summary>
+tbName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._TVI.tbEmail">
+	<summary>
+tbEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._TVI.tbComments">
+	<summary>
+tbComments control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._TVI.btnSubmit">
+	<summary>
+btnSubmit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._feed.tbName">
+	<summary>
+tbName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._feed.tbEmail">
+	<summary>
+tbEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._feed.tbComments">
+	<summary>
+tbComments control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._feed.btnSubmit">
+	<summary>
+btnSubmit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._feed.phSent">
+	<summary>
+phSent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._feed.phForm">
+	<summary>
+phForm control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Terms2.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._NowStatus.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._NowStatus.rptAlerts">
+	<summary>
+rptAlerts control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._DefaultDb.EmergencyStatus">
+	<summary>
+EmergencyStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._DefaultDb.EmergencyText">
+	<summary>
+EmergencyText control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._DefaultDb.btnToggle">
+	<summary>
+btnToggle control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._DefaultDb.Panel1">
+	<summary>
+Panel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._DefaultDb.rptRoutes1">
+	<summary>
+rptRoutes1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._DefaultDb.Panel2">
+	<summary>
+Panel2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._DefaultDb.rptRoutes2">
+	<summary>
+rptRoutes2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._DefaultDb.phNoAlerts">
+	<summary>
+phNoAlerts control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._DefaultDb.litAlertLinks">
+	<summary>
+litAlertLinks control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._DefaultDb.MessageBoardText">
+	<summary>
+MessageBoardText control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._Fares.ImageButton1">
+	<summary>
+ImageButton1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._Fares.ImageButton2">
+	<summary>
+ImageButton2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._Fares.btnSYP">
+	<summary>
+btnSYP control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._AutoPass.btnAuto">
+	<summary>
+btnAuto control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.MetroNow.ddlNumToShow">
+	<summary>
+ddlNumToShow control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.MetroNow.rptAlerts">
+	<summary>
+rptAlerts control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Tools.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Tools.phNoAlerts">
+	<summary>
+phNoAlerts control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Tools.litAlertLinks">
+	<summary>
+litAlertLinks control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._RiderAlerts.phNoAlerts">
+	<summary>
+phNoAlerts control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._RiderAlerts.rptCategories">
+	<summary>
+rptCategories control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:NFTA_Metro._RiderAlerts.Master">
+	<summary>
+Master property.
+</summary>
+	<remarks>
+Auto-generated property.
+</remarks>
+</member><member name="F:NFTA_Metro._EmergencyRide.phTemp">
+	<summary>
+phTemp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._EmergencyRide.phForm">
+	<summary>
+phForm control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._EmergencyRide.name">
+	<summary>
+name control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._EmergencyRide.RequiredFieldValidator3">
+	<summary>
+RequiredFieldValidator3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._EmergencyRide.address">
+	<summary>
+address control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._EmergencyRide.city">
+	<summary>
+city control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._EmergencyRide.zip">
+	<summary>
+zip control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._EmergencyRide.homephone">
+	<summary>
+homephone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._EmergencyRide.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._EmergencyRide.workphone">
+	<summary>
+workphone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._EmergencyRide.employer">
+	<summary>
+employer control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._EmergencyRide.employeraddress">
+	<summary>
+employeraddress control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._EmergencyRide.flashnumber">
+	<summary>
+flashnumber control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._EmergencyRide.whenpurchased">
+	<summary>
+whenpurchased control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._EmergencyRide.wherepurchased">
+	<summary>
+wherepurchased control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._EmergencyRide.routesused">
+	<summary>
+routesused control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._EmergencyRide.btnER">
+	<summary>
+btnER control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._EmergencyRide.phSent">
+	<summary>
+phSent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="M:NFTA_Metro.StatesAndProvincesService.StatesAndProvincesService.#ctor">
+	<remarks/>
+</member><member name="E:NFTA_Metro.StatesAndProvincesService.StatesAndProvincesService.GetStatesAndProvincesCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.StatesAndProvincesService.StatesAndProvincesService.GetUSStatesCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.StatesAndProvincesService.StatesAndProvincesService.GetCanadianProvincesCompleted">
+	<remarks/>
+</member><member name="M:NFTA_Metro.StatesAndProvincesService.StatesAndProvincesService.GetStatesAndProvinces">
+	<remarks/>
+</member><member name="M:NFTA_Metro.StatesAndProvincesService.StatesAndProvincesService.GetStatesAndProvincesAsync">
+	<remarks/>
+</member><member name="M:NFTA_Metro.StatesAndProvincesService.StatesAndProvincesService.GetStatesAndProvincesAsync(System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.StatesAndProvincesService.StatesAndProvincesService.GetUSStates">
+	<remarks/>
+</member><member name="M:NFTA_Metro.StatesAndProvincesService.StatesAndProvincesService.GetUSStatesAsync">
+	<remarks/>
+</member><member name="M:NFTA_Metro.StatesAndProvincesService.StatesAndProvincesService.GetUSStatesAsync(System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.StatesAndProvincesService.StatesAndProvincesService.GetCanadianProvinces">
+	<remarks/>
+</member><member name="M:NFTA_Metro.StatesAndProvincesService.StatesAndProvincesService.GetCanadianProvincesAsync">
+	<remarks/>
+</member><member name="M:NFTA_Metro.StatesAndProvincesService.StatesAndProvincesService.GetCanadianProvincesAsync(System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.StatesAndProvincesService.StatesAndProvincesService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:NFTA_Metro.StatesAndProvincesService.StatesAndProvincesService">
+	<remarks/>
+</member><member name="P:NFTA_Metro.StatesAndProvincesService.StatesAndProvincesView.stpId">
+	<remarks/>
+</member><member name="P:NFTA_Metro.StatesAndProvincesService.StatesAndProvincesView.stpName">
+	<remarks/>
+</member><member name="P:NFTA_Metro.StatesAndProvincesService.StatesAndProvincesView.stpAbbreviation">
+	<remarks/>
+</member><member name="P:NFTA_Metro.StatesAndProvincesService.StatesAndProvincesView.stpCountry">
+	<remarks/>
+</member><member name="T:NFTA_Metro.StatesAndProvincesService.StatesAndProvincesView">
+	<remarks/>
+</member><member name="T:NFTA_Metro.StatesAndProvincesService.GetStatesAndProvincesCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.StatesAndProvincesService.GetStatesAndProvincesCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.StatesAndProvincesService.GetStatesAndProvincesCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.StatesAndProvincesService.GetUSStatesCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.StatesAndProvincesService.GetUSStatesCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.StatesAndProvincesService.GetUSStatesCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.StatesAndProvincesService.GetCanadianProvincesCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.StatesAndProvincesService.GetCanadianProvincesCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.StatesAndProvincesService.GetCanadianProvincesCompletedEventArgs">
+	<remarks/>
+</member><member name="F:NFTA_Metro._dp.phSent">
+	<summary>
+phSent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._dp.phForm">
+	<summary>
+phForm control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._dp.tbName">
+	<summary>
+tbName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._dp.tbCompany">
+	<summary>
+tbCompany control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._dp.tbPhone">
+	<summary>
+tbPhone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._dp.tbEmail">
+	<summary>
+tbEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._dp.tbComments">
+	<summary>
+tbComments control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._dp.btnSubmit">
+	<summary>
+btnSubmit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._CACLogin.lblInvalid">
+	<summary>
+lblInvalid control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._CACLogin.txtUsername">
+	<summary>
+txtUsername control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._CACLogin.txtPassword">
+	<summary>
+txtPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._CACLogin.btnLogin">
+	<summary>
+btnLogin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Route.rptCategories">
+	<summary>
+rptCategories control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Route.phShowRt">
+	<summary>
+phShowRt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Route.litRouteDisplayName">
+	<summary>
+litRouteDisplayName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Route.litEffective">
+	<summary>
+litEffective control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Route.litCopyTxt">
+	<summary>
+litCopyTxt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Route.litNote">
+	<summary>
+litNote control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Route.litDownload">
+	<summary>
+litDownload control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Route.litAlert">
+	<summary>
+litAlert control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Route.litPreview">
+	<summary>
+litPreview control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Route.litChanges">
+	<summary>
+litChanges control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Route.litPages">
+	<summary>
+litPages control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Route.litMap">
+	<summary>
+litMap control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Route.phHideRt">
+	<summary>
+phHideRt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Metro.Header">
+	<summary>
+Header control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Metro.phHead">
+	<summary>
+phHead control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Metro.formMaster">
+	<summary>
+formMaster control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Metro.EmergencyMessagePH">
+	<summary>
+EmergencyMessagePH control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Metro.phMain">
+	<summary>
+phMain control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Metro.phSideBar">
+	<summary>
+phSideBar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.#ctor">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.GetAllParentCategoriesCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.GetPublicParentCategoriesCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.GetSubCategoriesCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.GetCategoryDetailsCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.CategoryExistsCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.CategoryIsPublicCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.AddNewCategoryCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.UpdateCategoryCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.DeleteCategoryCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.GetAlertsByCategoryCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.GetAlertDetailsCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.AddNewAlertCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.UpdateAlertCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.DeleteAlertCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.UpdateAlertStatusCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.ArchiveAlertCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.GetUserContactsCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.GetUserVerifiedContactsCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.GetContactDetailsCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.AddNewContactCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.UpdateContactEmailCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.ValidateContactCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.DeleteContactCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.GetUserSubscriptionsCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.GetSubscriptionDetailsCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.AddNewSubscriptionCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.UpdateSubscriptionCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.DeleteSubscriptionCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.DeleteSubscriptionsByContactIdCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.DeleteSubscriptionsByCategoryIdCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.GetAlertTextListCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.GetAlertEmailListCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.GetUserRoleDescriptionsCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.AlertService.AlertService.GetUserDetailsCompleted">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetAllParentCategories">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetAllParentCategoriesAsync">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetAllParentCategoriesAsync(System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetPublicParentCategories">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetPublicParentCategoriesAsync">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetPublicParentCategoriesAsync(System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetSubCategories(System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetSubCategoriesAsync(System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetSubCategoriesAsync(System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetCategoryDetails(System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetCategoryDetailsAsync(System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetCategoryDetailsAsync(System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.CategoryExists(System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.CategoryExistsAsync(System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.CategoryExistsAsync(System.String,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.CategoryIsPublic(System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.CategoryIsPublicAsync(System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.CategoryIsPublicAsync(System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.AddNewCategory(System.String,System.Int32,System.String,System.String,System.Boolean)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.AddNewCategoryAsync(System.String,System.Int32,System.String,System.String,System.Boolean)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.AddNewCategoryAsync(System.String,System.Int32,System.String,System.String,System.Boolean,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.UpdateCategory(System.Int32,System.String,System.Int32,System.String,System.String,System.Boolean)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.UpdateCategoryAsync(System.Int32,System.String,System.Int32,System.String,System.String,System.Boolean)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.UpdateCategoryAsync(System.Int32,System.String,System.Int32,System.String,System.String,System.Boolean,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.DeleteCategory(System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.DeleteCategoryAsync(System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.DeleteCategoryAsync(System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetAlertsByCategory(System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetAlertsByCategoryAsync(System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetAlertsByCategoryAsync(System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetAlertDetails(System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetAlertDetailsAsync(System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetAlertDetailsAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.AddNewAlert(System.Int32,System.String,System.String,System.String,System.Boolean)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.AddNewAlertAsync(System.Int32,System.String,System.String,System.String,System.Boolean)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.AddNewAlertAsync(System.Int32,System.String,System.String,System.String,System.Boolean,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.UpdateAlert(System.Int32,System.Int32,System.String,System.String,System.String,System.Boolean)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.UpdateAlertAsync(System.Int32,System.Int32,System.String,System.String,System.String,System.Boolean)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.UpdateAlertAsync(System.Int32,System.Int32,System.String,System.String,System.String,System.Boolean,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.DeleteAlert(System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.DeleteAlertAsync(System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.DeleteAlertAsync(System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.UpdateAlertStatus(System.Int32,System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.UpdateAlertStatusAsync(System.Int32,System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.UpdateAlertStatusAsync(System.Int32,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.ArchiveAlert(System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.ArchiveAlertAsync(System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.ArchiveAlertAsync(System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetUserContacts(System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetUserContactsAsync(System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetUserContactsAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetUserVerifiedContacts(System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetUserVerifiedContactsAsync(System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetUserVerifiedContactsAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetContactDetails(System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetContactDetailsAsync(System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetContactDetailsAsync(System.String,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.AddNewContact(System.String,System.Int32,System.Int32,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.AddNewContactAsync(System.String,System.Int32,System.Int32,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.AddNewContactAsync(System.String,System.Int32,System.Int32,System.String,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.UpdateContactEmail(System.String,System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.UpdateContactEmailAsync(System.String,System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.UpdateContactEmailAsync(System.String,System.String,System.String,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.ValidateContact(System.String,System.Int32,System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.ValidateContactAsync(System.String,System.Int32,System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.ValidateContactAsync(System.String,System.Int32,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.DeleteContact(System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.DeleteContactAsync(System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.DeleteContactAsync(System.String,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetUserSubscriptions(System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetUserSubscriptionsAsync(System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetUserSubscriptionsAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetSubscriptionDetails(System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetSubscriptionDetailsAsync(System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetSubscriptionDetailsAsync(System.String,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.AddNewSubscription(System.Int32[],System.Int32[],System.DateTime,System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.AddNewSubscriptionAsync(System.Int32[],System.Int32[],System.DateTime,System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.AddNewSubscriptionAsync(System.Int32[],System.Int32[],System.DateTime,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.UpdateSubscription(System.Int32,System.Int32,System.Int32,System.DateTime,System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.UpdateSubscriptionAsync(System.Int32,System.Int32,System.Int32,System.DateTime,System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.UpdateSubscriptionAsync(System.Int32,System.Int32,System.Int32,System.DateTime,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.DeleteSubscription(System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.DeleteSubscriptionAsync(System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.DeleteSubscriptionAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.DeleteSubscriptionsByContactId(System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.DeleteSubscriptionsByContactIdAsync(System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.DeleteSubscriptionsByContactIdAsync(System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.DeleteSubscriptionsByCategoryId(System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.DeleteSubscriptionsByCategoryIdAsync(System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.DeleteSubscriptionsByCategoryIdAsync(System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetAlertTextList(System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetAlertTextListAsync(System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetAlertTextListAsync(System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetAlertEmailList(System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetAlertEmailListAsync(System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetAlertEmailListAsync(System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetUserRoleDescriptions(System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetUserRoleDescriptionsAsync(System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetUserRoleDescriptionsAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetUserDetails(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetUserDetailsAsync(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.GetUserDetailsAsync(System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.AlertService.AlertService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.AlertService">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.AlertCategoryView.Category_Id">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.AlertCategoryView.Parent_Id">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.AlertCategoryView.CategoryName">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.AlertCategoryView.CategoryDescription">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.AlertCategoryView.CategoryCode">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.AlertCategoryView.IsPublic">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.AlertCategoryView">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactAlertView.Id">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactAlertView.Contact_Id">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactAlertView.Alert_Category_Id">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactAlertView.Start_Date">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactAlertView.Finish_Date">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactAlertView.Contact_User_Id">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactAlertView.Contact_Type_Id">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactAlertView.Provider_Id">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactAlertView.Contact_Info">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactAlertView.Contact_Enabled">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactAlertView.Contact_Validation">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactAlertView.ProviderName">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactAlertView.Domain">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactAlertView.Contact_Type_Name">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactAlertView.Parent_Id">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactAlertView.CategoryName">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.ContactAlertView">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactView.Contact_Id">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactView.Contact_User_Id">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactView.Contact_Type_Id">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactView.Provider_Id">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactView.Contact_Info">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactView.Contact_Enabled">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactView.Contact_Validation">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactView.ProviderName">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ContactView.Domain">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.ContactView">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.AlertView.Alert_Id">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.AlertView.Category_Id">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.AlertView.Status_Id">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.AlertView.DateAdded">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.AlertView.MessageText">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.AlertView.MessageEmail">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.AlertView.IsArchived">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.AlertView.EndDate">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.AlertView.DisplayAlert">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.AlertView.Parent_Id">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.AlertView.CategoryName">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.AlertView.CategoryDescription">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.AlertView.CategoryCode">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.AlertView.IsPublic">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.AlertView.StatusName">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.AlertView">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetAllParentCategoriesCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.GetAllParentCategoriesCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetAllParentCategoriesCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetPublicParentCategoriesCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.GetPublicParentCategoriesCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetPublicParentCategoriesCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetSubCategoriesCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.GetSubCategoriesCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetSubCategoriesCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetCategoryDetailsCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.GetCategoryDetailsCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetCategoryDetailsCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.CategoryExistsCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.CategoryExistsCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.CategoryExistsCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.CategoryIsPublicCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.CategoryIsPublicCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.CategoryIsPublicCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.AddNewCategoryCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.AddNewCategoryCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.AddNewCategoryCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.UpdateCategoryCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.UpdateCategoryCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.UpdateCategoryCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.DeleteCategoryCompletedEventHandler">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetAlertsByCategoryCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.GetAlertsByCategoryCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetAlertsByCategoryCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetAlertDetailsCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.GetAlertDetailsCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetAlertDetailsCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.AddNewAlertCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.AddNewAlertCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.AddNewAlertCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.UpdateAlertCompletedEventHandler">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.DeleteAlertCompletedEventHandler">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.UpdateAlertStatusCompletedEventHandler">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.ArchiveAlertCompletedEventHandler">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetUserContactsCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.GetUserContactsCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetUserContactsCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetUserVerifiedContactsCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.GetUserVerifiedContactsCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetUserVerifiedContactsCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetContactDetailsCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.GetContactDetailsCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetContactDetailsCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.AddNewContactCompletedEventHandler">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.UpdateContactEmailCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.UpdateContactEmailCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.UpdateContactEmailCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.ValidateContactCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.ValidateContactCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.ValidateContactCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.DeleteContactCompletedEventHandler">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetUserSubscriptionsCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.GetUserSubscriptionsCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetUserSubscriptionsCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetSubscriptionDetailsCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.GetSubscriptionDetailsCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetSubscriptionDetailsCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.AddNewSubscriptionCompletedEventHandler">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.UpdateSubscriptionCompletedEventHandler">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.DeleteSubscriptionCompletedEventHandler">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.DeleteSubscriptionsByContactIdCompletedEventHandler">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.DeleteSubscriptionsByCategoryIdCompletedEventHandler">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetAlertTextListCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.GetAlertTextListCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetAlertTextListCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetAlertEmailListCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.GetAlertEmailListCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetAlertEmailListCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetUserRoleDescriptionsCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.GetUserRoleDescriptionsCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetUserRoleDescriptionsCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetUserDetailsCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.AlertService.GetUserDetailsCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.AlertService.GetUserDetailsCompletedEventArgs">
+	<remarks/>
+</member><member name="M:NFTA_Metro.CacheService.CacheService.#ctor">
+	<remarks/>
+</member><member name="E:NFTA_Metro.CacheService.CacheService.ClearCacheCompleted">
+	<remarks/>
+</member><member name="M:NFTA_Metro.CacheService.CacheService.ClearCache(System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.CacheService.CacheService.ClearCacheAsync(System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.CacheService.CacheService.ClearCacheAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.CacheService.CacheService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:NFTA_Metro.CacheService.CacheService">
+	<remarks/>
+</member><member name="T:NFTA_Metro.CacheService.ClearCacheCompletedEventHandler">
+	<remarks/>
+</member><member name="M:NFTA_Metro.MetroService.MetroService.#ctor">
+	<remarks/>
+</member><member name="E:NFTA_Metro.MetroService.MetroService.GetMetroConfigItemsCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.MetroService.MetroService.GetMetroConfigItemDetailsCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.MetroService.MetroService.AddNewConfigItemCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.MetroService.MetroService.UpdateConfigItemCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.MetroService.MetroService.DeleteConfigItemCompleted">
+	<remarks/>
+</member><member name="E:NFTA_Metro.MetroService.MetroService.ConfigExistsCompleted">
+	<remarks/>
+</member><member name="M:NFTA_Metro.MetroService.MetroService.GetMetroConfigItems">
+	<remarks/>
+</member><member name="M:NFTA_Metro.MetroService.MetroService.GetMetroConfigItemsAsync">
+	<remarks/>
+</member><member name="M:NFTA_Metro.MetroService.MetroService.GetMetroConfigItemsAsync(System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.MetroService.MetroService.GetMetroConfigItemDetails(System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.MetroService.MetroService.GetMetroConfigItemDetailsAsync(System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.MetroService.MetroService.GetMetroConfigItemDetailsAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.MetroService.MetroService.AddNewConfigItem(System.String,System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.MetroService.MetroService.AddNewConfigItemAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.MetroService.MetroService.AddNewConfigItemAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.MetroService.MetroService.UpdateConfigItem(System.Int32,System.String,System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.MetroService.MetroService.UpdateConfigItemAsync(System.Int32,System.String,System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.MetroService.MetroService.UpdateConfigItemAsync(System.Int32,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.MetroService.MetroService.DeleteConfigItem(System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.MetroService.MetroService.DeleteConfigItemAsync(System.Int32)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.MetroService.MetroService.DeleteConfigItemAsync(System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.MetroService.MetroService.ConfigExists(System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.MetroService.MetroService.ConfigExistsAsync(System.String)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.MetroService.MetroService.ConfigExistsAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:NFTA_Metro.MetroService.MetroService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:NFTA_Metro.MetroService.MetroService">
+	<remarks/>
+</member><member name="P:NFTA_Metro.MetroService.ConfigView.Id">
+	<remarks/>
+</member><member name="P:NFTA_Metro.MetroService.ConfigView.key">
+	<remarks/>
+</member><member name="P:NFTA_Metro.MetroService.ConfigView.value">
+	<remarks/>
+</member><member name="P:NFTA_Metro.MetroService.ConfigView.LastModified">
+	<remarks/>
+</member><member name="T:NFTA_Metro.MetroService.ConfigView">
+	<remarks/>
+</member><member name="T:NFTA_Metro.MetroService.GetMetroConfigItemsCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.MetroService.GetMetroConfigItemsCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.MetroService.GetMetroConfigItemsCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.MetroService.GetMetroConfigItemDetailsCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.MetroService.GetMetroConfigItemDetailsCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.MetroService.GetMetroConfigItemDetailsCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.MetroService.AddNewConfigItemCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.MetroService.AddNewConfigItemCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.MetroService.AddNewConfigItemCompletedEventArgs">
+	<remarks/>
+</member><member name="T:NFTA_Metro.MetroService.UpdateConfigItemCompletedEventHandler">
+	<remarks/>
+</member><member name="T:NFTA_Metro.MetroService.DeleteConfigItemCompletedEventHandler">
+	<remarks/>
+</member><member name="T:NFTA_Metro.MetroService.ConfigExistsCompletedEventHandler">
+	<remarks/>
+</member><member name="P:NFTA_Metro.MetroService.ConfigExistsCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:NFTA_Metro.MetroService.ConfigExistsCompletedEventArgs">
+	<remarks/>
+</member><member name="F:NFTA_Metro._SM.litRouteScript">
+	<summary>
+litRouteScript control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._SM.litTrainMarkup">
+	<summary>
+litTrainMarkup control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._SM.litMarkup">
+	<summary>
+litMarkup control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro.Terms.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._Default.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._Default.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._Stripped.Header">
+	<summary>
+Header control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._Stripped.phHead">
+	<summary>
+phHead control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._Stripped.formMaster">
+	<summary>
+formMaster control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._Stripped.EmergencyMessagePH">
+	<summary>
+EmergencyMessagePH control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._Stripped.phMain">
+	<summary>
+phMain control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._NowBoard.EmergencyStatus">
+	<summary>
+EmergencyStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._NowBoard.EmergencyText">
+	<summary>
+EmergencyText control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._NowBoard.rptAlerts">
+	<summary>
+rptAlerts control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._NowBoard.AllSystemsGo">
+	<summary>
+AllSystemsGo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.phForm">
+	<summary>
+phForm control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.tbDate">
+	<summary>
+tbDate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.tbCompany">
+	<summary>
+tbCompany control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.tbAddress">
+	<summary>
+tbAddress control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.tbCity">
+	<summary>
+tbCity control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.RequiredFieldValidator7">
+	<summary>
+RequiredFieldValidator7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.ddlState">
+	<summary>
+ddlState control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.CompareValidator2">
+	<summary>
+CompareValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.tbZip">
+	<summary>
+tbZip control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.RequiredFieldValidator9">
+	<summary>
+RequiredFieldValidator9 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.tbContact">
+	<summary>
+tbContact control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.RequiredFieldValidator3">
+	<summary>
+RequiredFieldValidator3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.tbContactEmail">
+	<summary>
+tbContactEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.RequiredFieldValidator4">
+	<summary>
+RequiredFieldValidator4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.tbContactPhone">
+	<summary>
+tbContactPhone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.RequiredFieldValidator5">
+	<summary>
+RequiredFieldValidator5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.tbFull">
+	<summary>
+tbFull control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.tbReduced">
+	<summary>
+tbReduced control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.tbPal10">
+	<summary>
+tbPal10 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.tbPal20">
+	<summary>
+tbPal20 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.XXXXXXXXtbFull">
+	<summary>
+XXXXXXXXtbFull control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.XXXXXXXXXtbReduced">
+	<summary>
+XXXXXXXXXtbReduced control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.XXXXXXXtbPal10">
+	<summary>
+XXXXXXXtbPal10 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.XXXXXXXXtbPal20">
+	<summary>
+XXXXXXXXtbPal20 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.tbMonth">
+	<summary>
+tbMonth control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.RequiredFieldValidator6">
+	<summary>
+RequiredFieldValidator6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.btnOrder">
+	<summary>
+btnOrder control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._PerkOrder.phSent">
+	<summary>
+phSent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.phResponse">
+	<summary>
+phResponse control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.phExistingUser">
+	<summary>
+phExistingUser control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.phNewUser">
+	<summary>
+phNewUser control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.litNewUserEmail">
+	<summary>
+litNewUserEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.litNewUserPassword">
+	<summary>
+litNewUserPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.phForm">
+	<summary>
+phForm control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.txtFirstName">
+	<summary>
+txtFirstName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.txtLastName">
+	<summary>
+txtLastName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.txtAddress">
+	<summary>
+txtAddress control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.RequiredFieldValidator3">
+	<summary>
+RequiredFieldValidator3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.txtCity">
+	<summary>
+txtCity control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.RequiredFieldValidator4">
+	<summary>
+RequiredFieldValidator4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.ddlState">
+	<summary>
+ddlState control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.CompareValidator1">
+	<summary>
+CompareValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.txtZip">
+	<summary>
+txtZip control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.RequiredFieldValidator5">
+	<summary>
+RequiredFieldValidator5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.txtCounty">
+	<summary>
+txtCounty control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.RequiredFieldValidator6">
+	<summary>
+RequiredFieldValidator6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.txtPhone">
+	<summary>
+txtPhone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.RequiredFieldValidator7">
+	<summary>
+RequiredFieldValidator7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.txtEmail">
+	<summary>
+txtEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.RequiredFieldValidator8">
+	<summary>
+RequiredFieldValidator8 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.chkPal">
+	<summary>
+chkPal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.chkFixed">
+	<summary>
+chkFixed control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.chkExpress">
+	<summary>
+chkExpress control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.chkMonthly">
+	<summary>
+chkMonthly control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.chkPark">
+	<summary>
+chkPark control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.txtOther">
+	<summary>
+txtOther control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.txtStatement">
+	<summary>
+txtStatement control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.rptCategories">
+	<summary>
+rptCategories control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.cbAgree">
+	<summary>
+cbAgree control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.phErrors">
+	<summary>
+phErrors control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.litErrors">
+	<summary>
+litErrors control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:NFTA_Metro._cac.btnSubmit">
+	<summary>
+btnSubmit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,203 @@
+
+body {
+
+	margin:0;
+	padding:0;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	width:100%; 
+	height:100%;
+    font-size:62.5%; /* 16px × 62.5% = 10px */
+	border:0;			/* This removes the border around the viewport in old versions of IE */
+	min-width:800px;	/* Minimum width of layout - does not work in old versions of Internet Explorer */
+	font-size:.9em;  /*  = 9px */ 
+}
+
+.noPrint {display:none;}
+
+.offscreen {display:none;}
+
+td.edgeLeft { display:none; }
+td#content { text-align:left;  }
+td.edgeRight {display:none;}
+td.bottomEdge {display:none; }
+
+#toolsNav {display:none;}
+
+
+#banner {display:none;}
+
+
+
+/*  === For navigation stylign see /metro/css/navigation.css  ========   */
+
+
+#bannerRight {
+	display:none;
+}
+
+#rotator {
+	display:none;
+}
+
+#footer { font-size:.7em; }
+
+#footer ul {padding:0 0 1em 0; margin:0;}
+
+#footer li {
+display:inline;
+margin:0;
+padding:0 3px;
+border:0;
+color:#003366;
+list-style-type:none;
+}
+
+#footer a {
+color:#003366; 
+}
+
+#footer a:hover {
+color:#000; 
+}
+
+
+/*  ===============  General  ====================    */
+img {border:0;}
+
+
+/* =============== Headings  ======================   */
+
+h1 {
+font-weight:900;
+font-size:1.5em;
+}
+
+h2 {
+font-weight:900;
+font-size:1.4em;
+}
+
+h3 {
+font-weight:900;
+font-size:1.3em;
+}
+
+h4 {
+font-weight:900;
+font-size:1.2em;
+}
+
+h5 {
+font-weight:900;
+font-size:1.1em;
+}
+
+.small {font-size:.8em;}
+
+.newsheader {
+border:0;
+border-bottom:1px solid #999;
+color:#003366;
+padding-bottom:0;
+margin-bottom:0;
+}
+
+.newsheader2 {
+margin:0 72px 0 0;
+padding:0;
+border:0;
+border-bottom:1px solid #999;
+color:#003366;
+}
+
+.greyheader {
+height:23px;
+line-height:23px;
+padding-left:5px;
+border:1px solid #999;
+background:#EAEAEA;
+}
+
+.clear {clear:both;}
+.imgPadding {padding:10px;}
+
+
+
+/* ===================  Advertisments =====================*/
+#rightSideBar {
+	display:none;
+}
+
+
+/*======================= Form fields ==============================*/
+
+.textarea_large {
+width:360px;
+margin:0 0 5px 0;
+border:1px solid #666;
+padding:2px;
+background:#FFF;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:small;
+color:#000;
+}
+
+.textfield_small, .textfield_medium, .textfield_large, .textfield_xlarge {
+margin:0 0 5px 0;
+border:1px solid #666;
+padding:2px;
+background:#FFF;
+font-size:small;
+color:#000;
+vertical-align:middle;
+}
+
+.textfield_small {
+width:216px;
+}
+
+.textfield_medium {
+width:288px;
+}
+
+.textfield_large {
+width:360px;
+}
+
+.textfield_xlarge {
+width:432px;
+}
+
+
+ul#icon
+{
+list-style-type:none;
+padding:20px;
+}
+
+ul#icon li
+{
+background: url(http://www.nfta.com/metro/img/li-icon.gif) no-repeat left 4px;
+margin:0 0 8px 0;
+min-height:10px;
+padding:0 0 0 60px;
+}
+
+#feature {
+	background:#eaeaea;
+
+	border:4px double #fff;
+	padding:5px 10px;
+	margin:10px;
+}
+
+
+fieldset.red { color:#000; border:1px solid #710505; margin:5px 0; padding:5px; }
+
+legend.red { color:#710505; font-weight:900; font-size:1.2em;}
+
+fieldset.blue { color:#000; border:1px solid #041148;  margin:5px 0; padding:5px; }
+
+legend.blue { color:#041148; font-weight:900; font-size:1.2em;}
+

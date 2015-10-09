@@ -1,0 +1,246 @@
+﻿
+/*  Color Scheme
+Dark Blue  	004990
+Light Blue  bcd6f0
+Grey		999b9e
+Light Grey	c5c6c8
+Red			bf2f37
+*/
+
+body {
+	background:#fff;
+	margin:0;
+	padding:0px;
+	text-align:left;
+	font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+	width:100%; 
+	height:100%;
+    font-size:62.5%; /* 16px × 62.5% = 10px */
+	border:0;			/* This removes the border around the viewport in old versions of IE */
+	min-width:800px;	/* Minimum width of layout - does not work in old versions of Internet Explorer */
+	font-size:.9em;  /*  = 9px */ 
+}
+
+
+
+#logo {margin:15px;}
+
+img {border:0;}
+
+/* HEADERS */
+h1 {
+	font-size:2em;
+	font-weight: bold;
+	margin: 0  15px;
+	padding:0;
+	color:#004990;
+	border-bottom:3px solid #999;
+}
+
+h1 .type {
+	font-size:.6em;
+	color:#999;
+}
+
+h2 {
+	font-size:1.3em;
+	padding: 10px 0 3px 15px;
+	margin: 0 0 .5em 0;
+	color: #2e2d2a;
+	border-bottom: 2px solid #b1aca7;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size:1.3em;
+	font-weight: bold;
+	padding: 5px 0 0 0;
+	margin: 0;
+	color: #000000;
+}
+
+a, a:link, a:visited, a:active, a:hover {color: #084C8D;}
+
+#subLinks {padding:15px;}
+
+#subLinks a {
+	font-weight: normal;
+	color: #084C8D;
+}
+.subLinks a:hover {
+
+}
+
+#footer {border-top:3px solid #999; margin:15px; text-align:center; padding-top:10px;}
+
+#footer ul {padding:0 0 1em 0; margin:0;}
+
+#footer li {
+display:inline;
+margin:0;
+padding:0 3px;
+border:0;
+color:#003366;
+list-style-type:none;
+}
+
+#footer a {
+color:#084C8D; 
+}
+
+#footer a:hover {
+color:#000; 
+}
+
+.footnotes, .effective {margin:15px; line-height:1.1em;}
+
+ 
+
+
+
+.schedule p, .schedule ul, .schedule ol {
+	font: 90%/125%;
+}
+	.schedule p {
+		margin: 0;
+		padding: 0 0 1em 0;
+	}
+	.schedule ul, .schedule ol {
+		margin: 0 15px 0 30px;
+		padding: 0 0 1em 0;
+	}
+	.schedule p.side {
+		margin: 25px 0 1em 0;
+		padding: 0;
+		font: 80%/100% Arial, Helvetica, sans-serif;
+		color: #75706b;
+	}
+		.schedule p.side a {
+		}
+	.schedule p.breadcrumb {
+		margin: 0 0 1em 0;
+		padding: 0;
+		font: 80%/100% Arial, Helvetica, sans-serif;
+		color: #75706b;
+	}
+		.schedule p.breadcrumb a {
+		}
+	.schedule p.footnotes, .schedule p.effective {
+		width: 800px;
+		margin: 10px 0 0 15px;
+		padding: 0;
+	}
+
+.schedule .bullet {
+	color: #8d8781;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#route {
+	font: 80%/80% "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin-bottom: 15px;
+	clear: both;
+}
+#map {
+	width: 100%;
+	height: 270px;
+	border: 1px solid #084c8d;
+}
+
+
+/* TABLE */
+table {
+}
+table#timeTableHorizontal {	/* for horizontal layout */
+	width: 100%;
+}
+table#timeTableHorizontal tbody tr td, table#timeTableHorizontal th	{
+}
+tr td, tr th {
+	text-align: center;
+	border-bottom: 1px solid #fff;
+	padding: 5px;
+}
+tr td.yellowdata {
+	background-color: #e7e7e7;
+	padding: 0;
+	border-right: 1px solid #fff;
+}
+	tr.yellowdata {	/* for horizontal layout */
+		background-color: #e7e7e7;
+		padding: 0;
+		border-right: 1px solid #fff;
+	}
+tr td.bluedata {
+	background-color: #f3f3f3;
+	padding: 0;
+	border-right: 1px solid #fff;
+}
+	tr.bluedata {	/* for horizontal layout */
+		background-color: #f3f3f3;
+		padding: 0;
+		border-right: 1px solid #fff;
+	}
+	tr td a {
+		color: #084C8D;
+		margin-left: 5px;
+	}
+
+
+th {
+	background: #084c8d;
+	vertical-align: top;
+	font: 110%/110%  Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #fff !important;
+	border-right: 1px solid #fff;
+	font-weight: bold;
+}	
+	.schedule th a:link	{
+		color: #fff !important;
+		cursor: pointer;
+	}
+	.schedule th a:hover	{
+		color: #fff !important;
+		cursor: pointer;
+		border-bottom: 1px dotted #fff;
+	}
+	th.bluedata	{
+		background: #1c5c99;
+	}
+	th.last	{
+		border: none;
+	}
+	tr.bluedata th	{	/* for horizontal layout */
+		background: #1c5c99;
+	}
+	a.schedule-header {
+		font-weight: bold;
+	}
+		
+.h7	{
+	font: 95%/100% "Trebuchet MS", Helvetica, Arial, sans-serif;
+	color: #b1aca7;
+	margin: 2px 0 0 0;
+	padding: 0;
+	font-weight: normal;
+}
+	
+.h8	{
+	font: 80%/80% "Trebuchet MS", Helvetica, Arial, sans-serif;
+	font-weight: normal !important;
+	margin: 0 0 10px 0;
+	padding: 0;
+	color: #ffffff;
+	font-weight: normal;
+}
+	.h8 a:link, .h8 a:visited {
+		color: #ffffff;
+		text-decoration: none;
+		font-weight: normal;
+	}
+	.h8 a:hover, .h8 a:active {
+		text-decoration: none;
+		border-bottom: 1px dotted #fff;
+		font-weight: normal;
+	}
+	

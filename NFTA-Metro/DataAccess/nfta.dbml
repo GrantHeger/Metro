@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="nftaalerts" Class="nftaDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=WIN-19OM7B29JS9\NFTASQLEXPRESS;Initial Catalog=nftaalerts;Persist Security Info=True;User ID=IISUsr_Alerts" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="NFTA_RouteDB.My.MySettings.nftaalertsConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AlertView" Member="AlertViews">
+    <Type Name="AlertView">
+      <Column Name="Alert_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Category_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DateAdded" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="MessageText" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="MessageEmail" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="IsArchived" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DisplayAlert" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Parent_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CategoryName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CategoryDescription" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="CategoryCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IsPublic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="StatusName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RouteCategoryView" Member="RouteCategoryViews">
+    <Type Name="RouteCategoryView">
+      <Column Name="Category_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CategoryName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SortOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AlertCategoryView" Member="AlertCategoryViews">
+    <Type Name="AlertCategoryView">
+      <Column Name="Category_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Parent_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CategoryName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CategoryDescription" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="CategoryCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IsPublic" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RouteView" Member="RouteViews">
+    <Type Name="RouteView">
+      <Column Name="RouteId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Category_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RouteName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RouteNumber" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Copy" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Spanish" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="English" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Pages" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Map" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Note" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CategoryName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Revised" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TimeTable" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Preview" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="Changes" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="StatusColor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StatusNote" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

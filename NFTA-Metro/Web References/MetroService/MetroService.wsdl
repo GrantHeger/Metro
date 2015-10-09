@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetMetroConfigItems">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMetroConfigItemsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMetroConfigItemsResult" type="tns:ArrayOfConfigView" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfConfigView">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ConfigView" nillable="true" type="tns:ConfigView" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ConfigView">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="value" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LastModified" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetMetroConfigItemDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMetroConfigItemDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMetroConfigItemDetailsResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddNewConfigItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="value" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNewConfigItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddNewConfigItemResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateConfigItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="value" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateConfigItemResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteConfigItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteConfigItemResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ConfigExists">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConfigExistsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ConfigExistsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetMetroConfigItemsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMetroConfigItems" />
+  </wsdl:message>
+  <wsdl:message name="GetMetroConfigItemsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMetroConfigItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMetroConfigItemDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMetroConfigItemDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetMetroConfigItemDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMetroConfigItemDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddNewConfigItemSoapIn">
+    <wsdl:part name="parameters" element="tns:AddNewConfigItem" />
+  </wsdl:message>
+  <wsdl:message name="AddNewConfigItemSoapOut">
+    <wsdl:part name="parameters" element="tns:AddNewConfigItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateConfigItemSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateConfigItem" />
+  </wsdl:message>
+  <wsdl:message name="UpdateConfigItemSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateConfigItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteConfigItemSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteConfigItem" />
+  </wsdl:message>
+  <wsdl:message name="DeleteConfigItemSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteConfigItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConfigExistsSoapIn">
+    <wsdl:part name="parameters" element="tns:ConfigExists" />
+  </wsdl:message>
+  <wsdl:message name="ConfigExistsSoapOut">
+    <wsdl:part name="parameters" element="tns:ConfigExistsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="MetroServiceSoap">
+    <wsdl:operation name="GetMetroConfigItems">
+      <wsdl:input message="tns:GetMetroConfigItemsSoapIn" />
+      <wsdl:output message="tns:GetMetroConfigItemsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMetroConfigItemDetails">
+      <wsdl:input message="tns:GetMetroConfigItemDetailsSoapIn" />
+      <wsdl:output message="tns:GetMetroConfigItemDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddNewConfigItem">
+      <wsdl:input message="tns:AddNewConfigItemSoapIn" />
+      <wsdl:output message="tns:AddNewConfigItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConfigItem">
+      <wsdl:input message="tns:UpdateConfigItemSoapIn" />
+      <wsdl:output message="tns:UpdateConfigItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteConfigItem">
+      <wsdl:input message="tns:DeleteConfigItemSoapIn" />
+      <wsdl:output message="tns:DeleteConfigItemSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConfigExists">
+      <wsdl:input message="tns:ConfigExistsSoapIn" />
+      <wsdl:output message="tns:ConfigExistsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MetroServiceSoap" type="tns:MetroServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetMetroConfigItems">
+      <soap:operation soapAction="http://tempuri.org/GetMetroConfigItems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMetroConfigItemDetails">
+      <soap:operation soapAction="http://tempuri.org/GetMetroConfigItemDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewConfigItem">
+      <soap:operation soapAction="http://tempuri.org/AddNewConfigItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConfigItem">
+      <soap:operation soapAction="http://tempuri.org/UpdateConfigItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteConfigItem">
+      <soap:operation soapAction="http://tempuri.org/DeleteConfigItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfigExists">
+      <soap:operation soapAction="http://tempuri.org/ConfigExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MetroServiceSoap12" type="tns:MetroServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetMetroConfigItems">
+      <soap12:operation soapAction="http://tempuri.org/GetMetroConfigItems" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMetroConfigItemDetails">
+      <soap12:operation soapAction="http://tempuri.org/GetMetroConfigItemDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewConfigItem">
+      <soap12:operation soapAction="http://tempuri.org/AddNewConfigItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConfigItem">
+      <soap12:operation soapAction="http://tempuri.org/UpdateConfigItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteConfigItem">
+      <soap12:operation soapAction="http://tempuri.org/DeleteConfigItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfigExists">
+      <soap12:operation soapAction="http://tempuri.org/ConfigExists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MetroService">
+    <wsdl:port name="MetroServiceSoap" binding="tns:MetroServiceSoap">
+      <soap:address location="http://services.nfta.com/MetroService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MetroServiceSoap12" binding="tns:MetroServiceSoap12">
+      <soap12:address location="http://services.nfta.com/MetroService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

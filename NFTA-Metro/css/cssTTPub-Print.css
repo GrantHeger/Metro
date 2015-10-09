@@ -1,0 +1,305 @@
+﻿@charset "utf-8";
+
+
+
+#screenreader, #mainMenu, #modes, #top, #mainFooter, #footerLinks, p.hide, a.hide, span.hide, .hide, #share {
+	display: none;
+}		
+
+
+body {
+	font: 100%/125% Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	width:100%;
+}
+p.clear {
+	float: none;
+	clear: both;
+}
+.standard #container {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+	.standard #top {
+		float: none;
+		padding: 0;
+		margin: 0;
+		height: 75px;
+		clear: both;
+	}
+	.standard #middle {
+		float: none;
+		clear: both;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+		.standard #mainContent {
+			margin: 0;
+			padding: 0;
+			float: none;
+			width: 100%;
+			/*
+			*/
+			clear: both;
+		}
+		.standard #mainSidebar {
+			/*
+			*/
+			display: none;
+		}
+			.content .box {
+				width:70%;
+			}
+
+.standard #bottom {
+	width: 100%;
+	float: none;
+	padding: 0;
+	margin: 0;
+	clear: both;
+}
+
+
+
+.content .box-rules {
+	border: 1px solid #b1aca7;
+	height: auto;
+	width: 90%;
+	overflow: visible;
+}
+
+
+
+/* --- TRIP PLANNER & ALERTS PAGES BEGIN --- */
+.content p.mobile, .content p.help, .content div.tabs p.tab-option, .content .planner-form-bottom, .content .tagline, .content span.maplink {
+	display: none;
+}
+
+.content .planner-form, .content .alerts-box {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+	.content .planner-form-top, .content .alerts-box-top {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+		.content .planner-icon, .content .alerts-icon {
+			padding: 0;
+			margin: 0;
+		}
+			.content .planner-form-top .planner-icon h1, .content .alerts-box-top .alerts-icon h1 {
+				padding: 0;
+				margin: 0;
+				float: none;
+				height: auto;
+			}
+	
+	
+.content .planner-form-top .planner-header, .content .planner-alerts, .content .alerts-box-top .alerts-header {
+	border: none;
+	margin: 0;
+	padding: 0;
+	line-height: 100%;
+}
+	.content .planner-alerts {
+		margin: 15px 0 0 0;
+	}
+	.content .alerts-box-top .alerts-header p {
+		padding: 0;
+		margin: 0;
+	}
+
+.content div.tabs {
+	display: none;
+}
+	.content div.tabs h2.tab-current {
+		border: none;
+		margin: 0;
+		padding: 15px 0 0 0;
+	}
+	.content div.planner-header h2 {
+		font-weight: bold;
+	}
+	.content div.planner-alerts h2 a {
+		border: none;
+		color: #000;
+	}
+
+	
+.content div#itinerary {
+	margin: 0;
+	padding: 0;
+	border: none;
+	width: 100%;
+}
+	.content div#itinerary table {
+		margin: 0 0 15px 0;
+		padding: 10px;
+		border: 1px solid #000;
+		width: 100%;
+	}
+	.content div#itinerary table tr td a {
+		display: none;
+	}
+
+
+.content ol#tripsteps, .content ul#alerts {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #333;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+	.content ol#tripsteps li, .content ul#alerts li {
+		border-top: 1px solid #333;
+	}
+	.content ol#tripsteps li a {
+		border: none;
+		color: #000;
+	}
+	
+	.content ul#alerts li p span.alert-icon {
+		margin: 0;
+		padding: 0;
+	}
+
+
+.content div.disclaimer {
+}
+	.content div.disclaimer p {
+		padding: 0;
+		margin: 0;
+	}
+	.content div.disclaimer p.disclaimer-feedback {
+		width: auto;
+		float: none;
+		border-left: none;
+		padding: 0;
+		margin: 0 0 1em 0;
+	}
+
+/* --- TRIP PLANNER & ALERTS PAGES END --- */
+
+
+
+
+
+
+
+
+
+
+/* --- MODE PAGES BEGIN --- */
+.standard #mode-header-map {
+	width: 630px;
+	height: 282px;
+	float: left;
+	position: relative;
+}
+.standard #mode-header-button {
+	display: none;
+}
+.standard #mode-header-image {
+	width:290px;
+	height:282px;
+	float: left;
+	border-left: 1px solid #000;
+}
+.standard #mode-header-image p {
+	margin: 15px;
+	font: 100%/110% Arial, Helvetica, sans-serif;
+}
+.standard div.max-railline {
+	float: left;
+	width: 34%;
+}
+/* --- MODE PAGES END --- */
+
+
+
+
+
+/* --- MAIN SITEMAP BEGIN --- */
+#mainSitemap {
+	width: 100%;
+	float: left;
+	padding: 0;
+	margin: 0;
+	clear: both;
+}
+	#sitemap-header {
+		height: 40px;
+		margin: 0;
+		padding: 0 15px 0 15px;
+		clear: both;
+	}
+		#sitemap-header p {
+			font: 90%/100% Arial, Helvetica, sans-serif;
+			color: #55514e;
+			margin: 0;
+			padding: 12px 0 5px 0;
+		}
+	#sitemap {
+		width: 965px;
+		clear: both;
+		padding: 0 0 0 15px;
+		margin: 0;
+	}
+		div.list, div.listfirst, div.listlast {
+			width: 205px;
+			float: left;
+			margin: 15px 0 0 15px;
+			padding: 0 14px 0 0;
+			border-right: 1px dashed #999999;
+			min-height: 50px;
+		}
+			div.listfirst {
+				width: 205px;
+				margin-left: 15px;
+			}
+			div.listlast {
+				width: 216px;
+				border: 0;
+			}
+		
+			div.list ul, div.listfirst ul, div.listlast ul {
+				list-style: none;
+				margin: 0 0 10px 0;
+				padding: 0;
+			}
+				div.list li, div.listfirst li, div.listlast li {
+					float: none;
+					margin: 0;
+					padding: 0 0 6px 0;	/* change left padding for indent */
+					border: 0;
+					color: #55514e;
+					font: 80%/105% Arial, Helvetica, sans-serif;
+				}
+				div.list li a, div.listfirst li a, div.listlast li a {
+					text-decoration: none;
+				}
+				div.list li a:hover, div.listfirst li a:hover, div.listlast li a:hover {
+					text-decoration: underline;
+				}
+				div.list li.title, div.listfirst li.title, div.listlast li.title {
+					/*list-style: none;*/
+				}
+					div.list li h2, div.listfirst li h2, div.listlast li h2 {
+						font: 100%/100% Arial, Helvetica, sans-serif;
+						font-weight: bold;
+						margin: 0;
+						padding: 0;
+					}
+		
+	#sitemap-bottom {
+		clear: both;
+	}
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<markers>
+					
+	<marker 
+		name="Main and Niagara City of Tonawanda" 
+		address="Tonawanda, NY 14150"
+		lng="-78.878268875163" lat="43.0208685628633 " 
+		routes='25 - &lt;a href="/Routes/Routes.aspx#25"&gt;Delaware&lt;/a&gt;  &lt;br&gt;
+			57 - &lt;a href="/Routes/Routes.aspx#57"&gt;Tonawanda&lt;/a&gt;  &lt;br&gt;
+			61 - &lt;a href="/Routes/Routes.aspx#61"&gt;North Tonawanda&lt;/a&gt;  &lt;br&gt;
+			79 - &lt;a href="/Routes/Routes.aspx#79"&gt;Tonawanda&lt;/a&gt;  &lt;br&gt;
+			200 - &lt;a href="/Routes/Routes.aspx#200"&gt;North Tonawanda&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+
+	<marker 
+		name="Portage Road" 
+		address="1124 Portage Rd, Niagara Falls, NY 14301"
+		lng="-79.051796" lat="43.099716" 
+		routes='40 - &lt;a href="/Routes/Routes.aspx#40"&gt;Delaware&lt;/a&gt;  &lt;br&gt;
+			50 - &lt;a href="/Routes/Routes.aspx#50"&gt;Main/Niagara&lt;/a&gt;  &lt;br&gt;
+			52 - &lt;a href="/Routes/Routes.aspx#52"&gt;Hyde Park&lt;/a&gt;  &lt;br&gt;
+			54 - &lt;a href="/Routes/Routes.aspx#54"&gt;Military&lt;/a&gt;  &lt;br&gt;
+			55 - &lt;a href="/Routes/Routes.aspx#55"&gt;Pine Avenue&lt;/a&gt;  &lt;br&gt;
+			60 - &lt;a href="/Routes/Routes.aspx#60"&gt;Niagara Falls&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+
+	<marker 
+		name="Lackawanna Victory" 
+		address="2694-2704 S Park Ave, Lackawanna, NY"
+		lng="-78.823968" lat="42.826966" 
+		routes='16 - &lt;a href="/Routes/Routes.aspx#16"&gt;South Park&lt;/a&gt;  &lt;br&gt;
+			42 - &lt;a href="/Routes/Routes.aspx#42"&gt;Lackawanna&lt;/a&gt;  &lt;br&gt;'
+	/>
+	
+	
+	<marker 
+		name="Niagara Falls Transportation Center " 
+		address="2180 Factory Outlet Blvd Niagara Falls, NY 14301" 
+		lng="-78.980273" lat="43.100626" 
+		routes='40 - &lt;a href="/Routes/Routes.aspx#40"&gt;Grand Island&lt;/a&gt;  &lt;br&gt;
+			50 - &lt;a href="/Routes/Routes.aspx#50"&gt;Main and Niagara&lt;/a&gt;  &lt;br&gt;
+			51 - &lt;a href="/Routes/Routes.aspx#51"&gt;Millitary Summit&lt;/a&gt;  &lt;br&gt;
+			52 - &lt;a href="/Routes/Routes.aspx#52"&gt;Hyde Park&lt;/a&gt;  &lt;br&gt;
+			54 - &lt;a href="/Routes/Routes.aspx#54"&gt;Millitary&lt;/a&gt;  &lt;br&gt;
+			55 - &lt;a href="/Routes/Routes.aspx#55"&gt;Pine Avenue&lt;/a&gt;  &lt;br&gt;
+			60 - &lt;a href="/Routes/Routes.aspx#60"&gt;Niagara Falls&lt;/a&gt;  &lt;br&gt;
+			210 - &lt;a href="/Routes/Routes.aspx#210"&gt;Airport-Niagara Falls Express&lt;/a&gt;  &lt;br&gt;'
+	/>
+	
+	<marker 
+		name="Southgate Plaza"
+		address="950 Union Road West Seneca, NY 14224" 
+		lng="-78.754293" lat="42.827554" 
+		routes='15 - &lt;a href="/Routes/Routes.aspx#15"&gt;Seneca&lt;/a&gt;  &lt;br&gt;
+			42 - &lt;a href="/Routes/Routes.aspx#42"&gt;Lackawanna&lt;/a&gt;  &lt;br&gt;'
+	/>
+	
+	<marker 
+		name="Thruway Mall" 
+		address="Harlem and Thruway Plaza Drive Buffalo, NY 14225" 
+		lng="-78.783768" lat="42.902704" 
+		routes='4 - &lt;a href="/Routes/Routes.aspx#4"&gt;Broadway&lt;/a&gt;  &lt;br&gt;
+			6 - &lt;a href="/Routes/Routes.aspx#6"&gt;Sycamore&lt;/a&gt;  &lt;br&gt;
+			22 - &lt;a href="/Routes/Routes.aspx#22"&gt;Porter Best&lt;/a&gt;  &lt;br&gt;
+			26 - &lt;a href="/Routes/Routes.aspx#26"&gt;Delavan&lt;/a&gt;  &lt;br&gt;
+			32 - &lt;a href="/Routes/Routes.aspx#32"&gt;Amherst&lt;/a&gt;  &lt;br&gt;
+			42 - &lt;a href="/Routes/Routes.aspx#6"&gt;Lackawana&lt;/a&gt;  &lt;br&gt;
+			46 - &lt;a href="/Routes/Routes.aspx#46"&gt;Lancaster&lt;/a&gt;  &lt;br&gt;'
+	/>
+	
+	
+</markers>
+
+
+
+                            

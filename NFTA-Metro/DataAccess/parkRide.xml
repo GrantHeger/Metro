@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<markers>
+
+    <marker
+		name="Appletree Business Park"
+		lng="-78.750653" lat="42.888985"
+		category="park"
+		address="2875 Union Road Cheektowaga, NY 14227"
+		routes='1 - &lt;a href="/Routes/Routes.aspx#1"&gt;William&lt;/a&gt;  &lt;br&gt;
+			42 - &lt;a href="/Routes/Routes.aspx#42"&gt;Lackawanna&lt;/a&gt;  &lt;br&gt;
+			69 - &lt;a href="/Routes/Routes.aspx#69"&gt;Alden&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+    <marker
+		name="Athol Springs"
+		address="4066 Lake Shore Road Hamburg, NY 14075"
+		lng="-78.861936" lat="42.773057"
+		category="park"
+		routes='74 - &lt;a href="/Routes/Routes.aspx#74"&gt;Boston&lt;/a&gt;  &lt;br&gt;
+			76 - &lt;a href="/Routes/Routes.aspx#76"&gt;Lotus Bay&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+
+
+
+
+    <marker
+		name="Creekside and Niagara Falls Blvd."
+		address="24 Creekside Drive, NY 14150"
+		lng="-78.822791" lat="43.031320"
+		category="park"
+		routes='34 - &lt;a href="/Routes/Routes.aspx#34"&gt;Niagara Falls Blvd.&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+    <marker
+		name="Crosspoint Business Park"
+		address="300 Crosspointe Parkway Getzville, NY 14068"
+		lng="-78.750383" lat="43.043602"
+		category="park"
+		routes='44 - &lt;a href="/Routes/Routes.aspx#44"&gt;Lockport&lt;/a&gt;  &lt;br&gt;
+			64 - &lt;a href="/Routes/Routes.aspx#64"&gt;Lockport Express&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+    <marker
+		name="Eastern Hills Mall"
+		address="4545 Transit Road Williamsville, NY 14221"
+		lng="-78.694555" lat="42.973424"
+		category="park"
+		routes='48 - &lt;a href="/Routes/Routes.aspx#48"&gt;Willimansville&lt;/a&gt;  &lt;br&gt;
+			49 - &lt;a href="/Routes/Routes.aspx#49"&gt;Hopkins&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+    <marker
+		name="Erie Community College South"
+		address="4041 Southwestern Blvd. Orchard Park, NY 14127"
+		lng="-78.796269" lat="42.77245"
+		category="park"
+		routes='14 (B, C) - &lt;a href="/Routes/Routes.aspx#14"&gt;Abbott&lt;/a&gt;  &lt;br&gt;
+			72 (A, B, C, D) - &lt;a href="/Routes/Routes.aspx#72"&gt;Orchard Park&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+    <marker
+		name="Highland Elementary School"
+		address="6745 Erie Road Derby, NY 14047"
+		lng="-78.972073" lat="42.704749"
+		category="park"
+		routes='76 - &lt;a href="/Routes/Routes.aspx#76"&gt;Lotus Bay&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+    <marker
+		name="Holtz Drive"
+		address="62 Holtz Drive Cheektowaga, NY 14225"
+		lng="-78.717955" lat="42.937293"
+		category="park"
+		routes='47 - &lt;a href="/Routes/Routes.aspx#47"&gt;Youngs Road&lt;/a&gt;  &lt;br&gt;
+			204 - &lt;a href="/Routes/Routes.aspx#204"&gt;Airport-Downtown Express&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+    <marker
+		name="LaSalle Station"
+		address="3030 Main Sreet, Buffalo, NY 14214"
+		lng="-78.830092" lat="42.947748"
+		category="park"
+		routes='&lt;a href="/Routes/Routes.aspx#45"&gt;Metro Rail&lt;/a&gt;  &lt;br&gt;
+			8 - &lt;a href="/Routes/Routes.aspx#8"&gt;Main&lt;/a&gt;  &lt;br&gt;
+			23 - &lt;a href="/Routes/Routes.aspx#23"&gt;Fillmore/Hertle&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+    <marker
+		name="Main and Niagara City of Tonawanda"
+		address="Tonawanda, NY 14150"
+		lng="-78.878268875163" lat="43.0208685628633 "
+		category="transit"
+		routes='25 - &lt;a href="/Routes/Routes.aspx#25"&gt;Delaware&lt;/a&gt;  &lt;br&gt;
+			57 - &lt;a href="/Routes/Routes.aspx#57"&gt;Tonawanda&lt;/a&gt;  &lt;br&gt;
+			61 - &lt;a href="/Routes/Routes.aspx#61"&gt;North Tonawanda&lt;/a&gt;  &lt;br&gt;
+			79 - &lt;a href="/Routes/Routes.aspx#79"&gt;Tonawanda&lt;/a&gt;  &lt;br&gt;
+			200 - &lt;a href="/Routes/Routes.aspx#200"&gt;North Tonawanda&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+    <marker
+		name="Main and Niagara City of Tonawanda"
+		address="Main and Niagara Street Tonawanda, NY"
+		lng="-78.878268875163" lat="43.0208685628633 "
+		category="park"
+		routes='25 - &lt;a href="/Routes/Routes.aspx#25"&gt;Delaware&lt;/a&gt;  &lt;br&gt;
+			57 - &lt;a href="/Routes/Routes.aspx#57"&gt;Tonawanda&lt;/a&gt;  &lt;br&gt;
+			61 - &lt;a href="/Routes/Routes.aspx#61"&gt;North Tonawanda&lt;/a&gt;  &lt;br&gt;
+			79 - &lt;a href="/Routes/Routes.aspx#79"&gt;Tonawanda&lt;/a&gt;  &lt;br&gt;
+			200 - &lt;a href="/Routes/Routes.aspx#200"&gt;North Tonawanda&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+
+
+    <marker
+		name="Main and Union, Williamsville"
+		address="24 S Union Road Buffalo, NY 14221"
+		lng="-78.755817" lat="42.960983"
+		category="park"
+		routes='47 - &lt;a href="/Routes/Routes.aspx#47"&gt;Youngs Road&lt;/a&gt;  &lt;br&gt;
+			48 - &lt;a href="/Routes/Routes.aspx#48"&gt;Williamsville&lt;/a&gt;  &lt;br&gt;
+			65 - &lt;a href="/Routes/Routes.aspx#65"&gt;Amherst&lt;/a&gt;  &lt;br&gt;
+			66 - &lt;a href="/Routes/Routes.aspx#66"&gt;Williamsville&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+    <marker
+		name="McKinley Mall"
+		address="3701 McKinley Parkway Blasdell, NY 14219"
+		lng="-78.811237" lat="42.783423"
+		category="park"
+		routes='14 (B) - &lt;a href="/Routes/Routes.aspx#14"&gt;Abbott&lt;/a&gt;  &lt;br&gt;
+			36 (B, M)- &lt;a href="/Routes/Routes.aspx#36"&gt;Hamburg&lt;/a&gt;  &lt;br&gt;
+			216 - &lt;a href="/Routes/Routes.aspx#216"&gt;Gowanda&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+    <marker
+		name="North Boston"
+		address="Boston State Road North Boston, NY"
+		lng="-78.777545" lat="42.686336"
+		category="park"
+		routes='74 - &lt;a href="/Routes/Routes.aspx#74"&gt;Boston&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+    <marker
+		name="Route 20A and 219"
+		address="5920 Big Tree Road Orchard Park, NY 14127"
+		lng="-78.762531" lat="42.763641"
+		category="park"
+		routes='72 - &lt;a href="/Routes/Routes.aspx#72"&gt;Orchard Park Express &lt;/a&gt;  &lt;br&gt;'
+	/>
+
+    <marker
+		name="University Station"
+		address="3435 Main Street Buffalo, NY 14214"
+		lng="-78.819752" lat="42.956417"
+		category="park"
+		routes='&lt;a href="/Routes/Routes.aspx#45"&gt;Metro Rail&lt;/a&gt;  &lt;br&gt;
+			5 - &lt;a href="/Routes/Routes.aspx#5"&gt;Niagara Kenmore&lt;/a&gt;  &lt;br&gt;
+			8 - &lt;a href="/Routes/Routes.aspx#8"&gt;Main&lt;/a&gt;  &lt;br&gt;
+			12 - &lt;a href="/Routes/Routes.aspx#12"&gt;Utica&lt;/a&gt;  &lt;br&gt;
+			13 - &lt;a href="/Routes/Routes.aspx#13"&gt;Kensington&lt;/a&gt;  &lt;br&gt;
+			19 - &lt;a href="/Routes/Routes.aspx#19"&gt;Bailey&lt;/a&gt;  &lt;br&gt;
+			34 - &lt;a href="/Routes/Routes.aspx#34"&gt;Niagara Falls Blvd.&lt;/a&gt;  &lt;br&gt;
+			47 - &lt;a href="/Routes/Routes.aspx#47"&gt;Youngs Road&lt;/a&gt;  &lt;br&gt;
+			48 - &lt;a href="/Routes/Routes.aspx#48"&gt;Williamsville&lt;/a&gt;  &lt;br&gt;
+			49 - &lt;a href="/Routes/Routes.aspx#49"&gt;Hopkins&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+
+
+
+    <marker
+		name="Portage Road"
+		address="1124 Portage Rd, Niagara Falls, NY 14301"
+		lng="-79.051796" lat="43.099716"
+		category="transit"
+		routes='40 - &lt;a href="/Routes/Routes.aspx#40"&gt;Delaware&lt;/a&gt;  &lt;br&gt;
+			50 - &lt;a href="/Routes/Routes.aspx#50"&gt;Main/Niagara&lt;/a&gt;  &lt;br&gt;
+			52 - &lt;a href="/Routes/Routes.aspx#52"&gt;Hyde Park&lt;/a&gt;  &lt;br&gt;
+			54 - &lt;a href="/Routes/Routes.aspx#54"&gt;Military&lt;/a&gt;  &lt;br&gt;
+			55 - &lt;a href="/Routes/Routes.aspx#55"&gt;Pine Avenue&lt;/a&gt;  &lt;br&gt;
+			60 - &lt;a href="/Routes/Routes.aspx#60"&gt;Niagara Falls&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+
+    <marker
+		name="Lackawanna Victory"
+		address="2694-2704 S Park Ave, Lackawanna, NY"
+		lng="-78.823968" lat="42.826966"
+		category="transit"
+		routes='16 - &lt;a href="/Routes/Routes.aspx#16"&gt;South Park&lt;/a&gt;  &lt;br&gt;
+			42 - &lt;a href="/Routes/Routes.aspx#42"&gt;Lackawanna&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+
+    <marker
+		name="Niagara Falls Transportation Center "
+		address="2180 Factory Outlet Blvd Niagara Falls, NY 14301"
+		lng="-78.980273" lat="43.100626"
+		category="transit"
+		routes='40 - &lt;a href="/Routes/Routes.aspx#40"&gt;Grand Island&lt;/a&gt;  &lt;br&gt;
+			50 - &lt;a href="/Routes/Routes.aspx#50"&gt;Main and Niagara&lt;/a&gt;  &lt;br&gt;
+			51 - &lt;a href="/Routes/Routes.aspx#51"&gt;Millitary Summit&lt;/a&gt;  &lt;br&gt;
+			52 - &lt;a href="/Routes/Routes.aspx#52"&gt;Hyde Park&lt;/a&gt;  &lt;br&gt;
+			54 - &lt;a href="/Routes/Routes.aspx#54"&gt;Millitary&lt;/a&gt;  &lt;br&gt;
+			55 - &lt;a href="/Routes/Routes.aspx#55"&gt;Pine Avenue&lt;/a&gt;  &lt;br&gt;
+			60 - &lt;a href="/Routes/Routes.aspx#60"&gt;Niagara Falls&lt;/a&gt;  &lt;br&gt;
+			210 - &lt;a href="/Routes/Routes.aspx#210"&gt;Airport-Niagara Falls Express&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+    <marker
+		name="Southgate Plaza"
+		address="950 Union Road West Seneca, NY 14224"
+		lng="-78.754293" lat="42.827554"
+		category="transit"
+		routes='15 - &lt;a href="/Routes/Routes.aspx#15"&gt;Seneca&lt;/a&gt;  &lt;br&gt;
+			42 - &lt;a href="/Routes/Routes.aspx#42"&gt;Lackawanna&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+    <marker
+		name="Thruway Mall"
+		address="Harlem and Thruway Plaza Drive Buffalo, NY 14225"
+		lng="-78.783768" lat="42.902704"
+		category="transit"
+		routes='4 - &lt;a href="/Routes/Routes.aspx#4"&gt;Broadway&lt;/a&gt;  &lt;br&gt;
+			6 - &lt;a href="/Routes/Routes.aspx#6"&gt;Sycamore&lt;/a&gt;  &lt;br&gt;
+			22 - &lt;a href="/Routes/Routes.aspx#22"&gt;Porter Best&lt;/a&gt;  &lt;br&gt;
+			26 - &lt;a href="/Routes/Routes.aspx#26"&gt;Delavan&lt;/a&gt;  &lt;br&gt;
+			32 - &lt;a href="/Routes/Routes.aspx#32"&gt;Amherst&lt;/a&gt;  &lt;br&gt;
+			42 - &lt;a href="/Routes/Routes.aspx#6"&gt;Lackawana&lt;/a&gt;  &lt;br&gt;
+			46 - &lt;a href="/Routes/Routes.aspx#46"&gt;Lancaster&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+
+
+    <marker
+		name="Village of Angola"
+		address="Main street  Angola, NY 14006"
+		lng="-79.027259" lat="42.639096"
+		category="park"
+		routes='76 - &lt;a href="/Routes/Routes.aspx#76"&gt;Lotus Bay&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+    <marker
+		name="Village of North Collins"
+		address="Route 62 North Collins, NY 14111"
+		lng="-78.940924" lat="42.594721"
+		category="park"
+		routes='216 - &lt;a href="/Routes/Routes.aspx#216"&gt;Gowanda&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+    <marker
+		name="West Seneca Municipal Parking"
+		address="2789 Seneca Street West Seneca, NY 14224"
+		lng="-78.789955" lat="42.842891"
+		category="park"
+		routes='15 - &lt;a href="/Routes/Routes.aspx#15"&gt;Seneca&lt;/a&gt;  &lt;br&gt;
+			75 - &lt;a href="/Routes/Routes.aspx#75"&gt;West Seneca &lt;/a&gt;  &lt;br&gt;'
+	/>
+
+    <marker
+		name="Zion United Church of Christ"
+		address="15 Koenig Circle Tonawanda, NY 14150 (Koenig near Parker)"
+		lng="-78.834846" lat="43.000494"
+		category="park"
+		routes='62 - &lt;a href="/Routes/Routes.aspx#62"&gt;Parker&lt;/a&gt;  &lt;br&gt;'
+	/>
+
+
+
+
+
+
+</markers>
+
+
+

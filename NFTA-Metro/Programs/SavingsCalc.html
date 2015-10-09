@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Niagara Frontier Transportation Authority (NFTA) - Metro - Gas & Carbon Savings Calculator</title>
+    <meta name="description" content="Gas & Carbon Savings Calculator. The Niagara Frontier Transportation Authority is a diversified and synergistic organization, energized by 1,500 dedicated men and women, serving the Niagara Region through cost-effective, quality transportation services everyday." />
+    <meta name="keywords" content="NFTA, Niagara Frontier Tranportation Authority, NFTA Metro, Metro, Transit, Transit Authority, Transit Agency, Tansportation, Bus and Rail, Metro Bus, Metro Rail" />
+    <script type="text/javascript">
+    <!--
+    function checkForm(){
+
+    if (document.dtpCalc.mpg.value=="" || document.dtpCalc.mpg.value==" " || document.dtpCalc.mpg.value=="  "){
+    window.location.href='##gasCalculator';
+    alert("Please let us know how many miles per gallon your vehicle gets")
+           }
+    else if (document.dtpCalc.gasPrice.value=="" || document.dtpCalc.gasPrice.value==" " || document.dtpCalc.gasPrice.value=="  "){
+    window.location.href='##gasCalculator';
+    alert("Please enter the price of gas")
+           }	
+    else if (document.dtpCalc.publicPrice.value=="" || document.dtpCalc.publicPrice.value==" " || document.dtpCalc.publicPrice.value=="  "){
+    window.location.href='##gasCalculator';
+    alert("Please enter the amount you spend on public transportation each day.")
+           }	
+    else if (document.dtpCalc.driveMiles.value=="" || document.dtpCalc.driveMiles.value==" " || document.dtpCalc.driveMiles.value=="  "){
+    window.location.href='##gasCalculator';
+    alert("Please enter the number of miles you drive each day.")
+           }	
+    else {
+    var mpg = eval(document.dtpCalc.mpg.value);                 // gas milage
+    var gasPrice = document.dtpCalc.gasPrice.value;             // gas price
+    var publicPrice = document.dtpCalc.publicPrice.value;       // public transporation daily cost
+    var driveMiles = document.dtpCalc.driveMiles.value;         // round trip commute miles 
+    var commuteDays = document.dtpCalc.commuteDays.value;       // commute days per week
+    var driveMilesWeek = (driveMiles * commuteDays)             // weekly commute miles 
+    var parkCost = document.dtpCalc.parkCost.value;             // daily parking cost
+    //var wearCost = document.dtpCalc.wearCost.value;             // based on size of car
+    var wearCost = 0;             // 
+    var gasDaily = (gasPrice * (driveMiles/mpg));               // daily cost 
+    var totalGasDaily = (eval(gasDaily) + eval(parkCost));      // daily cost with parking
+    var gasYear = ((commuteDays * 52) * totalGasDaily);         // yearly cost
+    var wearDaily = (driveMiles * wearCost);                    // round trip commute miles x wear cost 
+    var wearYearly = ((commuteDays * 52) * wearDaily);          // 
+    var gasTotalRaw = (eval(wearYearly) + eval(gasYear));
+    var gasTotal = gasTotalRaw.toFixed(2);
+    var publicTotalRaw = ((commuteDays * 52) * (publicPrice));
+    var publicTotal = publicTotalRaw.toFixed(2);
+    var totalSaveRaw = (gasTotal - eval(publicTotal));
+    var totalSave = totalSaveRaw.toFixed(2);
+    var minusCar =  (eval(totalSave) + eval(5576));
+    document.dtpCalc.gasTotal.value = "$ "+gasTotal;
+    document.dtpCalc.publicTotal.value = "$ "+publicTotal;
+    document.dtpCalc.totalSave.value = "$ "+totalSave;
+
+
+    var gallonWeekly = (driveMilesWeek/mpg);
+    var carbonWeekly = (19.4 * gallonWeekly);
+    var carbonYearly = (52 * carbonWeekly);
+    var carbonPublic =  (carbonYearly / 24);
+    var carbonSave =  (carbonYearly -  carbonPublic);
+    document.dtpCalc.carbonYearly.value = carbonYearly.toFixed(0);
+    document.dtpCalc.carbonPublic.value = carbonPublic.toFixed(0);
+    document.dtpCalc.saveCarbon.value = carbonSave.toFixed(0);
+    //document.dtpCalc.reduceCarbon.value = reduceCarbon.toFixed(2);
+
+
+          }
+         }
+    //-->
+    </script>
+      
+<style type="text/css">
+
+.GAScalcContain{
+	position:relative;
+	top:10px;
+	background-image:url(/img/calc-bg.jpg);
+    background-color:#000000;
+	width:441px;
+	height:702px;
+    text-align:left;
+}
+
+.GAScalcContain a {color:#fff;}
+.GAStableHolder{
+	position:relative;
+	padding-top:100px;
+	padding-left:25px;
+}
+.GAScontentContain{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	width:510px;
+	position:absolute;
+	top:60px;
+	left:460px;
+}
+/*.GAScontentContain td{
+	border-style:solid;
+	border-width:thin;
+	border-color:#000000;
+}*/
+.GAStotals{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+.GASsave{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#41381F;
+}
+.GAScopy{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#FFFFFF;
+}
+.GASsavecopy{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#41381F;
+}
+.GASast{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#00CCFF;
+}
+.GASast2{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#009900;
+}
+.GASdollarsign{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	float:right;
+	position:absolute;
+	right:118px;
+	padding-top:2px;
+}
+#.GASdollarsign{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	float:none;
+	position:relative;
+	top:118px;
+	left:-57px;
+}
+.GASrightcolumn{
+	padding-right:30px;
+}
+#.GASrightcolumn{
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:0px;
+	padding-right:28px;
+}
+.GAStotalprice{
+	border:hidden;
+	#border:none;
+	background-color:transparent;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+.GAStotalsave{
+	border:hidden;
+	#border:none;
+	background-color:transparent;
+	color:#009900;
+	font-weight:bold;
+}
+.GAScalculate{
+
+	background:url(/img/calc-btn.gif);
+	width:106px;
+	height:38px;
+	border:none;
+}
+.GASreset{
+	background:url(http://www.publictransportation.org/contact/stories/images/gas_reset_btn.jpg);
+	background-image:url(http://www.publictransportation.org/contact/stories/images/gas_reset_btn.jpg);
+	border:none;
+	width:77px;
+	height:38px;
+}
+
+</style>
+</head>
+<body>
+
+    
+
+
+    <div id="main">
+        <p>Can using Metro Bus or Rail save you money and reduce your carbon footprint? Check it out for yourself. This calculator will compute the costs of gas and parking, but not additional costs like wear &amp; tear on your vehicle, tolls and insurance.  It will give you a good idea how much Metro can save you. The fares represented are standard, although reduced fares are available. </p>
+        <center>
+            
+		<div class="GAScalcContain">
+            <form name="dtpCalc" action="checkForm()" method="post">
+            <br /><br />
+            <div class="GAStableHolder">
+                <table border="0" cellpadding="4" cellspacing="0" width="400px">
+                    <tr>
+                        <td width="60%"><span class="GAScopy">Your car's gas mileage (MPG)<br />
+                            (<a href="http://www.fueleconomy.gov/feg/findacar.htm" target="_fuel">fuel economy guide</a>)</span></td>
+                        <td width="40%" class="GASrightcolumn" align="right"><input type="text" style="text-align:right" name="mpg" value="0" size="10"/></td>
+                    </tr>
+                    <tr>
+                        <td><span class="GAScopy">Price of gas per gallon<br />(<a href="http://www.buffalogasprices.com/" target="_gas">current prices</a>)</span></td>
+                        <td class="GASrightcolumn" align="right"><div class="GASdollarsign">$</div><input type="text" style="text-align:right" name="gasPrice" value="0.00" size="10"/></td>
+                    </tr>
+                    <tr>
+                        <td><span class="GAScopy">Miles in your round trip commute<br />(calculate with <a href="http://maps.google.com/?utm_campaign=en&utm_medium=ha&utm_source=en-ha-na-us-bk-gm" target="_maps">google maps</a>)</span></td>
+                        <td class="GASrightcolumn" align="right"><input type="text" style="text-align:right" name="driveMiles" value="0" size="10"/></td>
+                    </tr>
+                    <tr>
+                        <td><span class="GAScopy">Commute days per week</span></td>
+                        <td class="GASrightcolumn" align="right"><input type="text" style="text-align:right" name="commuteDays" value="0" size="10"/></td>
+                    </tr>
+                    
+            
+                    <tr>
+                    <td><span class="GAScopy">Daily parking cost</span></td>
+                    <td class="GASrightcolumn" align="right"><div class="GASdollarsign" style="padding-right:18px">$</div> <input type="text" style="text-align:right" name="parkCost" value="0" size="10"/></td>
+                    </tr>
+                    <tr>
+                        <td><span class="GAScopy">Daily commute cost using Metro<br />
+                        (<a href="http://metro.nfta.com/routes/fares.aspx" target="_gas">Metro Fares</a>)</span></td>
+                        <td class="GASrightcolumn" align="right"><div class="GASdollarsign">$</div> <input type="text" style="text-align:right" name="publicPrice" value="5.00" size="10"/></td>
+                    </tr>
+                    
+                    <tr>
+                        <td align="left"></td>
+                        <td align="right" style="padding-right:22px"><input class="GAScalculate" type="button" value="" onclick="checkForm()" /></td>
+                    </tr>
+                    <tr>
+                    <td colspan="2" ><span class="GAStotals">YEARLY TOTALS</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="GAScopy">Commuting by car</span></td>
+                        <td class="GASrightcolumn" align="right"><input class="GAStotalprice" type="text" style="text-align:right" name="gasTotal" value="$ 0.00" size="10"/></td>
+                    </tr>
+                    <tr>
+                        <td><span class="GAScopy">Commuting by using Metro</span></td>
+                        <td class="GASrightcolumn" align="right"><input class="GAStotalprice" type="text" style="text-align:right" name="publicTotal" value="$ 0.00" size="10"/></td>
+                    </tr>
+                
+                    <tr>
+                        <td><span class="GAScopy">CO<sub>2</sub> emissions (in pounds) by driving</span></td>
+                        <td class="GASrightcolumn" align="right"><input class="GAStotalprice" type="text" style="text-align:right" name="carbonYearly" value="0" size="10"/></td>
+                    </tr>
+                    <tr>
+                        <td><span class="GAScopy">CO<sub>2</sub> emissions (in pounds) by using Metro</span></td>
+                        <td class="GASrightcolumn" align="right"><input class="GAStotalprice" type="text" style="text-align:right" name="carbonPublic" value="0" size="10"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="left" style="padding-top:20px; padding-top:15px"><span class="GASsave"><br /><br /><br />YOU SAVE</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="GASsavecopy">Your total savings</span></td>
+                        <td align="right" class="GASrightcolumn" style="padding-right:32px; padding-right:32px;"><input class="GAStotalsave" type="text" style="text-align:right" value="$ 0.00" name="totalSave" size="10" /></td>
+                    </tr>
+                    <tr>
+                        <td><span class="GASsavecopy">Your CO<sub>2</sub> savings</span></td>
+                        <td align="right" class="GASrightcolumn"><input class="GAStotalsave" type="text" style="text-align:right" name="saveCarbon" value="0" size="10" /></td>
+                    </tr>
+        
+                </table>
+             
+            </div>
+            </form>
+            
+        </div>
+        </center>
+    </div>
+
+
+</body>
+</html>
+
+
+

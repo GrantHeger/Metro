@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="nftaalerts" Class="NFTARoutesDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=WIN-19OM7B29JS9\NFTASQLEXPRESS;Initial Catalog=nftaalerts;Persist Security Info=True;User ID=IISUsr_Alerts" SettingsObjectName="NFTA_RouteDB.My.MySettings" SettingsPropertyName="nftaalertsConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Shapes" Member="Shapes">
+    <Type Name="Shape">
+      <Column Name="route_id" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="shape_pt_lon" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="shape_pt_lat" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="shape_pt_sequence" Type="System.Int32" DbType="int" CanBeNull="true" />
+      <Association Name="Route_Shape" Member="Route" ThisKey="route_id" OtherKey="RouteNumber" Type="Route" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.gtfs_colors" Member="gtfs_colors">
+    <Type Name="gtfs_color">
+      <Column Name="color_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="text_color" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="color_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="hex_color" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="route_number" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="gtfs_color_gtfs_route" Member="gtfs_routes" ThisKey="color_id" OtherKey="route_color" Type="gtfs_route" />
+    </Type>
+  </Table>
+  <Table Name="dbo.gtfs_routes" Member="gtfs_routes">
+    <Type Name="gtfs_route">
+      <Column Name="route_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="agency_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="route_short_name" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="route_long_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="route_type" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="route_url" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="route_color" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="gtfs_route_gtfs_trip" Member="gtfs_trips" ThisKey="route_id" OtherKey="route_id" Type="gtfs_trip" />
+      <Association Name="gtfs_color_gtfs_route" Member="gtfs_color" ThisKey="route_color" OtherKey="color_id" Type="gtfs_color" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.gtfs_shapes" Member="gtfs_shapes">
+    <Type Name="gtfs_shape">
+      <Column Name="shape_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="shape_pt_lat" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="shape_pt_lon" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="shape_pt_sequence" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="shape_dist_traveled" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.gtfs_trips" Member="gtfs_trips">
+    <Type Name="gtfs_trip">
+      <Column Name="route_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="service_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="trip_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="trip_headsign" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="direction_id" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="block_id" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="shape_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="gtfs_route_gtfs_trip" Member="gtfs_route" ThisKey="route_id" OtherKey="route_id" Type="gtfs_route" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Route" Member="Routes">
+    <Type Name="Route">
+      <Column Name="RouteId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Category_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RouteName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RouteNumber" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Copy" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Spanish" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="English" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Pages" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Map" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Note" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Revised" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TimeTable" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Preview" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="TextColor" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="RouteColor" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Shape_In" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Shape_Out" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Route_Shape" Member="Shapes" ThisKey="RouteNumber" OtherKey="route_id" Type="Shape" />
+    </Type>
+  </Table>
+  <Table Name="dbo.gtfs_service" Member="gtfs_services">
+    <Type Name="gtfs_service">
+      <Column Name="Mode" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Service_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RailStations" Member="RailStations">
+    <Type Name="RailStation">
+      <Column Name="Station" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Lat" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Lon" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="NFTA_Metro_AlertService_AlertService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nftaservices.nsytes.net/AlertService.asmx</Value>
+    </Setting>
+    <Setting Name="NFTA_Metro_MetroService_MetroService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nftaservices.nsytes.net/MetroService.asmx</Value>
+    </Setting>
+    <Setting Name="NFTA_Metro_StatesAndProvincesService_StatesAndProvincesService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nftaservices.nsytes.net/StatesAndProvincesService.asmx</Value>
+    </Setting>
+    <Setting Name="NFTA_Metro_CacheService_CacheService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://nftaservices.nsytes.net/CacheService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

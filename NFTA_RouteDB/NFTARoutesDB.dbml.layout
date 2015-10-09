@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="NFTARoutesDB">
+  <DataContextMoniker Name="/NFTARoutesDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a58a430f-ccd3-4c6a-ab5c-277b93bf60ef" absoluteBounds="3.75, 3.25, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/NFTARoutesDBDataContext/Shape" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0a9a7893-8189-4945-a020-e3b34de2fc3d" absoluteBounds="3.765, 3.71, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1300b41d-017e-4e33-b90d-87f8e704e098" absoluteBounds="3.5, 0.875, 2, 1.5891951497395831">
+      <DataClassMoniker Name="/NFTARoutesDBDataContext/gtfs_color" />
+      <nestedChildShapes>
+        <elementListCompartment Id="99041d61-d4b0-4f8e-8c6b-7420aec16ad0" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="66dc64f1-743a-4609-ad6e-e405fcc8dfd7" absoluteBounds="6.125, 0.5, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/NFTARoutesDBDataContext/gtfs_route" />
+      <nestedChildShapes>
+        <elementListCompartment Id="927e5bb1-f12a-418f-8f42-490a802e0069" absoluteBounds="6.14, 0.96, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 1.64644490559896); (6.125 : 1.64644490559896)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NFTARoutesDBDataContext/gtfs_color/gtfs_color_gtfs_route" />
+      <nodes>
+        <classShapeMoniker Id="1300b41d-017e-4e33-b90d-87f8e704e098" />
+        <classShapeMoniker Id="66dc64f1-743a-4609-ad6e-e405fcc8dfd7" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="3751aa18-addf-44eb-ab62-8dd6b0e12acd" absoluteBounds="7.375, 3.25, 2, 1.5891951497395831">
+      <DataClassMoniker Name="/NFTARoutesDBDataContext/gtfs_shape" />
+      <nestedChildShapes>
+        <elementListCompartment Id="85aedf52-1f50-44ad-945a-86b406065238" absoluteBounds="7.39, 3.71, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7f043453-66aa-4f64-9760-51b8460d05f6" absoluteBounds="1, 0.5, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/NFTARoutesDBDataContext/gtfs_trip" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6a315df6-1c8f-4d57-8058-367af7ef5fb0" absoluteBounds="1.0150000000000001, 0.96, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.125 : 0.65625); (3 : 0.65625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/NFTARoutesDBDataContext/gtfs_route/gtfs_route_gtfs_trip" />
+      <nodes>
+        <classShapeMoniker Id="66dc64f1-743a-4609-ad6e-e405fcc8dfd7" />
+        <classShapeMoniker Id="7f043453-66aa-4f64-9760-51b8460d05f6" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="fe3c6009-8b79-4baf-b42c-02db82ee9085" absoluteBounds="0.5, 2.75, 2, 3.7257104492187496">
+      <DataClassMoniker Name="/NFTARoutesDBDataContext/Route" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f8e57310-5684-4fd1-b078-96a6d5b2eee8" absoluteBounds="0.51500000000000012, 3.21, 1.9700000000000002, 3.16571044921875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 3.96242390950521); (3.75 : 3.96242390950521)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NFTARoutesDBDataContext/Route/Route_Shape" />
+      <nodes>
+        <classShapeMoniker Id="fe3c6009-8b79-4baf-b42c-02db82ee9085" />
+        <classShapeMoniker Id="a58a430f-ccd3-4c6a-ab5c-277b93bf60ef" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="292e5dd5-6885-495b-b6b2-7036d28631ba" absoluteBounds="3.75, 5.5, 2, 1.0961531575520833">
+      <DataClassMoniker Name="/NFTARoutesDBDataContext/gtfs_service" />
+      <nestedChildShapes>
+        <elementListCompartment Id="285cd27d-220d-42f0-ab05-a08c130ecf4c" absoluteBounds="3.765, 5.96, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5d9f61d3-1b04-4a59-92db-88d6b1ed50e5" absoluteBounds="6.5, 5.5, 2, 1.26050048828125">
+      <DataClassMoniker Name="/NFTARoutesDBDataContext/RailStation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8ecf3be6-61e9-4b57-ad88-c8705335a941" absoluteBounds="6.515, 5.96, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

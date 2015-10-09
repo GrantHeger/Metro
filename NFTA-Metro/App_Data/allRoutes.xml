@@ -1,0 +1,2034 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+  <!--
+	
+	<route>
+    =================  Current Schedule =====================================
+    <id> = unique id
+    <routeNum>  = used to display numbered routes. Used with name.  Should be empty for rail and trolley, etc.
+    <category>  = county or catagory type string
+    <name> = lable name or route
+    
+    <status> = Active will show route     
+	  <copy>   = text shown by the info "i" <![CDATA[ extra copy - see 20E ]]>     
+	  <spanish>  = True or False will show/hide spanish pdf schedule button
+	  <english> = True or False will show/hide regular pdf schedule button
+	  <pages>	= 1 or 2 (used for jpg converstion of schedules)
+    <map> =  True or False will show or hide map button
+    
+    ================The rest are for the new schedule.  Set  ShowNextSchedule to true in webconfig to see on website  ==============================
+    <nextStatus> = Active will show route 
+	  <nextSpanish>  True or False 
+	  <nextEnglish>  True or False 
+	  <nextPages>		1 or 2 (used for jpg converstion of schedules)
+    <nextMap>     True or False
+    <nextNote>    note to display custom message.  nextStatus has to be set to true and nextSpanish, nextEnglish, nextMap all must be set to false to display message.  This messages is to overwrite the default message (found in webconfig ShowNextDefaultMessage) ie. discontinuted, no changes  
+  </route>
+  
+  -->
+
+
+  <!-- =========================== METRO RAIL ==========================  -->
+  <route>
+    <id>45</id>
+    <routeNum></routeNum>
+    <category>Metro Rail</category>
+    <name>Metro Rail</name>
+    <status>Active</status>
+    <copy> </copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <!-- =========================== END METRO RAIL ==========================  -->
+
+
+
+
+
+  <!-- =========================== Metro Bus Routes ==========================  -->
+  <route>
+    <id>1</id>
+    <routeNum>1</routeNum>
+    <category>Metro Bus</category>
+    <name>William</name>
+    <status>Active</status>
+    <copy>Revised inbound and outbound running times for weekday, Saturday, and Sunday trips.   Modified 6:45 p.m. from Goethe to leave Appletree Business Park at 6:47 p.m.  6:00 p.m. outbound trip is extended to Appletree Business Park.  AM and PM trips to and from Appletree adjusted to better serve work shifts. </copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>2</id>
+    <routeNum>2</routeNum>
+    <category>Metro Bus</category>
+    <name>Clinton</name>
+    <status>Active</status>
+    <copy>Revised inbound and outbound running times for weekday, Saturday, and Sunday trips.  Eliminated weekday inbound 8:35 p.m. and inbound 6:18 p.m. trips.  Weekday interval is 15 minutes between 7:30 a.m. and 8:30 a.m.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>3</id>
+    <routeNum>3</routeNum>
+    <category>Metro Bus</category>
+    <name>Grant</name>
+    <status>Active</status>
+    <copy>Added 7:55 a.m. weekday inbound to Lafayette High School.  Sunday outbound trip adjusted from 10:53 p.m. to 11:03 p.m.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>4</id>
+    <routeNum>4</routeNum>
+    <category>Metro Bus</category>
+    <name>Broadway</name>
+    <status>Active</status>
+    <copy>Revised inbound and outbound running times for weekday, Saturday, and Sunday trips.  Weekday, Saturday, and Sunday interval adjusted to 60 minute after 7 p.m.  </copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>5</id>
+    <routeNum>5</routeNum>
+    <category>Metro Bus</category>
+    <name>Niagara - Kenmore</name>
+    <status>Active</status>
+    <copy>AM and PM peak service was adjusted to 10 minute interval and nine trips have been added.  Also, weekday running time adjusted. </copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>6</id>
+    <routeNum>6</routeNum>
+    <category>Metro Bus</category>
+    <name>Sycamore</name>
+    <status>Active</status>
+    <copy>Added two trips to Saturday inbound, creating a 30 minute interval.  Sunday p.m. inbound interval increased to 30 minutes due to overcrowding. </copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>7</id>
+    <routeNum>7</routeNum>
+    <category>Metro Bus</category>
+    <name><![CDATA[  Baynes-Richmond ]]></name>
+    <status>Active</status>
+    <copy>Eliminated 8 trips and created 60 minute interval.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>8</id>
+    <routeNum>8</routeNum>
+    <category>Metro Bus</category>
+    <name>Main</name>
+    <status>Active</status>
+    <copy>Eliminated Saturday inbound10:00 p.m. trip and Sunday outbound 10:00 p.m. trip.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>11</id>
+    <routeNum>11</routeNum>
+    <category>Metro Bus</category>
+    <name>Colvin</name>
+    <status>Active</status>
+    <copy>Adjusted the weekday inbound 7:50 a.m. to 7:45 a.m. trip to accommodate an 8:40 a.m. arrival per passenger request. Added a 6:50 a.m. and 8:13 a.m. inbound trip from Colvin and Paramount.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>12</id>
+    <routeNum>12</routeNum>
+    <category>Metro Bus</category>
+    <name>Utica</name>
+    <status>Active</status>
+    <copy>Sunday trips adjusted.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>13</id>
+    <routeNum>13</routeNum>
+    <category>Metro Bus</category>
+    <name>Kensington</name>
+    <status>Active</status>
+    <copy>Saturday and Sunday trips adjusted</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>14</id>
+    <routeNum>14</routeNum>
+    <category>Metro Bus</category>
+    <name>Abbott</name>
+    <status>Active</status>
+    <copy>Adjusted Saturday interval from 60 minutes to 90 minutes.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>15</id>
+    <routeNum>15</routeNum>
+    <category>Metro Bus</category>
+    <name>Seneca</name>
+    <status>Active</status>
+    <copy>Revised inbound and outbound running times for weekday, Saturday, and Sunday trips.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>16</id>
+    <routeNum>16</routeNum>
+    <category>Metro Bus</category>
+    <name>South Park</name>
+    <status>Active</status>
+    <copy>Adjusted Saturday interval from 60 minutes to 90 minutes.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>18</id>
+    <routeNum>18</routeNum>
+    <category>Metro Bus</category>
+    <name>Jefferson</name>
+    <status>Active</status>
+    <copy>Eliminated two weekday trips: 5:25 a.m. inbound and 5:50 a.m. outbound due to low ridership.  Eliminated six Sunday trips creating a 90 minute interval.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>19</id>
+    <routeNum>19</routeNum>
+    <category>Metro Bus</category>
+    <name>Bailey</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>20</id>
+    <routeNum>20</routeNum>
+    <category>Metro Bus</category>
+    <name>Elmwood</name>
+    <status>Active</status>
+    <copy> Revised inbound and outbound running times for weekday, Saturday, and Sunday trips.  Sunday 10:00 p.m. outbound trip changed to 10:05 p.m. and outbound 10:45 p.m. trip changed to 11:05 p.m. per passenger requests.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>20E</id>
+    <routeNum>20E</routeNum>
+    <category>Metro Bus</category>
+    <name>Late Night Express Service</name>
+    <status>Active</status>
+    <copy>
+      <![CDATA[ 
+		  <p align="center"><strong>Take Metro downtown on weekends</strong></p>
+		  <p>Students from Buffalo State, Bryant &amp; Stratton, Canisius College, ECC City Campus, Medaille College and 
+				  the general public are all invited to try Metro's Late 
+				  Night Express Service, Route 20E, to Buffalo's downtown entertainment districts.</p>
+			<p><strong>WHEN:</strong></p>
+			<p>Thursday and Saturday from 10:00 p.m. to 4:30 a.m.</p>
+		
+			<p>While school is in session. 20E does not run during Thanksgiving weekend, Christmas and Spring breaks.</p>
+		
+			<p>Service starts the Buffalo State College campus with stops on Rockwell near the Twin Rise &amp; Porter Hall, and on Iroquois Drive at Moore Complex, then to the 198, stopping next at Medaille College. From there, the bus travels to Canisius College, Delavan Townhouses and on Main Street at Eastwood, then back on the 198, back to Elmwood and downtown to Chippewa.</p>
+			<p>Here's what you need to do to ride this service:</p>
+      <p>See the attached map of pick up and drop off locations near the college you 
+			  attend.</p>
+      <p>
+			  Look for the Metro Bus Stop sign at that location with the number 20E on it.</p>
+       <p> Buses will pick you up at any Metro bus stop along the route from 10:00 p.m. 
+			  to 3:30 a.m.</p>
+        
+        <p>
+			  - Last bus leaves Delaware &amp; Chippewa at 4:00 a.m.<br />
+        
+			  - Service is open door and open to the general public.<br />
+			  - College Students with a valid College ID from schools participating in <a href="/metro/unlimited_pass.asp">Unlimited Access</a>  ride FREE 
+			  of charge.
+			  </p>
+        
+        <p>
+		
+			  Students will be required to swipe their valid Metro-College/University Unlimited Access ID cards upon boarding the bus or they will be charged regular Metro fare.</p>
+			
+
+	]]>
+    </copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>22</id>
+    <routeNum>22</routeNum>
+    <category>Metro Bus</category>
+    <name>Porter-Best</name>
+    <status>Active</status>
+    <copy>Eliminated two weekday trips: 8:28 a.m. inbound and 8:13 a.m. outbound.  Saturday trips adjusted.  Eliminated 10 trips on Sunday creating a 2 hour interval.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>23</id>
+    <routeNum>23</routeNum>
+    <category>Metro Bus</category>
+    <name>Filmore-Hertel</name>
+    <status>Active</status>
+    <copy>Eliminated eight Sunday trips due to low ridership creating a 40 minute interval during peak times.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>24</id>
+    <routeNum>24</routeNum>
+    <category>Metro Bus</category>
+    <name>Genesee</name>
+    <status>Active</status>
+    <copy>Running times have been adjusted.  Weekday 11:08 p.m. inbound trip changed to 11:02 p.m. for connection with Route 19 at Bailey and Genesee per passenger request.  Eliminated 9 Sunday trips due to low ridership creating a 40-45 minute interval for Sunday service.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>25</id>
+    <routeNum>25</routeNum>
+    <category>Metro Bus</category>
+    <name>Delaware</name>
+    <status>Active</status>
+    <copy>Added weekday outbound 4:30 p.m. trip to Main and Niagara and adjusted inbound and outbound running times for weekday, Saturday and Sunday per passenger request.  Adjusted weekday outbound trips 2:25 p.m. to 2:20 p.m. and 4:25 p.m. trip to 4:15 p.m. and weekday peak period interval is 15 minutes.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>26</id>
+    <routeNum>26</routeNum>
+    <category>Metro Bus</category>
+    <name>Delavan</name>
+    <status>Active</status>
+    <copy>Added Sunday outbound 7:08 a.m. trip and trips adjusted.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>27</id>
+    <routeNum>27</routeNum>
+    <category>Metro Bus</category>
+    <name>Erie County Home</name>
+    <status>Active</status>
+    <copy>Added one inbound weekday trip at 7:30 a.m. and one outbound trip at 1:40 p.m. to serve Trocaire per passenger request.  Adjusted outbound time points.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>29</id>
+    <routeNum>29</routeNum>
+    <category>Metro Bus</category>
+    <name>Wohlers</name>
+    <status>Active</status>
+    <copy>Eliminated 3 inbound and 2 outbound trips due to low ridership.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>32</id>
+    <routeNum>32</routeNum>
+    <category>Metro Bus</category>
+    <name>Amherst</name>
+    <status>Active</status>
+    <copy>Added 9:09 p.m. Saturday inbound trip to relieve overcrowding.  Eliminated 10 weekday trips and created 20 minute interval during peak.  The Sunday 9:50 p.m. outbound trip was eliminated due to lower ridership.  </copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>34</id>
+    <routeNum>34</routeNum>
+    <category>Metro Bus</category>
+    <name>Niagara Falls Blvd</name>
+    <status>Active</status>
+    <copy>Increased intervals during peak to 20 minutes, eliminated 12 trips due to low ridership.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>35</id>
+    <routeNum>35</routeNum>
+    <category>Metro Bus</category>
+    <name>Sheridan</name>
+    <status>Active</status>
+    <copy>Many weekday, Saturday, and Sunday trip times adjusted to improve connections with Route 5 Niagara Kenmore.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>36</id>
+    <routeNum>36</routeNum>
+   <category>Metro Bus</category>
+    <name>Hamburg</name>
+    <status>Active</status>
+    <copy>Added five weekday trips: 4:35 p.m. outbound, 8:50 p.m. inbound, 9:40 p.m. inbound, 11:00 p.m. inbound, and 9:55 p.m. outbound. Added 7 Saturday trips to create a 90 minute interval.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>40</id>
+    <routeNum>40</routeNum>
+    <category>Metro Bus</category>
+    <name>Grand Island</name>
+    <status>Active</status>
+    <copy><![CDATA[ <center><div class="colors" style="background-color:#FF0000;" ><a href="http://routes.nfta.com/ttpdf/40c.pdf" target="_new">Route 40/210 Supplement</a></div><a href="/metro/colorcode.asp">click here for color code information</a><br /><br /> Starting Dec. 26 -  No change in routing. This service will continue to operate between Portage Road Transit Center and downtown Buffalo.</center> ]]></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>42</id>
+    <routeNum>42</routeNum>
+    <category>Metro Bus</category>
+    <name>Lackawanna</name>
+    <status>Active</status>
+    <copy>Revised inbound and outbound running times for weekday trips.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>44</id>
+    <routeNum>44</routeNum>
+    <category>Metro Bus</category>
+    <name>Lockport</name>
+    <status>Active</status>
+    <copy>Adjusted three weekday trips to improve rail connections: outbound 5:34 a.m. to 5:29 a.m., inbound 6:24 a.m. to 6:19 a.m., outbound 7:22a.m. to 7:25 a.m. Eliminated 6 trips.  </copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>46</id>
+    <routeNum>46</routeNum>
+    <category>Metro Bus</category>
+    <name>Lancaster</name>
+    <status>Active</status>
+    <copy> Adjustment made to accommodate Harlequin per passenger request.  7:30 a.m. changed to 7:15 a.m. for HSBC per passenger request.  Adjusted 11:13 p.m. trip to 11:03 p.m. for connection to Route 6 at Galleria Mall per passenger request. </copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>47</id>
+    <routeNum>47</routeNum>
+    <category>Metro Bus</category>
+    <name>Youngs Road</name>
+    <status>Active</status>
+    <copy>Eliminated 6 weekday trips creating 60 minute intervals at peak.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>48</id>
+    <routeNum>48</routeNum>
+    <category>Metro Bus</category>
+    <name>Williamsville</name>
+    <status>Active</status>
+    <copy>Added weekday inbound 11:21 p.m. trip per passenger request. Eliminated three weekday inbound trips: 8:19 a.m., 5:17 a.m., 5:29 a.m., two Sunday trips: 9:20 p.m. inbound and 8:45 p.m. outbound.  Sunday 6:05 p.m. moved to 6:15 p.m. for connection. </copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>49</id>
+    <routeNum>49</routeNum>
+    <category>Metro Bus</category>
+    <name>Millard Suburban</name>
+    <status>Active</status>
+    <copy>Eliminated four weekday trips creating a 2 hour interval. </copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+
+  <route>
+    <id>50</id>
+    <routeNum>50</routeNum>
+    <category>Metro Bus</category>
+    <name>Main-Niagara</name>
+    <status>Active</status>
+    <copy><![CDATA[ <center><div class="colors" style="background-color:#0099FF;" ><a href="http://routes.nfta.com/ttpdf/50c.pdf" target="_new">Route 50 Supplement</a></div><a href="/metro/colorcode.asp">click here for color code information</a></center> ]]>Modified four Sunday trips: inbound 5:27 p.m. trip changed to 5:15 p.m., outbound 6:26 p.m. trip changed to 6:15 p.m., inbound 6:25 p.m. trip changed to 6:07 p.m., outbound 7:25 p.m. trip changed to 7:08 p.m. for better connections per passenger request.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>52</id>
+    <routeNum>52</routeNum>
+    <category>Metro Bus</category>
+    <name>Hyde Park</name>
+    <status>Active</status>
+    <copy><![CDATA[ <center><div class="colors" style="background-color:#FFFF33;" ><a href="http://routes.nfta.com/ttpdf/52c.pdf" target="_new">Route 52 Supplement</a></div><a href="/metro/colorcode.asp">click here for color code information</a></center> ]]></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>54</id>
+    <routeNum>54</routeNum>
+    <category>Metro Bus</category>
+    <name>Military</name>
+    <status>Active</status>
+    <copy>Eliminated eight weekday trips and Sunday inbound 4:42 p.m. due to low ridership.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>55</id>
+    <routeNum>55</routeNum>
+    <category>Metro Bus</category>
+    <name>Pine Avenue</name>
+    <status>Active</status>
+    <copy><![CDATA[ <center><div class="colors" style="background-color:#339900;" ><a href="http://routes.nfta.com/ttpdf/55c.pdf" target="_new">Route 55/55T Supplement</a></div><a href="/metro/colorcode.asp">click here for color code information</a><br /><br />Starting Dec. 26 -  All trips serve the new Niagara Falls Airport. Only 55A and B trips now serve The Summit. Transfers should be made at the Airport Transit Center.</center> ]]>Modified weekday inbound 9:40 p.m. trip to 10:20 p.m. provides and inbound return trip for the outbound trip ending at Niagara Falls International Airport at 10:14 p.m. Outbound 5:12 p.m. trip changed to 4:58 p.m. for better connections.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>55T</id>
+    <routeNum>55T</routeNum>
+    <category>Metro Bus</category>
+    <name>Trolley</name>
+    <status>Active</status>
+    <copy>
+      <![CDATA[ 
+		<center><div class="colors" style="background-color:#339900;" ><a href="http://routes.nfta.com/ttpdf/55c.pdf" target="_new">Route 55/55T Supplement</a></div><a href="/metro/colorcode.asp">click here for color code information</a></center><br /><br clear="all"><p align="center">For Niagara Falls information visit <a href="http://www.niagara-usa.com" target="_falls">www.niagara-usa.com</a><br />
+		<a href="http://www.niagara-usa.com" target="_falls"><img src="http://www.nfta.com/img/logos/others/niagarausa.gif" width="181" height="104" alt="Niagara USA" /></a></p>
+		<p><em>(these are not the trolleys that run through Niagara Falls State Park)</em></p>
+		<p>Trolley Route 55T serves Niagara Falls Blvd., Pine Ave. and downtown Niagara Falls USA. Guests of participating hotels ride free all day, including transfers to Metro Bus or Metro Rail. Trolley Day Passes are available at participating hotel registration desks. Day Passes are valid for use on the date punched by the Metro operator. (Other valid Metro passes can also be used on the 55T Trolley.) Passengers without a Trolley Day Pass from a hotel may use the service for $1.75 per ride, which can be paid upon boarding. Children ages 5-11, senior citizens (age 65+), disabled and Medicare card holders with valid I.D. pay 75 cents. Exact change is required on trolleys and buses. </p>
+		<p>Route 55T service is offered everyday from June-September. Service will be offered weekends only May 14-31 and October 1-11 (including Memorial Day and Columbus Day). Trolleys operate from 9 a.m. until Midnight. Stops are indicated with Route 55T signs as shown on the map.</p>
+		<p>
+			<ul>
+				<li>Trolley Day Passes are also valid on regular Metro Route 55 buses which run between downtown Niagara Falls and hotels/motels along Pine Ave and Niagara Falls Blvd.</li>
+				<li>Trolley stops closest to the Falls and State Reservation are on Rainbow Blvd. at Michael O’Laughlin Dr. and near Old Falls St. </li>
+				<li>For return trips to the Niagara Falls Blvd. hotels/motels board 55T trolleys at any of the downtown stops. Returning trolleys will have a ‘Niagara Falls Airport’ destination sign in the front window. Ask the trolley operator if you are not sure </li>
+				<li>A regular Metro bus maybe substituted for a trolley bus on occasion. Look at the route sign on the front of the bus. If it reads 55T PINE AVE and 55T TROLLEY, it is a bus running a trolley bus route. </li>
+			</ul>
+		</p>
+	]]>
+    </copy>
+    <spanish>False</spanish>
+    <english>False</english>
+    <pages>1</pages>
+    <map>False</map>
+    <Note><![CDATA[  Seasonal Route<br />May to October ]]></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>False</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>False</nextMap>
+    <nextNote><![CDATA[  Seasonal Route<br />May to October ]]></nextNote>
+  </route>
+
+  <route>
+    <id>57</id>
+    <routeNum>57</routeNum>
+    <category>Metro Bus</category>
+    <name>Tonawandas</name>
+    <status>Active</status>
+    <copy>Eliminated 6 trips, interval adjusted from 60 to 90 minutes.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <!-- =========================== EXPRESS ==========================  -->
+  <route>
+    <id>60</id>
+    <routeNum>60</routeNum>
+    <category>Express</category>
+    <name>Niagara Falls</name>
+    <status>Active</status>
+    <copy>Starting Oct. 31 This route will run between the Portage Road Transit Center and downtown Buffalo via the Niagara Falls Transit Center, The I-190 and Grand Island Boulevard.  The 60B variation using Hyde Park Blvd and Buffalo Avenue is discontinued.  There are two trips during peak hours in the morning and three trips in the late afternoon.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>61</id>
+    <routeNum>61</routeNum>
+    <category>Express</category>
+    <name>North Tonawanda</name>
+    <status>Active</status>
+    <copy>New time-points added: inbound Delaware and Delton, outbound Delaware and Canton.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>62</id>
+    <routeNum>62</routeNum>
+    <category>Express</category>
+    <name>Parker</name>
+    <status>Active</status>
+    <copy>Starting Oct. 31 No change, except this route will run only one trip in the morning and one in the late afternoon.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>63</id>
+    <routeNum>63</routeNum>
+    <category>Express</category>
+    <name>Riverside</name>
+    <status>Active</status>
+    <copy>Adjusted 7:20 a.m. inbound to 7:15 a.m. for earlier arrival downtown.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>64</id>
+    <routeNum>64</routeNum>
+    <category>Express</category>
+    <name>Lockport</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>65</id>
+    <routeNum>65</routeNum>
+    <category>Express</category>
+    <name>Amherst</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>66</id>
+    <routeNum>66</routeNum>
+    <category>Express</category>
+    <name>Williamsville</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>67</id>
+    <routeNum>67</routeNum>
+    <category>Express</category>
+    <name>Cleveland Hill</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>68</id>
+    <routeNum>68</routeNum>
+    <category>Express</category>
+    <name>George Urban</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>69</id>
+    <routeNum>69</routeNum>
+    <category>Express</category>
+    <name>Alden</name>
+    <status>Active</status>
+    <copy>Adjusted 5:09 p.m. outbound trip to 5:07 p.m.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>70</id>
+    <routeNum>70</routeNum>
+    <category>Express</category>
+    <name>East Aurora</name>
+    <status>Active</status>
+    <copy>Adjusted 7:04 a.m. inbound to 7:02 a.m. for earlier arrival downtown and adjusted running times.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>72</id>
+    <routeNum>72</routeNum>
+    <category>Express</category>
+    <name>Orchard Park</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>74</id>
+    <routeNum>74</routeNum>
+    <category>Express</category>
+    <name>Hamburg</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>75</id>
+    <routeNum>75</routeNum>
+    <category>Express</category>
+    <name>West Seneca</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>76</id>
+    <routeNum>76</routeNum>
+    <category>Express</category>
+    <name>Lotus Bay</name>
+    <status>Active</status>
+    <copy>Adjusted running times on 12:50 p.m. trip.</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>79</id>
+    <routeNum>79</routeNum>
+    <category>Express</category>
+    <name>Tonawanda</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>81</id>
+    <routeNum>81</routeNum>
+    <category>Express</category>
+    <name>Eastside</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+
+  <!-- =========================== Game Day Express ==========================  -->
+
+
+  <route>
+    <id>90</id>
+    <routeNum>90</routeNum>
+    <category>Game Day Express</category>
+    <name><![CDATA[ Portage Road<br />Transportation Center ]]></name>
+    <status>Active</status>
+    <copy>
+      <![CDATA[ 
+		<p><strong>Get me to the game - Buffalo Bills </strong><br />
+		  Fast, comfortable bus service direct to Ralph Wilson Stadium, for every Buffalo 
+		  Bills home game.</p>
+		<p align="left"><strong>Service leaves two hours before game time<br />
+		</strong></p>
+		Route 90 - Portage Road Transportation Center, Portage and Chilton.
+		<p align="left"><br />
+		  <strong>Fares</strong><br />
+		  Fare for Game Day Express is the same as general Metro service. A Metro Day Pass, Weekend Pass, or College University Pass is valid. Cash fares, are as follows (one way and two way):</p>
+		<table width="50%"  border="1">
+		  <tr>
+			<td>&nbsp;</td>
+			<td><div align="center">One way</div></td>
+			<td><div align="center">Round trip</div></td>
+		  </tr>
+		  <tr>
+			<td>Route 90</td>
+			<td><div align="center">$1.75</div></td>
+			<td><div align="center">$3.50</div></td>
+		  </tr>
+		</table>
+	 ]]>
+    </copy>
+    <spanish>False</spanish>
+    <english>False</english>
+    <pages>2</pages>
+    <map>False</map>
+    <Note><![CDATA[  See blue info "i" icon for details  ]]></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>False</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>False</nextMap>
+    <nextNote><![CDATA[  See blue info "i" icon for details  ]]></nextNote>
+  </route>
+  <route>
+    <id>91</id>
+    <routeNum>91</routeNum>
+    <category>Game Day Express</category>
+    <name><![CDATA[  City of Tonawanda<br />Transit Center ]]></name>
+    <status>In-Active</status>
+    <copy>
+      <![CDATA[ 
+		<p><strong>Get me to the game - Buffalo Bills </strong><br />
+		  Fast, comfortable bus service direct to Ralph Wilson Stadium, for every Buffalo 
+		  Bills home game.</p>
+		<p align="left"><strong>Service leaves two hours before game time<br />
+		</strong></p>
+		Route 91 - City of Tonawanda Transit Center, Main and Niagara Street.
+		<p align="left"><br />
+		  <strong>Fares</strong><br />
+		  Fare for Game Day Express is the same as general Metro service. A Metro Day Pass, Weekend Pass, or College University Pass is valid. Cash fares, are as follows (one way and two way):</p>
+		<table width="50%"  border="1">
+		  <tr>
+			<td>&nbsp;</td>
+			<td><div align="center">One way</div></td>
+			<td><div align="center">Round trip</div></td>
+		  </tr>
+		  <tr>
+			<td>Route 91</td>
+			<td><div align="center">$1.75</div></td>
+			<td><div align="center">$3.50</div></td>
+		  </tr>
+		</table>
+	 ]]>
+    </copy>
+    <spanish>False</spanish>
+    <english>False</english>
+    <pages>2</pages>
+    <map>False</map>
+    <Note></Note>
+    <nextStatus>InActive</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>False</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>False</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>92</id>
+    <routeNum>92</routeNum>
+    <category>Game Day Express</category>
+    <name><![CDATA[ Metro Rail<br />University Station  ]]></name>
+    <status>Active</status>
+    <copy>
+      <![CDATA[ 
+		<p><strong>Get me to the game - Buffalo Bills </strong><br />
+		  Fast, comfortable bus service direct to Ralph Wilson Stadium, for every Buffalo 
+		  Bills home game.</p>
+		<p align="left"><strong>Service leaves two hours before game time<br />
+		</strong></p>
+		Route 92 - Metro Rail University Station, UB South Campus.
+		<p align="left"><br />
+		  <strong>Fares</strong><br />
+		  Fare for Game Day Express is the same as general Metro service. A Metro Day Pass, Weekend Pass, or College University Pass is valid. Cash fares, are as follows (one way and two way):</p>
+		<table width="50%"  border="1">
+		  <tr>
+			<td>&nbsp;</td>
+			<td><div align="center">One way</div></td>
+			<td><div align="center">Round trip</div></td>
+		  </tr>
+		  <tr>
+			<td>Route 92</td>
+			<td><div align="center">$1.75</div></td>
+			<td><div align="center">$3.50</div></td>
+		  </tr>
+		</table>
+	 ]]>
+    </copy>
+    <spanish>False</spanish>
+    <english>False</english>
+    <pages>2</pages>
+    <map>False</map>
+    <Note><![CDATA[  See blue info "i" icon for details  ]]></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>False</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>False</nextMap>
+    <nextNote><![CDATA[  See blue info "i" icon for details  ]]></nextNote>
+  </route>
+  <route>
+    <id>93</id>
+    <routeNum>93</routeNum>
+    <category>Game Day Express</category>
+    <name><![CDATA[ Metropolitan<br />Transportation Center ]]></name>
+    <status>Active</status>
+    <copy>
+      <![CDATA[ 
+		<p><strong>Get me to the game - Buffalo Bills </strong><br />
+		  Fast, comfortable bus service direct to Ralph Wilson Stadium, for every Buffalo 
+		  Bills home game.</p>
+		<p align="left"><strong>Service leaves two hours before game time<br />
+		</strong></p>
+		Route 93 - Metropolitan Transportation Center, North Division Street and Ellicott Street, Buffalo.
+		<p align="left"><br />
+		  <strong>Fares</strong><br />
+		  Fare for Game Day Express is the same as general Metro service. A Metro Day Pass, Weekend Pass, or College University Pass is valid. Cash fares, are as follows (one way and two way):</p>
+		<table width="50%"  border="1">
+		  <tr>
+			<td>&nbsp;</td>
+			<td><div align="center">One way</div></td>
+			<td><div align="center">Round trip</div></td>
+		  </tr>
+		  <tr>
+			<td>Route 93</td>
+			<td><div align="center">$1.75</div></td>
+			<td><div align="center">$3.50</div></td>
+		  </tr>
+		</table>
+	 ]]>
+    </copy>
+    <spanish>False</spanish>
+    <english>False</english>
+    <pages>2</pages>
+    <map>False</map>
+    <Note><![CDATA[  See blue info "i" icon for details  ]]></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>False</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>False</nextMap>
+    <nextNote><![CDATA[  See blue info "i" icon for details  ]]></nextNote>
+  </route>
+  <route>
+    <id>94</id>
+    <routeNum>94</routeNum>
+    <category>Game Day Express</category>
+    <name><![CDATA[ Niagara Falls<br />Transportation Center ]]></name>
+    <status>Active</status>
+    <copy>
+      <![CDATA[ 
+		<p><strong>Get me to the game - Buffalo Bills </strong><br />
+		  Fast, comfortable bus service direct to Ralph Wilson Stadium, for every Buffalo 
+		  Bills home game.</p>
+		<p align="left"><strong>Service leaves two hours before game time<br />
+		</strong></p>
+		Route 94 - Niagara Falls Transportation Center, Factory Outlet Blvd. 
+		<p align="left"><br />
+		  <strong>Fares</strong><br />
+		  Fare for Game Day Express is the same as general Metro service. A Metro Day Pass, Weekend Pass, or College University Pass is valid. Cash fares, are as follows (one way and two way):</p>
+		<table width="50%"  border="1">
+		  <tr>
+			<td>&nbsp;</td>
+			<td><div align="center">One way</div></td>
+			<td><div align="center">Round trip</div></td>
+		  </tr>
+		  <tr>
+			<td>Route 94</td>
+			<td><div align="center">$1.75</div></td>
+			<td><div align="center">$3.50</div></td>
+		  </tr>
+		</table>
+	 ]]>
+    </copy>
+    <spanish>False</spanish>
+    <english>False</english>
+    <pages>2</pages>
+    <map>False</map>
+    <Note><![CDATA[  See blue info "i" icon for details  ]]></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>False</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>False</nextMap>
+    <nextNote><![CDATA[  See blue info "i" icon for details  ]]></nextNote>
+  </route>
+  <route>
+    <id>95</id>
+    <routeNum>95</routeNum>
+    <category>Game Day Express</category>
+    <name><![CDATA[ Thruway Mall<br />Transit Center ]]></name>
+    <status>In-Active</status>
+    <copy>
+      <![CDATA[ 
+		<p><strong>Get me to the game - Buffalo Bills </strong><br />
+		  Fast, comfortable bus service direct to Ralph Wilson Stadium, for every Buffalo 
+		  Bills home game.</p>
+		<p align="left"><strong>Service leaves two hours before game time<br />
+		</strong></p>
+		Route 96 - Thruway Mall Transit Center, Cheektowaga.
+		<p align="left"><br />
+		  <strong>Fares</strong><br />
+		  Fare for Game Day Express is the same as general Metro service. A Metro Day Pass, Weekend Pass, or College University Pass is valid. Cash fares, are as follows (one way and two way):</p>
+		<table width="50%"  border="1">
+		  <tr>
+			<td>&nbsp;</td>
+			<td><div align="center">One way</div></td>
+			<td><div align="center">Round trip</div></td>
+		  </tr>
+		  <tr>
+			<td>Route 95</td>
+			<td><div align="center">$1.75</div></td>
+			<td><div align="center">$3.50</div></td>
+		  </tr>
+		</table>
+	 ]]>
+    </copy>
+    <spanish>False</spanish>
+    <english>False</english>
+    <pages>2</pages>
+    <map>False</map>
+    <Note></Note>
+    <nextStatus>InActive</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>False</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>False</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>96</id>
+    <routeNum>96</routeNum>
+    <category>Game Day Express</category>
+    <name>Clarence Mall</name>
+    <status>Active</status>
+    <copy>
+      <![CDATA[ 
+		<p><strong>Get me to the game - Buffalo Bills </strong><br />
+		  Fast, comfortable bus service direct to Ralph Wilson Stadium, for every Buffalo 
+		  Bills home game.</p>
+		<p align="left"><strong>Service leaves two hours before game time<br />
+		</strong></p>
+		Route 96 - Clarence Mall, at the northeast corner of Main Street and Transit Road.
+		<p align="left"><br />
+		  <strong>Fares</strong><br />
+		  Fare for Game Day Express is the same as general Metro service. A Metro Day Pass, Weekend Pass, or College University Pass is valid. Cash fares, are as follows (one way and two way):</p>
+		<table width="50%"  border="1">
+		  <tr>
+			<td>&nbsp;</td>
+			<td><div align="center">One way</div></td>
+			<td><div align="center">Round trip</div></td>
+		  </tr>
+		  <tr>
+			<td>Route 96</td>
+			<td><div align="center">$1.75</div></td>
+			<td><div align="center">$3.50</div></td>
+		  </tr>
+		</table>
+	 ]]>
+    </copy>
+    <spanish>False</spanish>
+    <english>False</english>
+    <pages>2</pages>
+    <map>False</map>
+    <Note><![CDATA[  See blue info "i" icon for details  ]]></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>False</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>False</nextMap>
+    <nextNote><![CDATA[  See blue info "i" icon for details  ]]></nextNote>
+  </route>
+
+
+  <!-- =========================== SPECIAL ==========================  -->
+  <route>
+    <id>97</id>
+    <routeNum>97</routeNum>
+    <category>Special</category>
+    <name>Darien Lake</name>
+    <status>Active</status>
+    <copy>
+      <![CDATA[ 
+		New schdule starting June 22 - Depart Ellicott Loop at 9:51 a.m.<br />
+		Depart Darien Lake at 7:45 p.m. 
+	 ]]>
+    </copy>
+    <spanish>False</spanish>
+    <english>False</english>
+    <pages>1</pages>
+    <map>False</map>
+    <Note><![CDATA[  
+			Seasonal Route<br />Starting in June 
+		]]></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote>
+      <![CDATA[  
+			Seasonal Route<br />Starting in June 
+		]]>
+    </nextNote>
+  </route>
+
+  <!-- =========================== SCHOOL DAYS ONLY ==========================  -->
+  <route>
+    <id>101</id>
+    <routeNum>101</routeNum>
+    <category>School Days Only</category>
+    <name>North-South</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>102</id>
+    <routeNum>102</routeNum>
+    <category>School Days Only</category>
+    <name>Bailey</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>103</id>
+    <routeNum>103</routeNum>
+    <category>School Days Only</category>
+
+    <name>East-Suburban</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>104</id>
+    <routeNum>104</routeNum>
+    <category>School Days Only</category>
+    <name>South-Central</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>106</id>
+    <routeNum>106</routeNum>
+    <category>School Days Only</category>
+    <name>South-Suburban</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>110</id>
+    <routeNum>110</routeNum>
+    <category>School Days Only</category>
+    <name>West-North</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>111</id>
+    <routeNum>111</routeNum>
+    <category>School Days Only</category>
+    <name>South-Michigan</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>112</id>
+    <routeNum>112</routeNum>
+    <category>School Days Only</category>
+    <name>Grant-North</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>113</id>
+    <routeNum>113</routeNum>
+    <category>School Days Only</category>
+    <name>South-Clinton</name>
+    <status>InActive</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Inactive</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>114</id>
+    <routeNum>114</routeNum>
+    <category>School Days Only</category>
+    <name>North-Central</name>
+    <status>InActive</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Inactive</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>115</id>
+    <routeNum>115</routeNum>
+    <category>School Days Only</category>
+    <name>South-Sycamore</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>118</id>
+    <routeNum>118</routeNum>
+    <category>School Days Only</category>
+    <name>Ogden</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <!-- =========================== METRO LINK ==========================  -->
+  <route>
+    <id>200</id>
+    <routeNum>200</routeNum>
+    <category>Metrolink</category>
+    <name>North Tonawanda-Wheatfield</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>201</id>
+    <routeNum>201</routeNum>
+    <category>Metrolink</category>
+    <name>Lockport</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+  <route>
+    <id>204</id>
+    <routeNum>204</routeNum>
+    <category>Metrolink</category>
+    <name>Airport-Downtown Express</name>
+    <status>Active</status>
+    <copy>Adjusted outbound 7:09 a.m. to 7:18 a.m. </copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>206</id>
+    <routeNum>206</routeNum>
+    <category>Metrolink</category>
+    <name>Buffalo State Circulator</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>207</id>
+    <routeNum>207</routeNum>
+    <category>Metrolink</category>
+    <name>Elmwood Circulator</name>
+    <status>InActive</status>
+    <copy>The Elmwood Circulator was discontinued in December</copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>InActive</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>208</id>
+    <routeNum>208</routeNum>
+    <category>Metrolink</category>
+    <name>Grant Circulator</name>
+    <status>InActive</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>2</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Inactive</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>2</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>209</id>
+    <routeNum>209</routeNum>
+    <category>Metrolink</category>
+    <name>Medaille Circulator</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>210</id>
+    <routeNum>210</routeNum>
+    <category>Metrolink</category>
+    <name>Airport Niagara Falls Express</name>
+    <status>Active</status>
+    <copy><![CDATA[ <center><div class="colors" style="background-color:#FF0000;" ><a href="http://www.niagarafrontiertransportationauthority.com/img/schedules/40c.pdf" target="_new">Route 40/210 Supplement</a></div><a href="/metro/colorcode.asp">click here for color code information</a></center> ]]></copy>
+    <spanish>False</spanish>
+    <english>False</english>
+    <pages>1</pages>
+    <map>False</map>
+    <Note><![CDATA[ Seasonal Route<br />May to October ]]></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>False</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote><![CDATA[ Seasonal Route<br />May to October ]]></nextNote>
+  </route>
+  <route>
+    <id>211</id>
+    <routeNum>211</routeNum>
+    <category>Metrolink</category>
+    <name>ECC/Transit Rd. Circulator</name>
+    <status>InActive</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Inactive</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+  <route>
+    <id>216</id>
+    <routeNum>216</routeNum>
+    <category>Metrolink</category>
+    <name>Gowanda-McKinley Mall</name>
+    <status>Active</status>
+    <copy></copy>
+    <spanish>False</spanish>
+    <english>True</english>
+    <pages>1</pages>
+    <map>True</map>
+    <Note></Note>
+    <nextStatus>Active</nextStatus>
+    <nextSpanish>False</nextSpanish>
+    <nextEnglish>True</nextEnglish>
+    <nextPages>1</nextPages>
+    <nextMap>True</nextMap>
+    <nextNote></nextNote>
+  </route>
+
+</data>

@@ -1,0 +1,469 @@
+
+/*  Color Scheme
+Dark Blue  	004990
+Light Blue  bcd6f0
+Grey		999b9e
+Light Grey	c5c6c8
+Red			bf2f37
+blue            24496d
+bright blue     3f6ea6
+light grey      999b9e
+Mid Grey       4a4949 
+Dark Grey       302f2f
+Yellowish       edc93e  
+*/
+
+
+body {	
+	margin:0;
+	padding:0;
+	font-size:small;
+	font-family:Trebuchet, Arial, sans-serif;
+	color:#302f2f;
+	background:none;
+	width:100% ;
+	text-align:center;
+	font-size:62.5%; /* 16px × 62.5% = 10px */
+	font-size:1em;
+	line-height:1.7em;
+}
+
+
+/* ===================  Top Sections ==================== */
+#All {
+    width:100%;
+}
+
+
+#Top { 
+    width:100%;
+    text-align:left;
+}
+
+#Container {
+	float:left;
+	width:100%;
+} 
+
+#Left {
+  width:25%;
+  float:left;
+} 
+
+#Right {              
+    width:75%;
+    float:left;
+}
+
+
+/*============== General ======================== */	
+img {border:none;}
+p {padding:1em 0 1em 0; margin:0;}
+p.padded {padding:1em 20px 1em 20px;}
+.txtCenter {text-align:center;}
+.txtSmall {font-size:.9em;}
+
+    .noPadding {padding:0;}
+    
+.offscreen {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+/* =============== Headings  ======================   */
+
+h1 {
+font-weight:900;
+font-size:1.0em;
+background: url(/img/h1.png) no-repeat;
+padding:0 0 0 70px;
+line-height:18px;
+margin:1.2em 0 0 0;
+}
+
+
+
+h2 { margin:0; padding:0; font-size:1.2em; color:#565656; }
+h3 { margin:0; padding:0; font-size:1.2em; color:#999; }
+
+h4 {
+font-weight:900;
+font-size:1em;
+color:#2b357d;
+padding:0;
+margin:0;
+}
+
+h5 {
+font-weight:900;
+font-size:1.1em;
+}
+
+
+/*  ======== LISTS =============== */
+
+	
+ul.square {
+font-weight:100;
+font-size:.8em;
+margin:20px 0 0 0;
+border:0;
+padding:0;
+list-style-image:url(http://www.nfta.com/img/li_bullet.gif);
+}
+
+
+ul.square li {
+padding-bottom:.2em;
+margin-left:40px;
+}
+
+.li_acrobat {
+list-style-image:url(/img/icon_acrobat_small.gif);
+position:relative;
+left:50px;
+}
+
+.li_excel {
+list-style-image:url(../img/icon_excel.gif);
+position:relative;
+left:50px;
+}
+
+.li_powerpoint {
+list-style-image:url(../img/icon_powerpoint.gif);
+position:relative;
+left:50px;
+}
+
+.li_word {
+list-style-image:url(../img/icon_word.gif);
+position:relative;
+left:50px;
+}
+
+.li_zip {
+list-style-image:url(../img/icon_zip.gif);
+position:relative;
+left:50px;
+}
+
+.li_quicktime {
+list-style-image:url(../img/icon_quicktime.gif);
+position:relative;
+left:50px;
+}
+
+.li_wmv {
+list-style-image:url(../img/icon_wmv.gif);
+position:relative;
+left:50px;
+}
+
+ul.triangle {
+list-style-image:url(../img/li-arrow.png);
+
+}
+
+ul.triangle li {
+
+padding:10px 0;
+}
+
+/* ==============LINKS  ================*/
+
+/* a, a:link, a:visited, a:hover, a:active {
+color:#2b357d;
+
+background:transparent;
+text-decoration:underline;
+display:inline;
+}
+
+a:hover { color:#71706f; }
+*/
+
+/* ==============OTHER  ================*/
+
+ #TransitToolsSidebar
+  {
+    margin:0px 4px;
+    padding:10px 10px 10px 10px;
+    
+  
+    }
+ #TransitToolsSidebar img {padding:3px 0;}
+ 
+  .tTool {padding:5px 0;}
+ 
+ 
+ .newsheader {
+border: 0;
+border-bottom: 1px solid #999;
+color: #003366;
+padding: 12px 0 0 0;
+margin-bottom: 0;
+}
+
+.BlueBar 
+{
+	background:#004990; padding:.5em; font-size:1.6em; text-align:center; color:#fff; margin-top:12px;
+	 -moz-border-radius-topleft: 10px;
+        border-top-left-radius: 10px;
+         -moz-border-radius-topright: 10px;
+        border-top-right-radius: 10px;
+}
+
+
+
+/*  ===========================    Route Status Styles for Default and schedules and routes pages ===========  */
+
+#scheduleKey P {padding:5px; margin:0;}
+
+p.indent {text-indent:20px;}
+p.padding-top {position:relative; top:100px;}
+
+
+
+#routeStatusBox, #scheduleKey
+      {
+        background:#fff;
+        margin:0px 4px 0 10px;
+        padding:10px 10px 10px 10px;
+        border:2px solid green;
+    	border-radius:8px; /*CSS3 border radius*/
+        -moz-border-radius:8px;
+        -webkit-border-radius:8px;	
+        box-shadow:0 0 15px #959595; /*CSS3 shadow*/
+        -moz-box-shadow:0 0 15px #959595;
+        -webkit-box-shadow:0 0 15px #959595;
+      
+        }
+        
+#routeStatus {
+	
+}      
+
+      /*
+      red       b50000   7f0000   
+      yellow    f9ff00   b1b500
+      green     00a604   dde200   
+      
+      */
+      
+      
+      .header0, .header1, .header2 {
+      	border:0px solid #00;
+	    border-top-left-radius:5px; 
+        -moz-border-radius-topleft:5px;
+        -webkit-border-radius-topleft:5px;
+        border-top-right-radius:5px; 
+        -moz-border-radius-topright:5px;
+        -webkit-border-radius-topright:5px;
+        
+
+      }
+      
+      #routeStatus a, #routeStatus a:hover, #scheduleKey a, #scheduleKey a:hover, #scheduleTable a, #scheduleTable a:hover 
+      {
+      	    color:#fff;
+      	    background:#006b03;
+      	    font-size:.9em;
+      	     border:0px solid #006b03;
+    	    border-radius:4px; /*CSS3 border radius*/
+            -moz-border-radius:4px;
+            -webkit-border-radius:4px;	
+            box-shadow:0 0 15px #959595; /*CSS3 shadow*/
+            -moz-box-shadow:0 0 15px #959595;
+            -webkit-box-shadow:0 0 15px #959595;
+            text-decoration:none;
+            padding:4px 6px;
+            margin:3px;
+            
+      }
+      
+      #routeStatus a:hover, #scheduleKey a:hover, #scheduleTable a:hover
+      {
+      	color:#000;
+      	background:#00a604;
+      }
+      
+      .header2, #routeStatus a.color2, #routeStatus a.color2:hover, #scheduleKey a.color2, #scheduleKey a.color2:hover, #scheduleTable a.color2 /* Red */
+      {
+      	    color:#fff;
+      	    background:#b50000;  
+      }
+      
+ 
+      #routeStatus a.color2:hover /* Red */
+      {
+      	color:#fff;
+      	background:#7f0000;
+      }
+      
+      .header1, #routeStatus a.color1, #routeStatus a.color1:hover, #scheduleKey a.color1, #scheduleKey a.color1:hover, #scheduleTable a.color1, #scheduleTable a.color1:hover /* Yellow */
+      {
+      	    color:#000;
+      	    background:#f9ff00; 
+      }
+      
+      #routeStatus a.color1:hover  /* Yellow */
+      {
+      	color:#000;
+      	background:#dde200;
+      }
+      
+      .header0, #routeStatus a.color0, #routeStatus a.color0:hover, #scheduleKey a.color0, #scheduleKey a.color:hover, #scheduleTable a.color0, #scheduleTable a.color0:hover /* Green */
+      {
+      	    color:#fff;
+      	    background:#006b03; 
+      }
+      
+      #routeStatus a.color0:hover /* Green */
+      {
+      	color:#000;
+      	background:#00a604;
+      }
+      
+
+      
+      
+      #scheduleTable a.details, #scheduleTable a.details:hover /* blue */
+      {
+      	    color:#fff;
+      	    background:#007cc2; 
+      }
+      
+     #scheduleTable a.details:hover /* blue */
+      {
+      	color:#fff;
+      	background:#00a3ff;
+      }
+      
+   
+    .close {color:#fff;}
+    
+
+    
+    .posted {
+    	font-size:.9em; 
+    	text-align:right;
+    	font-weight:900;
+    }
+    
+    #routeBtns, #routeBtns li {
+        display:inline;
+        list-style:none; 	
+        margin:0;
+        padding:0;
+        line-height:28px;
+    }
+    
+
+
+	
+	#quickSelect 
+    {
+        display:none;
+    }
+    
+    
+    #routeAlert 
+    {
+        background:#c20d00;
+        color:#fff;
+        padding:10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+
+    }
+    
+    .theAlertDetails  {
+    	background:#fff;
+    	text-align:left;
+        border:2px solid #ccc;
+        margin:10px 0;
+        padding:5px;
+        border-radius:4px; /*CSS3 border radius*/
+        -moz-border-radius:4px;
+        -webkit-border-radius:4px;	   
+        box-shadow:0 0 15px #959595; /*CSS3 shadow*/
+        -moz-box-shadow:0 0 15px #959595;
+        -webkit-box-shadow:0 0 15px #959595;          
+                      
+     }
+    
+    .theAlertDetails h4 {font-size:.9em; color:#999;}
+    
+    .color2 { border-color:#b50000; } /* Red */
+    .color1 { border-color:#f9ff00; } /* Yellow */
+    .color0 { border-color:#006b03; } /* Green */
+    
+    .AlertTitle {
+    	float:left;
+    	width:50%;
+    	font-weight:900; 
+    	font-size:1.2em;
+    }
+    
+    .AlertStamp {
+    	float:left;
+    	width:50%;
+    	text-align:right;
+    	font-weight:900; 
+    	font-size:.9em;
+    	color:#fff;
+    }
+    
+    .AlertStamp-color2 {color:#b50000;}
+    .AlertStamp-color1 {color:#f9ff00;}
+    .AlertStamp-color0 {color:#006b03;}
+        
+	#statusAlert   {
+        border:2px solid #999;
+        margin:10px 0;
+        padding:15px;
+        
+        border-radius:8px; /*CSS3 border radius*/
+        -moz-border-radius:8px;
+        -webkit-border-radius:8px;	
+        box-shadow:0 0 15px #959595; /*CSS3 shadow*/
+        -moz-box-shadow:0 0 15px #959595;
+        -webkit-box-shadow:0 0 15px #959595;	 	
+    }
+    
+    .clearAll { clear:both;}
+    
+    .keepInformed {text-align:center; font-weight:900; font-size:.8em;}
+    .keepInformed a.InstantUpdates {background:red;}
+    
+    .btn-primary {
+		background-image: linear-gradient(to bottom, #428BCA 0px, #2D6CA2 100%);
+		background-repeat: repeat-x;
+		border-color: #2B669A;
+    }
+    
+    #preview {
+        border:2px solid #de8500;
+        margin:10px 0;
+        padding:15px;
+        background:#fff;
+        border-radius:8px; /*CSS3 border radius*/
+        -moz-border-radius:8px;
+        -webkit-border-radius:8px;	
+        box-shadow:0 0 15px #959595; /*CSS3 shadow*/
+        -moz-box-shadow:0 0 15px #959595;
+        -webkit-box-shadow:0 0 15px #959595;
+    }
+    
+    h1 {font-size:22px !important;; font-weight:900 !important;;}
+       
+    #statusAlert h5, #statusAlertHistory h5, #statusAlertList h5 {line-height:30px; height:30px; font-size:.9em; font-weight:900; background: url(/img/icon-status.png) no-repeat; padding:0 0 0 30px; margin:0;}  
+    #preview h5 {line-height:30px; height:30px; font-size:.9em; font-weight:900; background: url(/img/icon-delta.png) no-repeat; padding:0 0 0 30px; margin:0;}
+       
+ 
+    	
