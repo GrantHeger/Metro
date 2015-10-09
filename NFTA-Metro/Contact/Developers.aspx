@@ -7,12 +7,12 @@
 
 <asp:Content ID="phMAIN" ContentPlaceHolderID="phMain" runat="server">
     <h1>Developer Tools</h1>
-    <h2>Google Transit Feed Specification (GTFS)</h2>
+    <h2>General Transit Feed Specification (GTFS)</h2>
 		<p>NFTA has provided schedule data in the <a href="http://code.google.com/transit/spec/transit_feed_specification.htm" target="_new">Google Transit Feed Specification (GTFS)</a>. To use the feed you should 
-			  read and accept the terms of our Google Transit Feed Specification (GTFS) License Agreement below.</p>
+			  read and accept the terms of our General Transit Feed Specification (GTFS) License Agreement below.</p>
 			  <p>You can <a href="http://www.nfta.com/metro/__googletransit/">access our download directory</a> to download data directly from our site. </p>
 
-              <h2>Google Transit Feed Specification (GTFS) License Agreement</h2>
+              <h2>General Transit Feed Specification (GTFS) License Agreement</h2>
 		
             <p><b>License Agreement</b><br />
             The Niagara Frontier Transportation Authority (NFTA) hereby grants you (Licensee) non-exclusive, limited and revocable rights to use, reproduce, and redistribute NFTA Data (Data) subject to the following Terms:</p>
